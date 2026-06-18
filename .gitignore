@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+dist/
+build/
+node_modules/
+docs/PROJECT_SCOREBOARD.tmp

@@ -1,0 +1,28 @@
+{
+  "slug": "apk-release-forge",
+  "title": "APK Release Forge",
+  "audience": "Android learners and indie app maintainers",
+  "problem": "Small Android projects often fail at repeatable APK builds, release notes, artifacts, and version hygiene.",
+  "mvp": "A reusable GitHub Actions template and local strict build script for Android APK releases.",
+  "tags": ["android", "release", "github-actions"],
+  "scores": {
+    "user_pain": 8,
+    "technical_feasibility": 9,
+    "distribution": 8,
+    "portfolio_signal": 8,
+    "maintenance_inverse": 8,
+    "reuse_potential": 9,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Generalize YumeBox build scripts",
+    "Create version bump helper",
+    "Generate release notes from commits",
+    "Upload APK artifacts and checksums"
+  ],
+  "risks": [
+    "Different Gradle project layouts",
+    "Signing key handling",
+    "Large Android SDK setup time"
+  ]
+}

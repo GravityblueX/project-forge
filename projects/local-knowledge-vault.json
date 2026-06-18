@@ -1,0 +1,28 @@
+{
+  "slug": "local-knowledge-vault",
+  "title": "Local Knowledge Vault",
+  "audience": "students, researchers, and personal knowledge workers",
+  "problem": "Useful notes, PDFs, screenshots, and repo docs are scattered and hard to retrieve privately.",
+  "mvp": "A local indexer that summarizes folders into searchable markdown cards without uploading private files.",
+  "tags": ["local-first", "knowledge", "privacy"],
+  "scores": {
+    "user_pain": 8,
+    "technical_feasibility": 8,
+    "distribution": 7,
+    "portfolio_signal": 8,
+    "maintenance_inverse": 7,
+    "reuse_potential": 8,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Index markdown, text, and filenames",
+    "Generate daily digest",
+    "Add SQLite full-text search",
+    "Add optional local embedding backend"
+  ],
+  "risks": [
+    "Document parsing edge cases",
+    "Privacy expectations",
+    "Search quality without embeddings"
+  ]
+}

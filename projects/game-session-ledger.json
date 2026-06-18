@@ -1,0 +1,28 @@
+{
+  "slug": "game-session-ledger",
+  "title": "Game Session Ledger",
+  "audience": "players who want light personal analytics",
+  "problem": "Game time, mood, wins, losses, and learning goals are hard to review without annoying manual tracking.",
+  "mvp": "A lightweight local journal that logs sessions, tags games, and generates weekly summaries.",
+  "tags": ["gaming", "local-first", "analytics"],
+  "scores": {
+    "user_pain": 6,
+    "technical_feasibility": 10,
+    "distribution": 7,
+    "portfolio_signal": 7,
+    "maintenance_inverse": 9,
+    "reuse_potential": 7,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Create session JSON format",
+    "Build CLI add/list/report commands",
+    "Generate weekly markdown summary",
+    "Add optional CSV export"
+  ],
+  "risks": [
+    "May be too small unless polished",
+    "Manual entry friction",
+    "Needs privacy-first defaults"
+  ]
+}

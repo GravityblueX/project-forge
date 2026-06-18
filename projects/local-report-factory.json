@@ -1,0 +1,28 @@
+{
+  "slug": "local-report-factory",
+  "title": "Local Report Factory",
+  "audience": "people who need repeatable PDFs, HTML reports, and project summaries",
+  "problem": "Reports are often handcrafted, inconsistent, and hard to regenerate after data changes.",
+  "mvp": "A template-driven report generator that turns JSON or CSV into polished HTML and PDF bundles.",
+  "tags": ["reports", "html", "pdf"],
+  "scores": {
+    "user_pain": 8,
+    "technical_feasibility": 8,
+    "distribution": 8,
+    "portfolio_signal": 8,
+    "maintenance_inverse": 8,
+    "reuse_potential": 9,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Define report manifest format",
+    "Render HTML with Jinja templates",
+    "Add PDF export path",
+    "Include repo health and browser diagnostic examples"
+  ],
+  "risks": [
+    "PDF rendering dependencies",
+    "Template design quality",
+    "Input schema sprawl"
+  ]
+}

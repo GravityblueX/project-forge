@@ -1,0 +1,28 @@
+{
+  "slug": "ci-failure-copilot",
+  "title": "CI Failure Copilot",
+  "audience": "maintainers who use GitHub Actions",
+  "problem": "CI failures are noisy; the useful signal is buried in logs and old failed notifications pile up.",
+  "mvp": "A local CLI that summarizes recent failed runs, groups root causes, and drafts fix checklists.",
+  "tags": ["github-actions", "developer-tools", "triage"],
+  "scores": {
+    "user_pain": 9,
+    "technical_feasibility": 8,
+    "distribution": 8,
+    "portfolio_signal": 9,
+    "maintenance_inverse": 7,
+    "reuse_potential": 8,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Fetch recent workflow failures with gh api",
+    "Extract failing step logs",
+    "Classify dependency, lint, test, packaging, and permission failures",
+    "Write markdown triage reports"
+  ],
+  "risks": [
+    "Large log volume",
+    "Secrets redaction",
+    "Ambiguous root causes"
+  ]
+}

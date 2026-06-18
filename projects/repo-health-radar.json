@@ -1,0 +1,28 @@
+{
+  "slug": "repo-health-radar",
+  "title": "Repo Health Radar",
+  "audience": "solo developers and small teams",
+  "problem": "Small repos quietly decay: broken CI, stale dependencies, missing releases, and unclear next actions.",
+  "mvp": "A CLI that scans GitHub repos, scores health, and writes a prioritized maintenance report.",
+  "tags": ["github", "automation", "maintenance"],
+  "scores": {
+    "user_pain": 9,
+    "technical_feasibility": 9,
+    "distribution": 8,
+    "portfolio_signal": 8,
+    "maintenance_inverse": 8,
+    "reuse_potential": 9,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Implement gh-based repo discovery",
+    "Score CI, releases, issues, dependency files, and README quality",
+    "Generate docs/health-report.md",
+    "Add weekly GitHub Action"
+  ],
+  "risks": [
+    "API rate limits",
+    "False positives for intentionally quiet repos",
+    "Private repo permissions"
+  ]
+}

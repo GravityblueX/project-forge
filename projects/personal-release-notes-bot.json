@@ -1,0 +1,28 @@
+{
+  "slug": "personal-release-notes-bot",
+  "title": "Personal Release Notes Bot",
+  "audience": "solo builders with multiple small repos",
+  "problem": "Good work disappears because releases, changelogs, screenshots, and artifacts are not summarized consistently.",
+  "mvp": "A CLI that reads commits and GitHub artifacts, then drafts human-friendly release notes.",
+  "tags": ["changelog", "github", "portfolio"],
+  "scores": {
+    "user_pain": 7,
+    "technical_feasibility": 9,
+    "distribution": 8,
+    "portfolio_signal": 9,
+    "maintenance_inverse": 8,
+    "reuse_potential": 8,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Read commits since latest tag",
+    "Group changes by feature, fix, build, docs",
+    "Link artifacts and workflow runs",
+    "Write release draft markdown"
+  ],
+  "risks": [
+    "Commit messages may be messy",
+    "Artifact retention limits",
+    "Release style preferences vary"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "browser-trust-lab",
+  "title": "Browser Trust Lab",
+  "audience": "QA engineers and authorized security testers",
+  "problem": "Modern pages hide state in frames, extensions, browser profiles, and event chains, making authorized diagnosis hard.",
+  "mvp": "A local-first browser diagnostic tool that records frames, selectors, event chains, and profile differences.",
+  "tags": ["browser", "qa", "diagnostics"],
+  "scores": {
+    "user_pain": 8,
+    "technical_feasibility": 8,
+    "distribution": 7,
+    "portfolio_signal": 9,
+    "maintenance_inverse": 7,
+    "reuse_potential": 9,
+    "ethical_safety": 8
+  },
+  "next_tasks": [
+    "Extract reusable pieces from slider-captcha-lab",
+    "Add profile comparison reports",
+    "Add frame tree visualization",
+    "Export HTML evidence bundles"
+  ],
+  "risks": [
+    "Must keep strict authorized-use boundaries",
+    "Browser APIs change often",
+    "Can be misunderstood as a bypass tool"
+  ]
+}

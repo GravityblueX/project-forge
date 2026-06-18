@@ -1,0 +1,28 @@
+{
+  "slug": "privacy-screenshot-redactor",
+  "title": "Privacy Screenshot Redactor",
+  "audience": "support teams, developers, and creators",
+  "problem": "Screenshots often leak names, tokens, emails, URLs, and private file paths before sharing.",
+  "mvp": "A local image tool that detects text regions and helps redact sensitive snippets before export.",
+  "tags": ["privacy", "images", "local-first"],
+  "scores": {
+    "user_pain": 8,
+    "technical_feasibility": 7,
+    "distribution": 8,
+    "portfolio_signal": 9,
+    "maintenance_inverse": 6,
+    "reuse_potential": 8,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Prototype manual rectangle redaction",
+    "Add OCR text extraction",
+    "Highlight likely secrets and emails",
+    "Export before/after audit metadata"
+  ],
+  "risks": [
+    "OCR setup complexity",
+    "False negatives are sensitive",
+    "Needs clear privacy guarantees"
+  ]
+}
