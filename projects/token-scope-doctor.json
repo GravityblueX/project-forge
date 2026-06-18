@@ -1,0 +1,28 @@
+{
+  "slug": "token-scope-doctor",
+  "title": "Token Scope Doctor",
+  "audience": "developers using GitHub CLI and automation tokens",
+  "problem": "Automation gets stuck when tokens have too little scope, but broad permanent tokens are risky.",
+  "mvp": "A diagnostic that explains current GitHub auth scopes, workflow limitations, and least-privilege next steps.",
+  "tags": ["github", "auth", "security"],
+  "scores": {
+    "user_pain": 8,
+    "technical_feasibility": 7,
+    "distribution": 7,
+    "portfolio_signal": 7,
+    "maintenance_inverse": 8,
+    "reuse_potential": 8,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Read gh auth status",
+    "Detect workflow scope gaps",
+    "Explain safe scope upgrades",
+    "Generate reports/token-scope.md"
+  ],
+  "risks": [
+    "Do not print token values",
+    "Different hosts and auth methods behave differently",
+    "Scope names evolve over time"
+  ]
+}

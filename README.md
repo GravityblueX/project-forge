@@ -35,9 +35,21 @@ Project Forge now includes a small maintenance toolkit:
 python scripts/repo_health_radar.py --owner GravityblueX --deep
 python scripts/ci_failure_copilot.py --owner GravityblueX
 python scripts/apk_release_forge.py C:\path\to\android-project
+python scripts/workflow_policy_auditor.py .
+python scripts/secret_pattern_audit.py .
+python scripts/dependency_manifest_radar.py .
+python scripts/release_notes_studio.py .
+python scripts/maintenance_briefing.py
 ```
 
 Generated reports are written to `reports/`.
+
+## References
+
+The direction is documented in `docs/REFERENCE_PROJECTS.md`. The toolkit is
+inspired by mature maintenance tools such as OpenSSF Scorecard, Renovate,
+Release Drafter, Gitleaks, pre-commit, Cookiecutter, Copier, and Backstage
+templates.
 
 ## Project Cards
 
@@ -57,6 +69,7 @@ The workflow template lives at:
 
 ```text
 automation/github-actions/curate.yml
+automation/github-actions/maintenance-suite.yml
 ```
 
 When GitHub workflow permissions are available, copy it to:

@@ -1,0 +1,28 @@
+{
+  "slug": "dependency-update-conductor",
+  "title": "Dependency Update Conductor",
+  "audience": "maintainers with several small repos",
+  "problem": "Dependency updates are valuable but noisy; small repos need grouping, scheduling, and clear risk notes.",
+  "mvp": "A tool that detects dependency manifests and drafts Renovate or Dependabot configuration suggestions.",
+  "tags": ["dependencies", "renovate", "dependabot"],
+  "scores": {
+    "user_pain": 8,
+    "technical_feasibility": 8,
+    "distribution": 8,
+    "portfolio_signal": 8,
+    "maintenance_inverse": 8,
+    "reuse_potential": 9,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Scan dependency manifests",
+    "Group ecosystems by risk",
+    "Draft config templates",
+    "Generate reports/dependency-radar.md"
+  ],
+  "risks": [
+    "Version advice may be ecosystem-specific",
+    "Breaking changes still need tests",
+    "Private package registries need custom configuration"
+  ]
+}

@@ -1,0 +1,31 @@
+name: Maintenance Suite
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  reports:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate local reports
+        run: |
+          python scripts/curate_projects.py
+          python scripts/workflow_policy_auditor.py .
+          python scripts/secret_pattern_audit.py .
+          python scripts/dependency_manifest_radar.py .
+          python scripts/release_notes_studio.py .
+          python scripts/maintenance_briefing.py
+      - name: Commit refreshed reports
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh maintenance reports"
+

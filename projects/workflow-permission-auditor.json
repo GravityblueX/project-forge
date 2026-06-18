@@ -1,0 +1,28 @@
+{
+  "slug": "workflow-permission-auditor",
+  "title": "Workflow Permission Auditor",
+  "audience": "GitHub repository owners",
+  "problem": "Actions workflows often accumulate broad token permissions, mutable action refs, and risky triggers without anyone noticing.",
+  "mvp": "A local CLI that scans workflow YAML files and writes a risk-ranked report with concrete fixes.",
+  "tags": ["github-actions", "security", "automation"],
+  "scores": {
+    "user_pain": 8,
+    "technical_feasibility": 9,
+    "distribution": 8,
+    "portfolio_signal": 9,
+    "maintenance_inverse": 8,
+    "reuse_potential": 9,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Scan workflow permissions and risky triggers",
+    "Flag mutable action refs",
+    "Generate reports/workflow-audit.md",
+    "Add remediation snippets"
+  ],
+  "risks": [
+    "YAML parsing edge cases",
+    "False positives on intentionally broad release workflows",
+    "Different repositories use different policy tolerance"
+  ]
+}

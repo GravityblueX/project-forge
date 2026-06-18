@@ -1,0 +1,28 @@
+{
+  "slug": "release-notes-studio",
+  "title": "Release Notes Studio",
+  "audience": "developers who publish frequent small releases",
+  "problem": "Manual release notes are easy to skip, while fully automated notes often miss verification and artifact details.",
+  "mvp": "A CLI that turns git history into categorized release notes with verification and artifact sections.",
+  "tags": ["release", "changelog", "git"],
+  "scores": {
+    "user_pain": 7,
+    "technical_feasibility": 9,
+    "distribution": 8,
+    "portfolio_signal": 8,
+    "maintenance_inverse": 9,
+    "reuse_potential": 9,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Read git history since last tag",
+    "Categorize conventional commits",
+    "Generate reports/release-notes.md",
+    "Add artifact checksum hooks"
+  ],
+  "risks": [
+    "Messy commit messages reduce quality",
+    "Tag strategy differs by repo",
+    "Human review is still needed before publishing"
+  ]
+}

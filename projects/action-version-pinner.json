@@ -1,0 +1,28 @@
+{
+  "slug": "action-version-pinner",
+  "title": "Action Version Pinner",
+  "audience": "GitHub Actions users",
+  "problem": "Workflows that use moving refs such as main or master can change behavior without a code review.",
+  "mvp": "A scanner that lists unpinned actions and suggests safer version pinning work.",
+  "tags": ["github-actions", "supply-chain", "ci"],
+  "scores": {
+    "user_pain": 7,
+    "technical_feasibility": 8,
+    "distribution": 7,
+    "portfolio_signal": 8,
+    "maintenance_inverse": 8,
+    "reuse_potential": 8,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Detect uses: owner/action@ref entries",
+    "Flag mutable refs",
+    "Group by workflow",
+    "Link to workflow auditor"
+  ],
+  "risks": [
+    "Full SHA pinning can be noisy to maintain",
+    "Major-version refs are common and sometimes acceptable",
+    "Reusable workflows need separate handling"
+  ]
+}

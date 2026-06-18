@@ -13,6 +13,17 @@ every other project.
 - [x] Generate `reports/repo-health.md`.
 - [ ] Add a weekly workflow.
 
+## Priority 1.5: Maintenance Suite
+
+Why now: it turns the incubator into a practical owner dashboard.
+
+- [x] Add workflow policy auditor.
+- [x] Add redacted secret pattern audit.
+- [x] Add dependency manifest radar.
+- [x] Add release notes studio.
+- [x] Add weekly briefing merger.
+- [ ] Activate the workflow after GitHub token workflow permission is available.
+
 ## Priority 2: CI Failure Copilot
 
 Why second: it directly reduces notification and failed workflow burden.

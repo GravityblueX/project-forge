@@ -1,19 +1,27 @@
 # Project Scoreboard
 
-Last refreshed: 2026-06-18 10:25 UTC
+Last refreshed: 2026-06-18 11:00 UTC
 
 | Rank | Project | Score | Audience | Tags |
 |---:|---|---:|---|---|
 | 1 | [Repo Health Radar](../projects/repo-health-radar.json) | 8.79 | solo developers and small teams | github, automation, maintenance |
-| 2 | [APK Release Forge](../projects/apk-release-forge.json) | 8.58 | Android learners and indie app maintainers | android, release, github-actions |
-| 3 | [CI Failure Copilot](../projects/ci-failure-copilot.json) | 8.56 | maintainers who use GitHub Actions | github-actions, developer-tools, triage |
-| 4 | [Local Report Factory](../projects/local-report-factory.json) | 8.43 | people who need repeatable PDFs, HTML reports, and project summaries | reports, html, pdf |
-| 5 | [Personal Release Notes Bot](../projects/personal-release-notes-bot.json) | 8.39 | solo builders with multiple small repos | changelog, github, portfolio |
-| 6 | [Automation Runbook Studio](../projects/automation-runbook-studio.json) | 8.23 | power users who automate repetitive desktop and web workflows | automation, runbooks, ops |
-| 7 | [Privacy Screenshot Redactor](../projects/privacy-screenshot-redactor.json) | 8.09 | support teams, developers, and creators | privacy, images, local-first |
-| 8 | [Local Knowledge Vault](../projects/local-knowledge-vault.json) | 8.08 | students, researchers, and personal knowledge workers | local-first, knowledge, privacy |
-| 9 | [Browser Trust Lab](../projects/browser-trust-lab.json) | 8.02 | QA engineers and authorized security testers | browser, qa, diagnostics |
-| 10 | [Game Session Ledger](../projects/game-session-ledger.json) | 7.92 | players who want light personal analytics | gaming, local-first, analytics |
+| 2 | [Workflow Permission Auditor](../projects/workflow-permission-auditor.json) | 8.72 | GitHub repository owners | github-actions, security, automation |
+| 3 | [Repo Template Factory](../projects/repo-template-factory.json) | 8.59 | solo builders who start many small tools | templates, scaffolding, developer-tools |
+| 4 | [APK Release Forge](../projects/apk-release-forge.json) | 8.58 | Android learners and indie app maintainers | android, release, github-actions |
+| 5 | [CI Failure Copilot](../projects/ci-failure-copilot.json) | 8.56 | maintainers who use GitHub Actions | github-actions, developer-tools, triage |
+| 6 | [Maintenance Briefing Bot](../projects/maintenance-briefing-bot.json) | 8.54 | busy repository owners | reports, automation, planning |
+| 7 | [Secret Pattern Audit](../projects/secret-pattern-audit.json) | 8.54 | solo developers and small teams | security, local-first, scanner |
+| 8 | [Release Notes Studio](../projects/release-notes-studio.json) | 8.47 | developers who publish frequent small releases | release, changelog, git |
+| 9 | [Dependency Update Conductor](../projects/dependency-update-conductor.json) | 8.43 | maintainers with several small repos | dependencies, renovate, dependabot |
+| 10 | [Local Report Factory](../projects/local-report-factory.json) | 8.43 | people who need repeatable PDFs, HTML reports, and project summaries | reports, html, pdf |
+| 11 | [Personal Release Notes Bot](../projects/personal-release-notes-bot.json) | 8.39 | solo builders with multiple small repos | changelog, github, portfolio |
+| 12 | [Automation Runbook Studio](../projects/automation-runbook-studio.json) | 8.23 | power users who automate repetitive desktop and web workflows | automation, runbooks, ops |
+| 13 | [Privacy Screenshot Redactor](../projects/privacy-screenshot-redactor.json) | 8.09 | support teams, developers, and creators | privacy, images, local-first |
+| 14 | [Local Knowledge Vault](../projects/local-knowledge-vault.json) | 8.08 | students, researchers, and personal knowledge workers | local-first, knowledge, privacy |
+| 15 | [Browser Trust Lab](../projects/browser-trust-lab.json) | 8.02 | QA engineers and authorized security testers | browser, qa, diagnostics |
+| 16 | [Action Version Pinner](../projects/action-version-pinner.json) | 7.98 | GitHub Actions users | github-actions, supply-chain, ci |
+| 17 | [Game Session Ledger](../projects/game-session-ledger.json) | 7.92 | players who want light personal analytics | gaming, local-first, analytics |
+| 18 | [Token Scope Doctor](../projects/token-scope-doctor.json) | 7.91 | developers using GitHub CLI and automation tokens | github, auth, security |
 
 ## Top Project Briefs
 
@@ -25,6 +33,24 @@ Last refreshed: 2026-06-18 10:25 UTC
 - MVP: A CLI that scans GitHub repos, scores health, and writes a prioritized maintenance report.
 - Next tasks: Implement gh-based repo discovery, Score CI, releases, issues, dependency files, and README quality, Generate docs/health-report.md, Add weekly GitHub Action
 - Main risks: API rate limits, False positives for intentionally quiet repos, Private repo permissions
+
+### Workflow Permission Auditor
+
+- Slug: `workflow-permission-auditor`
+- Value score: `8.72`
+- Problem: Actions workflows often accumulate broad token permissions, mutable action refs, and risky triggers without anyone noticing.
+- MVP: A local CLI that scans workflow YAML files and writes a risk-ranked report with concrete fixes.
+- Next tasks: Scan workflow permissions and risky triggers, Flag mutable action refs, Generate reports/workflow-audit.md, Add remediation snippets
+- Main risks: YAML parsing edge cases, False positives on intentionally broad release workflows, Different repositories use different policy tolerance
+
+### Repo Template Factory
+
+- Slug: `repo-template-factory`
+- Value score: `8.59`
+- Problem: New projects lose time recreating README, license, CI, reports, and release checklists.
+- MVP: A template generator that creates a clean local project skeleton with selected maintenance tools wired in.
+- Next tasks: Create Python CLI scaffold command, Add README and license templates, Add optional report scripts, Generate dry-run preview
+- Main risks: Templates can become stale, Too many options slow down creation, Should not overwrite user files without confirmation
 
 ### APK Release Forge
 
@@ -43,6 +69,42 @@ Last refreshed: 2026-06-18 10:25 UTC
 - MVP: A local CLI that summarizes recent failed runs, groups root causes, and drafts fix checklists.
 - Next tasks: Fetch recent workflow failures with gh api, Extract failing step logs, Classify dependency, lint, test, packaging, and permission failures, Write markdown triage reports
 - Main risks: Large log volume, Secrets redaction, Ambiguous root causes
+
+### Maintenance Briefing Bot
+
+- Slug: `maintenance-briefing-bot`
+- Value score: `8.54`
+- Problem: Reports are useful only when the owner can quickly see what matters this week.
+- MVP: A summarizer that merges health, CI, dependency, secret, and release reports into one short weekly briefing.
+- Next tasks: Collect generated reports, Extract top risks and next actions, Generate reports/weekly-briefing.md, Add owner-friendly priority labels
+- Main risks: Summaries can hide important details, Needs stable report formats, Should avoid hype and keep actions concrete
+
+### Secret Pattern Audit
+
+- Slug: `secret-pattern-audit`
+- Value score: `8.54`
+- Problem: Secrets can land in scripts, logs, reports, and config files long before a full security platform is installed.
+- MVP: A redacting local scanner that checks common text files for secret-like patterns and writes a safe report.
+- Next tasks: Add redacted pattern scanner, Skip generated and dependency directories, Generate reports/secret-audit.md, Provide allowlist support
+- Main risks: False positives in documentation, Must never print raw secrets, Regex coverage is not a replacement for mature scanners
+
+### Release Notes Studio
+
+- Slug: `release-notes-studio`
+- Value score: `8.47`
+- Problem: Manual release notes are easy to skip, while fully automated notes often miss verification and artifact details.
+- MVP: A CLI that turns git history into categorized release notes with verification and artifact sections.
+- Next tasks: Read git history since last tag, Categorize conventional commits, Generate reports/release-notes.md, Add artifact checksum hooks
+- Main risks: Messy commit messages reduce quality, Tag strategy differs by repo, Human review is still needed before publishing
+
+### Dependency Update Conductor
+
+- Slug: `dependency-update-conductor`
+- Value score: `8.43`
+- Problem: Dependency updates are valuable but noisy; small repos need grouping, scheduling, and clear risk notes.
+- MVP: A tool that detects dependency manifests and drafts Renovate or Dependabot configuration suggestions.
+- Next tasks: Scan dependency manifests, Group ecosystems by risk, Draft config templates, Generate reports/dependency-radar.md
+- Main risks: Version advice may be ecosystem-specific, Breaking changes still need tests, Private package registries need custom configuration
 
 ### Local Report Factory
 
@@ -98,6 +160,15 @@ Last refreshed: 2026-06-18 10:25 UTC
 - Next tasks: Extract reusable pieces from slider-captcha-lab, Add profile comparison reports, Add frame tree visualization, Export HTML evidence bundles
 - Main risks: Must keep strict authorized-use boundaries, Browser APIs change often, Can be misunderstood as a bypass tool
 
+### Action Version Pinner
+
+- Slug: `action-version-pinner`
+- Value score: `7.98`
+- Problem: Workflows that use moving refs such as main or master can change behavior without a code review.
+- MVP: A scanner that lists unpinned actions and suggests safer version pinning work.
+- Next tasks: Detect uses: owner/action@ref entries, Flag mutable refs, Group by workflow, Link to workflow auditor
+- Main risks: Full SHA pinning can be noisy to maintain, Major-version refs are common and sometimes acceptable, Reusable workflows need separate handling
+
 ### Game Session Ledger
 
 - Slug: `game-session-ledger`
@@ -106,3 +177,12 @@ Last refreshed: 2026-06-18 10:25 UTC
 - MVP: A lightweight local journal that logs sessions, tags games, and generates weekly summaries.
 - Next tasks: Create session JSON format, Build CLI add/list/report commands, Generate weekly markdown summary, Add optional CSV export
 - Main risks: May be too small unless polished, Manual entry friction, Needs privacy-first defaults
+
+### Token Scope Doctor
+
+- Slug: `token-scope-doctor`
+- Value score: `7.91`
+- Problem: Automation gets stuck when tokens have too little scope, but broad permanent tokens are risky.
+- MVP: A diagnostic that explains current GitHub auth scopes, workflow limitations, and least-privilege next steps.
+- Next tasks: Read gh auth status, Detect workflow scope gaps, Explain safe scope upgrades, Generate reports/token-scope.md
+- Main risks: Do not print token values, Different hosts and auth methods behave differently, Scope names evolve over time
