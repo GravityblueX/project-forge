@@ -27,6 +27,18 @@ This regenerates:
 docs/PROJECT_SCOREBOARD.md
 ```
 
+## Ready-to-Run Tools
+
+Project Forge now includes a small maintenance toolkit:
+
+```bash
+python scripts/repo_health_radar.py --owner GravityblueX --deep
+python scripts/ci_failure_copilot.py --owner GravityblueX
+python scripts/apk_release_forge.py C:\path\to\android-project
+```
+
+Generated reports are written to `reports/`.
+
 ## Project Cards
 
 Project cards live in `projects/*.json`. A card describes:
