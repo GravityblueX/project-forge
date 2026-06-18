@@ -40,9 +40,21 @@ python scripts/secret_pattern_audit.py .
 python scripts/dependency_manifest_radar.py .
 python scripts/release_notes_studio.py .
 python scripts/maintenance_briefing.py
+python scripts/token_scope_doctor.py
+python scripts/dependency_update_config_drafter.py C:\path\to\repo
+python scripts/branch_protection_radar.py --owner GravityblueX
+python scripts/repo_template_factory.py --name valuable-tool
+python scripts/report_index.py
 ```
 
 Generated reports are written to `reports/`.
+
+Start with:
+
+```text
+reports/INDEX.md
+reports/weekly-briefing.md
+```
 
 ## References
 

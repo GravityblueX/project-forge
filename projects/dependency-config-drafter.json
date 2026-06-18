@@ -1,0 +1,28 @@
+{
+  "slug": "dependency-config-drafter",
+  "title": "Dependency Config Drafter",
+  "audience": "developers adding automated dependency updates",
+  "problem": "Renovate and Dependabot are powerful, but the first configuration decision slows people down.",
+  "mvp": "A scanner that detects ecosystems and writes safe Renovate and Dependabot draft configs into a report.",
+  "tags": ["dependencies", "renovate", "dependabot"],
+  "scores": {
+    "user_pain": 8,
+    "technical_feasibility": 9,
+    "distribution": 8,
+    "portfolio_signal": 8,
+    "maintenance_inverse": 9,
+    "reuse_potential": 9,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Detect npm, pip, and Gradle manifests",
+    "Draft Renovate config",
+    "Draft Dependabot config",
+    "Add review notes"
+  ],
+  "risks": [
+    "Generated configs must be reviewed before use",
+    "Private registries need extra secrets",
+    "Automerge should remain disabled by default"
+  ]
+}

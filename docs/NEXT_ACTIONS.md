@@ -22,6 +22,11 @@ Why now: it turns the incubator into a practical owner dashboard.
 - [x] Add dependency manifest radar.
 - [x] Add release notes studio.
 - [x] Add weekly briefing merger.
+- [x] Add token scope diagnostics.
+- [x] Add dependency update config drafter.
+- [x] Add branch protection radar.
+- [x] Add report indexer.
+- [x] Add repo template factory preview.
 - [ ] Activate the workflow after GitHub token workflow permission is available.
 
 ## Priority 2: CI Failure Copilot

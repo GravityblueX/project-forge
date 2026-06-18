@@ -43,6 +43,9 @@ def render(reports_dir: Path) -> str:
     workflow_audit = read(reports_dir / "workflow-audit.md")
     secret_audit = read(reports_dir / "secret-audit.md")
     dependency_radar = read(reports_dir / "dependency-radar.md")
+    dependency_config = read(reports_dir / "dependency-update-config.md")
+    branch_protection = read(reports_dir / "branch-protection.md")
+    token_scope = read(reports_dir / "token-scope.md")
     release_notes = read(reports_dir / "release-notes.md")
 
     lines = [
@@ -63,8 +66,14 @@ def render(reports_dir: Path) -> str:
     secret_findings = count_findings(secret_audit)
     if secret_findings:
         priorities.append(f"Review `{secret_findings}` redacted secret-pattern findings and rotate anything real.")
+    if "`workflow` scope was not detected" in token_scope:
+        priorities.append("Keep workflow templates inactive until the GitHub token has explicit `workflow` scope.")
+    if "Unprotected default branches:" in branch_protection and "Unprotected default branches: `0`" not in branch_protection:
+        priorities.append("Review default branch protection for active repositories before relying on automation commits.")
     if "no test script" in dependency_radar:
         priorities.append("Add missing test scripts to Node projects before relying on automated dependency PRs.")
+    if "Renovate Draft" in dependency_config:
+        priorities.append("Review the generated Renovate or Dependabot draft before enabling dependency update automation.")
     if not priorities:
         priorities.append("No urgent maintenance blocker found in the generated reports.")
 
@@ -78,6 +87,9 @@ def render(reports_dir: Path) -> str:
         ("Workflow Audit", workflow_audit),
         ("Secret Audit", secret_audit),
         ("Dependency Radar", dependency_radar),
+        ("Dependency Update Config", dependency_config),
+        ("Branch Protection", branch_protection),
+        ("Token Scope", token_scope),
     ]
     for title, text in sections:
         lines.extend([f"### {title}", ""])
@@ -102,6 +114,9 @@ def render(reports_dir: Path) -> str:
         "- `reports/workflow-audit.md`",
         "- `reports/secret-audit.md`",
         "- `reports/dependency-radar.md`",
+        "- `reports/dependency-update-config.md`",
+        "- `reports/branch-protection.md`",
+        "- `reports/token-scope.md`",
         "- `reports/release-notes.md`",
         "",
         "## Draft Release Context",

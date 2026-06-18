@@ -1,0 +1,28 @@
+{
+  "slug": "branch-protection-radar",
+  "title": "Branch Protection Radar",
+  "audience": "GitHub repository owners",
+  "problem": "Default branches can remain unprotected even after a project starts publishing releases or accepting automation changes.",
+  "mvp": "A GitHub CLI based report that checks default branch protection across active repositories.",
+  "tags": ["github", "security", "governance"],
+  "scores": {
+    "user_pain": 8,
+    "technical_feasibility": 8,
+    "distribution": 7,
+    "portfolio_signal": 8,
+    "maintenance_inverse": 8,
+    "reuse_potential": 8,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Check default branch protection endpoint",
+    "Report active unprotected repositories",
+    "Recommend baseline status checks",
+    "Merge into weekly briefing"
+  ],
+  "risks": [
+    "Private repo permissions may hide protection status",
+    "Solo projects may intentionally keep lightweight branches",
+    "Rulesets need separate handling"
+  ]
+}

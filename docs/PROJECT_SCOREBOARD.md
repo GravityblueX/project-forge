@@ -1,27 +1,30 @@
 # Project Scoreboard
 
-Last refreshed: 2026-06-18 11:00 UTC
+Last refreshed: 2026-06-18 11:48 UTC
 
 | Rank | Project | Score | Audience | Tags |
 |---:|---|---:|---|---|
 | 1 | [Repo Health Radar](../projects/repo-health-radar.json) | 8.79 | solo developers and small teams | github, automation, maintenance |
 | 2 | [Workflow Permission Auditor](../projects/workflow-permission-auditor.json) | 8.72 | GitHub repository owners | github-actions, security, automation |
-| 3 | [Repo Template Factory](../projects/repo-template-factory.json) | 8.59 | solo builders who start many small tools | templates, scaffolding, developer-tools |
-| 4 | [APK Release Forge](../projects/apk-release-forge.json) | 8.58 | Android learners and indie app maintainers | android, release, github-actions |
-| 5 | [CI Failure Copilot](../projects/ci-failure-copilot.json) | 8.56 | maintainers who use GitHub Actions | github-actions, developer-tools, triage |
-| 6 | [Maintenance Briefing Bot](../projects/maintenance-briefing-bot.json) | 8.54 | busy repository owners | reports, automation, planning |
-| 7 | [Secret Pattern Audit](../projects/secret-pattern-audit.json) | 8.54 | solo developers and small teams | security, local-first, scanner |
-| 8 | [Release Notes Studio](../projects/release-notes-studio.json) | 8.47 | developers who publish frequent small releases | release, changelog, git |
-| 9 | [Dependency Update Conductor](../projects/dependency-update-conductor.json) | 8.43 | maintainers with several small repos | dependencies, renovate, dependabot |
-| 10 | [Local Report Factory](../projects/local-report-factory.json) | 8.43 | people who need repeatable PDFs, HTML reports, and project summaries | reports, html, pdf |
-| 11 | [Personal Release Notes Bot](../projects/personal-release-notes-bot.json) | 8.39 | solo builders with multiple small repos | changelog, github, portfolio |
-| 12 | [Automation Runbook Studio](../projects/automation-runbook-studio.json) | 8.23 | power users who automate repetitive desktop and web workflows | automation, runbooks, ops |
-| 13 | [Privacy Screenshot Redactor](../projects/privacy-screenshot-redactor.json) | 8.09 | support teams, developers, and creators | privacy, images, local-first |
-| 14 | [Local Knowledge Vault](../projects/local-knowledge-vault.json) | 8.08 | students, researchers, and personal knowledge workers | local-first, knowledge, privacy |
-| 15 | [Browser Trust Lab](../projects/browser-trust-lab.json) | 8.02 | QA engineers and authorized security testers | browser, qa, diagnostics |
-| 16 | [Action Version Pinner](../projects/action-version-pinner.json) | 7.98 | GitHub Actions users | github-actions, supply-chain, ci |
-| 17 | [Game Session Ledger](../projects/game-session-ledger.json) | 7.92 | players who want light personal analytics | gaming, local-first, analytics |
-| 18 | [Token Scope Doctor](../projects/token-scope-doctor.json) | 7.91 | developers using GitHub CLI and automation tokens | github, auth, security |
+| 3 | [Dependency Config Drafter](../projects/dependency-config-drafter.json) | 8.68 | developers adding automated dependency updates | dependencies, renovate, dependabot |
+| 4 | [Repo Template Factory](../projects/repo-template-factory.json) | 8.59 | solo builders who start many small tools | templates, scaffolding, developer-tools |
+| 5 | [Report Indexer](../projects/report-indexer.json) | 8.59 | busy maintainers with many generated reports | reports, docs, automation |
+| 6 | [APK Release Forge](../projects/apk-release-forge.json) | 8.58 | Android learners and indie app maintainers | android, release, github-actions |
+| 7 | [CI Failure Copilot](../projects/ci-failure-copilot.json) | 8.56 | maintainers who use GitHub Actions | github-actions, developer-tools, triage |
+| 8 | [Maintenance Briefing Bot](../projects/maintenance-briefing-bot.json) | 8.54 | busy repository owners | reports, automation, planning |
+| 9 | [Secret Pattern Audit](../projects/secret-pattern-audit.json) | 8.54 | solo developers and small teams | security, local-first, scanner |
+| 10 | [Release Notes Studio](../projects/release-notes-studio.json) | 8.47 | developers who publish frequent small releases | release, changelog, git |
+| 11 | [Dependency Update Conductor](../projects/dependency-update-conductor.json) | 8.43 | maintainers with several small repos | dependencies, renovate, dependabot |
+| 12 | [Local Report Factory](../projects/local-report-factory.json) | 8.43 | people who need repeatable PDFs, HTML reports, and project summaries | reports, html, pdf |
+| 13 | [Personal Release Notes Bot](../projects/personal-release-notes-bot.json) | 8.39 | solo builders with multiple small repos | changelog, github, portfolio |
+| 14 | [Automation Runbook Studio](../projects/automation-runbook-studio.json) | 8.23 | power users who automate repetitive desktop and web workflows | automation, runbooks, ops |
+| 15 | [Branch Protection Radar](../projects/branch-protection-radar.json) | 8.19 | GitHub repository owners | github, security, governance |
+| 16 | [Privacy Screenshot Redactor](../projects/privacy-screenshot-redactor.json) | 8.09 | support teams, developers, and creators | privacy, images, local-first |
+| 17 | [Local Knowledge Vault](../projects/local-knowledge-vault.json) | 8.08 | students, researchers, and personal knowledge workers | local-first, knowledge, privacy |
+| 18 | [Browser Trust Lab](../projects/browser-trust-lab.json) | 8.02 | QA engineers and authorized security testers | browser, qa, diagnostics |
+| 19 | [Action Version Pinner](../projects/action-version-pinner.json) | 7.98 | GitHub Actions users | github-actions, supply-chain, ci |
+| 20 | [Game Session Ledger](../projects/game-session-ledger.json) | 7.92 | players who want light personal analytics | gaming, local-first, analytics |
+| 21 | [Token Scope Doctor](../projects/token-scope-doctor.json) | 7.91 | developers using GitHub CLI and automation tokens | github, auth, security |
 
 ## Top Project Briefs
 
@@ -43,6 +46,15 @@ Last refreshed: 2026-06-18 11:00 UTC
 - Next tasks: Scan workflow permissions and risky triggers, Flag mutable action refs, Generate reports/workflow-audit.md, Add remediation snippets
 - Main risks: YAML parsing edge cases, False positives on intentionally broad release workflows, Different repositories use different policy tolerance
 
+### Dependency Config Drafter
+
+- Slug: `dependency-config-drafter`
+- Value score: `8.68`
+- Problem: Renovate and Dependabot are powerful, but the first configuration decision slows people down.
+- MVP: A scanner that detects ecosystems and writes safe Renovate and Dependabot draft configs into a report.
+- Next tasks: Detect npm, pip, and Gradle manifests, Draft Renovate config, Draft Dependabot config, Add review notes
+- Main risks: Generated configs must be reviewed before use, Private registries need extra secrets, Automerge should remain disabled by default
+
 ### Repo Template Factory
 
 - Slug: `repo-template-factory`
@@ -51,6 +63,15 @@ Last refreshed: 2026-06-18 11:00 UTC
 - MVP: A template generator that creates a clean local project skeleton with selected maintenance tools wired in.
 - Next tasks: Create Python CLI scaffold command, Add README and license templates, Add optional report scripts, Generate dry-run preview
 - Main risks: Templates can become stale, Too many options slow down creation, Should not overwrite user files without confirmation
+
+### Report Indexer
+
+- Slug: `report-indexer`
+- Value score: `8.59`
+- Problem: Reports lose value when the owner has to remember which file contains which signal.
+- MVP: A report index generator that lists every generated report with its headline metric.
+- Next tasks: Index markdown reports, Extract title and first useful metric, Generate reports/INDEX.md, Link index from README
+- Main risks: Report formats may drift, Too much indexing can duplicate weekly briefing, Needs stable relative links
 
 ### APK Release Forge
 
@@ -132,6 +153,15 @@ Last refreshed: 2026-06-18 11:00 UTC
 - MVP: A runbook format plus validator that turns automation steps into auditable markdown and JSON.
 - Next tasks: Define runbook JSON schema, Generate markdown documentation, Validate required safety fields, Add examples for GitHub, browser QA, and releases
 - Main risks: Too abstract without examples, Needs good templates, May overlap with workflow engines
+
+### Branch Protection Radar
+
+- Slug: `branch-protection-radar`
+- Value score: `8.19`
+- Problem: Default branches can remain unprotected even after a project starts publishing releases or accepting automation changes.
+- MVP: A GitHub CLI based report that checks default branch protection across active repositories.
+- Next tasks: Check default branch protection endpoint, Report active unprotected repositories, Recommend baseline status checks, Merge into weekly briefing
+- Main risks: Private repo permissions may hide protection status, Solo projects may intentionally keep lightweight branches, Rulesets need separate handling
 
 ### Privacy Screenshot Redactor
 

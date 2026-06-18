@@ -1,11 +1,13 @@
 # Weekly Maintenance Briefing
 
-Last refreshed: 2026-06-18 11:03 UTC
+Last refreshed: 2026-06-18 11:50 UTC
 
 ## Priority Queue
 
 1. Fix `ashveil-console` CI by ensuring Prettier is installed in the workflow environment.
 2. Review `10` workflow policy findings before enabling more automation.
+3. Keep workflow templates inactive until the GitHub token has explicit `workflow` scope.
+4. Review default branch protection for active repositories before relying on automation commits.
 
 ## Snapshot
 
@@ -44,6 +46,24 @@ Last refreshed: 2026-06-18 11:03 UTC
 
 - See report for details.
 
+### Dependency Update Config
+
+- See report for details.
+
+### Branch Protection
+
+| Item | Data |
+|---|---|
+| [GravityblueX/project-forge](https://github.com/GravityblueX/project-forge) | `main` / unprotected / No branch protection endpoint data. |
+| [GravityblueX/slider-captcha-lab](https://github.com/GravityblueX/slider-captcha-lab) | `main` / unprotected / No branch protection endpoint data. |
+| [GravityblueX/ashveil-console](https://github.com/GravityblueX/ashveil-console) | `main` / unprotected / No branch protection endpoint data. |
+| [GravityblueX/YumeBox-MaterialDesign-Study](https://github.com/GravityblueX/YumeBox-MaterialDesign-Study) | `Yume` / unprotected / No branch protection endpoint data. |
+| [GravityblueX/BLOG-PAGE](https://github.com/GravityblueX/BLOG-PAGE) | `main` / unknown / gh: Upgrade to GitHub Pro or make this repository public to enable this feature. (HTTP 403) |
+
+### Token Scope
+
+- See report for details.
+
 ## Report Files
 
 - `reports/repo-health.md`
@@ -51,6 +71,9 @@ Last refreshed: 2026-06-18 11:03 UTC
 - `reports/workflow-audit.md`
 - `reports/secret-audit.md`
 - `reports/dependency-radar.md`
+- `reports/dependency-update-config.md`
+- `reports/branch-protection.md`
+- `reports/token-scope.md`
 - `reports/release-notes.md`
 
 ## Draft Release Context

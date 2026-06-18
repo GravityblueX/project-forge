@@ -11,6 +11,8 @@ permissions:
 jobs:
   reports:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,10 +24,13 @@ jobs:
           python scripts/workflow_policy_auditor.py .
           python scripts/secret_pattern_audit.py .
           python scripts/dependency_manifest_radar.py .
+          python scripts/dependency_update_config_drafter.py .
+          python scripts/branch_protection_radar.py
           python scripts/release_notes_studio.py .
+          python scripts/token_scope_doctor.py
           python scripts/maintenance_briefing.py
+          python scripts/report_index.py
       - name: Commit refreshed reports
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh maintenance reports"
-

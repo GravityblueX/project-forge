@@ -1,0 +1,28 @@
+{
+  "slug": "report-indexer",
+  "title": "Report Indexer",
+  "audience": "busy maintainers with many generated reports",
+  "problem": "Reports lose value when the owner has to remember which file contains which signal.",
+  "mvp": "A report index generator that lists every generated report with its headline metric.",
+  "tags": ["reports", "docs", "automation"],
+  "scores": {
+    "user_pain": 7,
+    "technical_feasibility": 10,
+    "distribution": 8,
+    "portfolio_signal": 7,
+    "maintenance_inverse": 10,
+    "reuse_potential": 9,
+    "ethical_safety": 10
+  },
+  "next_tasks": [
+    "Index markdown reports",
+    "Extract title and first useful metric",
+    "Generate reports/INDEX.md",
+    "Link index from README"
+  ],
+  "risks": [
+    "Report formats may drift",
+    "Too much indexing can duplicate weekly briefing",
+    "Needs stable relative links"
+  ]
+}
