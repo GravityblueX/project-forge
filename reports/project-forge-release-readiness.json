@@ -1,10 +1,10 @@
 {
   "reportType": "project_forge_release_readiness",
-  "generatedAt": "2026-06-24T02:36:39.119352+00:00",
+  "generatedAt": "2026-06-24T02:44:39.346332+00:00",
   "project": "project-forge",
   "version": "0.1.0",
   "ok": true,
-  "dirtyCount": 5,
+  "dirtyCount": 13,
   "gates": [
     {
       "name": "required file README.md",
@@ -57,6 +57,11 @@
       "detail": "scripts/report_index.py"
     },
     {
+      "name": "required file scripts/tool_registry.py",
+      "ok": true,
+      "detail": "scripts/tool_registry.py"
+    },
+    {
       "name": "required file tests/test_grounded_evolution_radar.py",
       "ok": true,
       "detail": "tests/test_grounded_evolution_radar.py"
@@ -95,6 +100,16 @@
       "name": "required file reports/reference-catalog-check.json",
       "ok": true,
       "detail": "reports/reference-catalog-check.json"
+    },
+    {
+      "name": "required file reports/tool-registry.md",
+      "ok": true,
+      "detail": "reports/tool-registry.md"
+    },
+    {
+      "name": "required file reports/tool-registry.json",
+      "ok": true,
+      "detail": "reports/tool-registry.json"
     },
     {
       "name": "reference source OpenSSF Scorecard",
@@ -197,6 +212,16 @@
       "detail": "Project Forge Release Readiness"
     },
     {
+      "name": "tool registry exists",
+      "ok": true,
+      "detail": "8 tools"
+    },
+    {
+      "name": "tool registry ok",
+      "ok": true,
+      "detail": "True"
+    },
+    {
       "name": "unit tests",
       "ok": true,
       "detail": "OK"
@@ -204,7 +229,7 @@
     {
       "name": "git status readable",
       "ok": true,
-      "detail": "dirty_count=5"
+      "detail": "dirty_count=13"
     }
   ],
   "references": [

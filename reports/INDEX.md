@@ -1,7 +1,7 @@
 # Report Index
 
-Last refreshed: 2026-06-24 02:36 UTC
-Reports indexed: `20`
+Last refreshed: 2026-06-24 02:44 UTC
+Reports indexed: `21`
 
 | Report | File | Signal |
 |---|---|---|
@@ -19,6 +19,7 @@ Reports indexed: `20`
 | Secret Pattern Audit | [`secret-audit.md`](secret-audit.md) | Text files scanned: `45` |
 | Repo Template Factory Preview | [`template-preview.md`](template-preview.md) | See report |
 | Token Scope Doctor | [`token-scope.md`](token-scope.md) | `gh auth status` exit code: `0` |
+| Tool Registry | [`tool-registry.md`](tool-registry.md) | See report |
 | Weekly Maintenance Briefing | [`weekly-briefing.md`](weekly-briefing.md) | Priority items: `4` |
 | Workflow Policy Audit | [`workflow-audit.md`](workflow-audit.md) | Workflow files scanned: `2` |
 | APK Release Forge | [`yumebox-apk-release.md`](yumebox-apk-release.md) | See report |

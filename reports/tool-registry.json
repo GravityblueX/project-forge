@@ -1,0 +1,89 @@
+{
+  "report_type": "tool_registry",
+  "generated_at": "2026-06-24T02:44:32.777124+00:00",
+  "ok": true,
+  "tool_count": 8,
+  "tools": [
+    {
+      "name": "Grounded Evolution Radar",
+      "script": "scripts/grounded_evolution_radar.py",
+      "command": "python scripts/grounded_evolution_radar.py --root <workspace>",
+      "output": "reports/grounded-evolution-radar.md",
+      "reference": "OpenSSF Scorecard",
+      "purpose": "score local repositories from observable health signals",
+      "script_exists": true,
+      "output_exists": true
+    },
+    {
+      "name": "Evolution Backlog",
+      "script": "scripts/evolution_backlog.py",
+      "command": "python scripts/evolution_backlog.py",
+      "output": "reports/evolution-backlog.md",
+      "reference": "Backstage Software Templates",
+      "purpose": "turn repository signals into next maintainable work",
+      "script_exists": true,
+      "output_exists": true
+    },
+    {
+      "name": "Reference Catalog Check",
+      "script": "scripts/reference_catalog_check.py",
+      "command": "python scripts/reference_catalog_check.py",
+      "output": "reports/reference-catalog-check.md",
+      "reference": "primary source documentation",
+      "purpose": "keep borrowed patterns tied to primary sources and local artifacts",
+      "script_exists": true,
+      "output_exists": true
+    },
+    {
+      "name": "Release Readiness",
+      "script": "scripts/release_readiness_report.py",
+      "command": "python scripts/release_readiness_report.py --run-tests",
+      "output": "reports/project-forge-release-readiness.md",
+      "reference": "release-readiness gates",
+      "purpose": "prove that Project Forge reports, tests, and boundaries are ready",
+      "script_exists": true,
+      "output_exists": true
+    },
+    {
+      "name": "Report Index",
+      "script": "scripts/report_index.py",
+      "command": "python scripts/report_index.py",
+      "output": "reports/INDEX.md",
+      "reference": "inspectable evidence",
+      "purpose": "make generated reports discoverable from a single index",
+      "script_exists": true,
+      "output_exists": true
+    },
+    {
+      "name": "APK Release Forge",
+      "script": "scripts/apk_release_forge.py",
+      "command": "python scripts/apk_release_forge.py <android-project>",
+      "output": "reports/apk-release-forge.md",
+      "reference": "Android app signing",
+      "purpose": "summarize Android release assets and signing evidence",
+      "script_exists": true,
+      "output_exists": true
+    },
+    {
+      "name": "Dependency Manifest Radar",
+      "script": "scripts/dependency_manifest_radar.py",
+      "command": "python scripts/dependency_manifest_radar.py <repo>",
+      "output": "reports/dependency-radar.md",
+      "reference": "Renovate",
+      "purpose": "surface dependency manifests before update automation",
+      "script_exists": true,
+      "output_exists": true
+    },
+    {
+      "name": "Secret Pattern Audit",
+      "script": "scripts/secret_pattern_audit.py",
+      "command": "python scripts/secret_pattern_audit.py <repo>",
+      "output": "reports/secret-audit.md",
+      "reference": "Gitleaks-style local scan",
+      "purpose": "find obvious secret patterns with redacted reporting",
+      "script_exists": true,
+      "output_exists": true
+    }
+  ],
+  "failures": []
+}

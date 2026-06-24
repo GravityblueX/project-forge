@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-24T02:36:38.596442+00:00",
-  "radarGeneratedAt": "2026-06-24T02:36:38.442827+00:00",
+  "generatedAt": "2026-06-24T02:44:38.760614+00:00",
+  "radarGeneratedAt": "2026-06-24T02:44:38.574330+00:00",
   "referenceSources": [
     {
       "key": "scorecard",
@@ -288,7 +288,7 @@
       ],
       "currentEvidence": {
         "tests": "1 Python test files",
-        "diagnostics": "31 report artifacts, 0 logs",
+        "diagnostics": "33 report artifacts, 0 logs",
         "release": "1 git tags, 1 release docs"
       }
     },
@@ -327,7 +327,7 @@
       ],
       "currentEvidence": {
         "tests": "1 Python test files",
-        "diagnostics": "14 report artifacts, 0 logs",
+        "diagnostics": "17 report artifacts, 0 logs",
         "release": "5 git tags, 3 release docs"
       }
     },

@@ -35,6 +35,13 @@ assert REFERENCE_SPEC and REFERENCE_SPEC.loader
 sys.modules[REFERENCE_SPEC.name] = reference_catalog
 REFERENCE_SPEC.loader.exec_module(reference_catalog)
 
+TOOL_REGISTRY_MODULE_PATH = Path(__file__).resolve().parents[1] / "scripts" / "tool_registry.py"
+TOOL_REGISTRY_SPEC = importlib.util.spec_from_file_location("tool_registry", TOOL_REGISTRY_MODULE_PATH)
+tool_registry = importlib.util.module_from_spec(TOOL_REGISTRY_SPEC)
+assert TOOL_REGISTRY_SPEC and TOOL_REGISTRY_SPEC.loader
+sys.modules[TOOL_REGISTRY_SPEC.name] = tool_registry
+TOOL_REGISTRY_SPEC.loader.exec_module(tool_registry)
+
 
 class GroundedEvolutionRadarTests(unittest.TestCase):
     def test_detects_placeholder_test_commands(self) -> None:
@@ -198,6 +205,15 @@ class GroundedEvolutionRadarTests(unittest.TestCase):
         self.assertIn("https://github.com/ossf/scorecard", urls)
         self.assertIn("https://mas.owasp.org/MASVS/", urls)
         self.assertEqual(report["failures"], [])
+
+    def test_tool_registry_maps_commands_to_existing_scripts_and_reports(self) -> None:
+        registry = tool_registry.build_registry()
+
+        self.assertTrue(registry["ok"])
+        self.assertGreaterEqual(registry["tool_count"], 8)
+        commands = {tool["command"] for tool in registry["tools"]}
+        self.assertIn("python scripts/release_readiness_report.py --run-tests", commands)
+        self.assertEqual(registry["failures"], [])
 
 
 if __name__ == "__main__":

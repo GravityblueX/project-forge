@@ -1,6 +1,6 @@
 # Evolution Backlog
 
-Last refreshed: 2026-06-24 02:36 UTC
+Last refreshed: 2026-06-24 02:44 UTC
 
 This backlog converts the grounded radar into project-specific next work.
 It separates managed repositories from reference-only repositories so borrowed ideas do not become accidental pushes.
@@ -79,7 +79,7 @@ Next work:
 - Kind: maintenance toolkit
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/project-forge.git`
-- Evidence: tests `1 Python test files`; diagnostics `31 report artifacts, 0 logs`; release `1 git tags, 1 release docs`
+- Evidence: tests `1 Python test files`; diagnostics `33 report artifacts, 0 logs`; release `1 git tags, 1 release docs`
 - Reference anchors: OpenSSF Scorecard, Backstage Software Templates, Renovate
 
 Next work:
@@ -93,7 +93,7 @@ Next work:
 - Kind: authorized browser diagnostics lab
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/slider-captcha-lab.git`
-- Evidence: tests `1 Python test files`; diagnostics `14 report artifacts, 0 logs`; release `5 git tags, 3 release docs`
+- Evidence: tests `1 Python test files`; diagnostics `17 report artifacts, 0 logs`; release `5 git tags, 3 release docs`
 - Reference anchors: Playwright Trace Viewer, Chrome DevTools Protocol Page domain, OpenSSF Scorecard
 
 Next work:

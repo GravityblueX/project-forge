@@ -46,6 +46,7 @@ python scripts/branch_protection_radar.py --owner GravityblueX
 python scripts/repo_template_factory.py --name valuable-tool
 python scripts/grounded_evolution_radar.py --root C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work --root C:\Users\123\Desktop
 python scripts/evolution_backlog.py
+python scripts/tool_registry.py
 python scripts/release_readiness_report.py --run-tests
 python scripts/report_index.py
 ```
@@ -65,6 +66,7 @@ reports/INDEX.md
 reports/weekly-briefing.md
 reports/grounded-evolution-radar.md
 reports/evolution-backlog.md
+reports/tool-registry.md
 reports/project-forge-release-readiness.md
 ```
 

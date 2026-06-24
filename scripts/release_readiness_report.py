@@ -33,6 +33,7 @@ REQUIRED_FILES = [
     "scripts/evolution_backlog.py",
     "scripts/reference_catalog_check.py",
     "scripts/report_index.py",
+    "scripts/tool_registry.py",
     "tests/test_grounded_evolution_radar.py",
     "reports/INDEX.md",
     "reports/grounded-evolution-radar.md",
@@ -41,6 +42,8 @@ REQUIRED_FILES = [
     "reports/evolution-backlog.json",
     "reports/reference-catalog-check.md",
     "reports/reference-catalog-check.json",
+    "reports/tool-registry.md",
+    "reports/tool-registry.json",
 ]
 
 PRIMARY_REFERENCES = [
@@ -159,6 +162,14 @@ def report_index_gates() -> list[Gate]:
     return [Gate(f"report index includes {name}", name in index, name) for name in required]
 
 
+def tool_registry_gates() -> list[Gate]:
+    payload = load_json(ROOT / "reports" / "tool-registry.json")
+    return [
+        Gate("tool registry exists", bool(payload.get("tools")), f"{payload.get('tool_count', 0)} tools"),
+        Gate("tool registry ok", payload.get("ok") is True, str(payload.get("ok"))),
+    ]
+
+
 def test_gate(run_tests: bool) -> Gate:
     if not run_tests:
         return Gate("unit tests", True, "not run by this report; run python -m unittest discover -s tests")
@@ -174,6 +185,7 @@ def build_payload(run_tests: bool = False) -> dict[str, Any]:
         + radar_gates()
         + backlog_gates()
         + report_index_gates()
+        + tool_registry_gates()
         + [test_gate(run_tests)]
     )
     dirty = git_dirty_count()
