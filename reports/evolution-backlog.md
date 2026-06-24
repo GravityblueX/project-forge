@@ -1,6 +1,6 @@
 # Evolution Backlog
 
-Last refreshed: 2026-06-24 01:51 UTC
+Last refreshed: 2026-06-24 02:05 UTC
 
 This backlog converts the grounded radar into project-specific next work.
 It separates managed repositories from reference-only repositories so borrowed ideas do not become accidental pushes.
@@ -26,7 +26,7 @@ It separates managed repositories from reference-only repositories so borrowed i
 - Kind: admin console
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/ashveil-console.git`
-- Evidence: tests `package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\package.json: node --test "test/**/*.test.js"; frontend\package.json: node --test "test/**/*.test.js"`; diagnostics `39 report artifacts, 0 logs`; release `44 git tags, 1 release docs`
+- Evidence: tests `package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\package.json: node --test "test/**/*.test.js"; frontend\package.json: node --test "test/**/*.test.js"`; diagnostics `41 report artifacts, 0 logs`; release `44 git tags, 1 release docs`
 - Reference anchors: Node.js test runner, Renovate, OpenSSF Scorecard
 
 Next work:
@@ -40,7 +40,7 @@ Next work:
 - Kind: full-stack project-management app
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/GravityblueX-First-Identify.git`
-- Evidence: tests `package.json: turbo test; client\package.json: jest; server\package.json: jest`; diagnostics `4 report artifacts, 0 logs`; release `1 git tags`
+- Evidence: tests `package.json: turbo test; client\package.json: jest; server\package.json: jest`; diagnostics `6 report artifacts, 0 logs`; release `1 git tags`
 - Reference anchors: OpenSSF Scorecard, Node.js test runner, Renovate
 
 Next work:
@@ -54,7 +54,7 @@ Next work:
 - Kind: AI lab workspace
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/kiogarezaki.git`
-- Evidence: tests `projects\idea-triage-board\package.json: npm run build && node --test dist/tests/*.test.js; projects\personal-craft-console\package.json: npm run build && node --test dist/tests/*.test.js`; diagnostics `1 report artifacts, 0 logs`; release `4 git tags`
+- Evidence: tests `projects\idea-triage-board\package.json: npm run build && node --test dist/tests/*.test.js; projects\personal-craft-console\package.json: npm run build && node --test dist/tests/*.test.js`; diagnostics `3 report artifacts, 0 logs`; release `4 git tags`
 - Reference anchors: Backstage Software Templates, Node.js test runner, OpenSSF Scorecard
 
 Next work:
@@ -68,7 +68,7 @@ Next work:
 - Kind: maintenance toolkit
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/project-forge.git`
-- Evidence: tests `1 Python test files`; diagnostics `29 report artifacts, 0 logs`; release `1 release docs`
+- Evidence: tests `1 Python test files`; diagnostics `29 report artifacts, 0 logs`; release `1 git tags, 1 release docs`
 - Reference anchors: OpenSSF Scorecard, Backstage Software Templates, Renovate
 
 Next work:
@@ -96,7 +96,7 @@ Next work:
 - Kind: Android APK study fork
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git`
-- Evidence: tests `scripts\study-apk-contract.ps1; scripts\verify-installable-apk.ps1`; diagnostics `11 report artifacts, 2 logs`; release `15 git tags, 9 release docs`
+- Evidence: tests `scripts\study-apk-contract.ps1; scripts\verify-installable-apk.ps1`; diagnostics `13 report artifacts, 2 logs`; release `15 git tags, 9 release docs`
 - Reference anchors: Android app signing, Gradle dependency verification, OWASP MASVS
 
 Next work:

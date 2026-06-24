@@ -1,6 +1,6 @@
 {
   "reportType": "project_forge_release_readiness",
-  "generatedAt": "2026-06-24T01:50:44.151393+00:00",
+  "generatedAt": "2026-06-24T02:05:57.706026+00:00",
   "project": "project-forge",
   "version": "0.1.0",
   "ok": true,
@@ -139,7 +139,7 @@
     {
       "name": "reference repos are not managed",
       "ok": true,
-      "detail": "AllBeingsFuture, lux_net, lux_net-reference"
+      "detail": "lux_net-reference, AllBeingsFuture, lux_net"
     },
     {
       "name": "managed repos have next work",

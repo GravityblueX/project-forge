@@ -1,6 +1,6 @@
 # Grounded Evolution Radar
 
-Last refreshed: 2026-06-24 01:51 UTC
+Last refreshed: 2026-06-24 02:05 UTC
 
 This report maps local repositories to proven patterns from mature projects.
 It is intentionally boring: each recommendation is tied to an observable local signal.
@@ -62,7 +62,7 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\project-forge`
 - Remote: `git@github.com:GravityblueX/project-forge.git`
 - Branch: `main`
-- HEAD: `2449f59`
+- HEAD: `2c846a3`
 - Dirty files: `0`
 - Score: `100`
 
@@ -75,7 +75,7 @@ Next actions:
 | meaningful tests | OK | native-test-runner | 1 Python test files |
 | dependency manifests | OK | dependency-rhythm | 1 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
-| release evidence | OK | templateable-workflows | 1 release docs |
+| release evidence | OK | templateable-workflows | 1 git tags, 1 release docs |
 | diagnostic artifacts | OK | debug-traces | 29 report artifacts, 0 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
@@ -87,7 +87,7 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\kiogarezaki`
 - Remote: `git@github.com:GravityblueX/kiogarezaki.git`
 - Branch: `main`
-- HEAD: `d70ba62`
+- HEAD: `7fb8ff6`
 - Dirty files: `0`
 - Score: `100`
 
@@ -101,7 +101,7 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 2 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 4 git tags |
-| diagnostic artifacts | OK | debug-traces | 1 report artifacts, 0 logs |
+| diagnostic artifacts | OK | debug-traces | 3 report artifacts, 0 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -112,7 +112,7 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\ashveil-console`
 - Remote: `git@github.com:GravityblueX/ashveil-console.git`
 - Branch: `main`
-- HEAD: `bbb4ce7`
+- HEAD: `378a08d`
 - Dirty files: `0`
 - Score: `100`
 
@@ -126,7 +126,7 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 3 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 44 git tags, 1 release docs |
-| diagnostic artifacts | OK | debug-traces | 39 report artifacts, 0 logs |
+| diagnostic artifacts | OK | debug-traces | 41 report artifacts, 0 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -137,7 +137,7 @@ Next actions:
 - Path: `C:\Users\123\Desktop\YumeBox-MaterialDesign-Study`
 - Remote: `git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git`
 - Branch: `Yume`
-- HEAD: `2a123cd`
+- HEAD: `6618a91`
 - Dirty files: `0`
 - Score: `100`
 
@@ -151,7 +151,7 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 17 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 15 git tags, 9 release docs |
-| diagnostic artifacts | OK | debug-traces | 11 report artifacts, 2 logs |
+| diagnostic artifacts | OK | debug-traces | 13 report artifacts, 2 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -162,7 +162,7 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\GravityblueX-First-Identify`
 - Remote: `git@github.com:GravityblueX/GravityblueX-First-Identify.git`
 - Branch: `main`
-- HEAD: `625ddb5`
+- HEAD: `ce7f81e`
 - Dirty files: `0`
 - Score: `100`
 
@@ -176,7 +176,7 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 4 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 1 git tags |
-| diagnostic artifacts | OK | debug-traces | 4 report artifacts, 0 logs |
+| diagnostic artifacts | OK | debug-traces | 6 report artifacts, 0 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:

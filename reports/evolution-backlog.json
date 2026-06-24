@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-24T01:51:32.599831+00:00",
-  "radarGeneratedAt": "2026-06-24T01:51:22.657659+00:00",
+  "generatedAt": "2026-06-24T02:05:16.853048+00:00",
+  "radarGeneratedAt": "2026-06-24T02:05:01.953623+00:00",
   "referenceSources": [
     {
       "key": "scorecard",
@@ -111,7 +111,7 @@
       ],
       "currentEvidence": {
         "tests": "package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\\package.json: node --test \"test/**/*.test.js\"; frontend\\package.json: node --test \"test/**/*.test.js\"",
-        "diagnostics": "39 report artifacts, 0 logs",
+        "diagnostics": "41 report artifacts, 0 logs",
         "release": "44 git tags, 1 release docs"
       }
     },
@@ -150,7 +150,7 @@
       ],
       "currentEvidence": {
         "tests": "package.json: turbo test; client\\package.json: jest; server\\package.json: jest",
-        "diagnostics": "4 report artifacts, 0 logs",
+        "diagnostics": "6 report artifacts, 0 logs",
         "release": "1 git tags"
       }
     },
@@ -189,7 +189,7 @@
       ],
       "currentEvidence": {
         "tests": "projects\\idea-triage-board\\package.json: npm run build && node --test dist/tests/*.test.js; projects\\personal-craft-console\\package.json: npm run build && node --test dist/tests/*.test.js",
-        "diagnostics": "1 report artifacts, 0 logs",
+        "diagnostics": "3 report artifacts, 0 logs",
         "release": "4 git tags"
       }
     },
@@ -289,7 +289,7 @@
       "currentEvidence": {
         "tests": "1 Python test files",
         "diagnostics": "29 report artifacts, 0 logs",
-        "release": "1 release docs"
+        "release": "1 git tags, 1 release docs"
       }
     },
     {
@@ -366,7 +366,7 @@
       ],
       "currentEvidence": {
         "tests": "scripts\\study-apk-contract.ps1; scripts\\verify-installable-apk.ps1",
-        "diagnostics": "11 report artifacts, 2 logs",
+        "diagnostics": "13 report artifacts, 2 logs",
         "release": "15 git tags, 9 release docs"
       }
     }
