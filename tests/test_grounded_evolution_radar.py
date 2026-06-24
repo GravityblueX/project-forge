@@ -98,6 +98,18 @@ class GroundedEvolutionRadarTests(unittest.TestCase):
         self.assertTrue(ok)
         self.assertIn("boundary", note)
 
+    def test_detects_machine_readable_contract_artifacts(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            repo = Path(temp)
+            reports = repo / "reports"
+            reports.mkdir()
+            (reports / "api-surface.json").write_text('{"ok": true}', encoding="utf-8")
+
+            ok, note = radar.contract_artifact_signal(repo)
+
+        self.assertTrue(ok)
+        self.assertIn("api-surface.json", note)
+
     def test_render_report_includes_reference_patterns_and_actions(self) -> None:
         report = radar.render_report([
             {

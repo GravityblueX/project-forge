@@ -60,6 +60,13 @@ PATTERNS = [
         "test command that executes real assertions",
         "prevents placeholder tests from pretending to be quality gates",
     ),
+    ReferencePattern(
+        "evidence-contracts",
+        "machine-readable engineering evidence",
+        "OpenAPI inventories / Android release manifests / Backstage catalogs",
+        "api-surface, release-asset-manifest, project-registry, and contract reports",
+        "turns one-off fixes into repeatable artifacts that other tools can audit",
+    ),
 ]
 
 
@@ -214,6 +221,30 @@ def diagnostic_signal(repo: Path) -> tuple[bool, str]:
     return False, "no local report artifacts"
 
 
+def contract_artifact_signal(repo: Path) -> tuple[bool, str]:
+    artifact_names = [
+        "api-surface",
+        "apk-installability-report",
+        "release-asset-manifest",
+        "runtime-boundary",
+        "study-apk-contract",
+        "project-registry",
+        "project-promotion",
+        "workspace-verification",
+        "release-readiness",
+    ]
+    matches = [
+        path
+        for path in iter_files(repo)
+        if any(name in path.name for name in artifact_names)
+        and path.suffix.lower() in {".md", ".json", ".mjs", ".ps1", ".py"}
+    ]
+    if matches:
+        examples = ", ".join(str(path.relative_to(repo)) for path in matches[:4])
+        return True, f"{len(matches)} contract artifact(s): {examples}"
+    return False, "no API, release asset, APK, or project registry contract artifacts"
+
+
 def safety_signal(repo: Path) -> tuple[bool, str]:
     text = "\n".join(
         read_text(repo / name)
@@ -263,6 +294,9 @@ def score_repo(repo: Path) -> dict[str, Any]:
     diagnostics_ok, diagnostics_note = diagnostic_signal(repo)
     add("diagnostic artifacts", diagnostics_ok, 8, diagnostics_note, "debug-traces")
 
+    contract_ok, contract_note = contract_artifact_signal(repo)
+    add("contract artifacts", contract_ok, 0, contract_note, "evidence-contracts")
+
     safety_ok, safety_note = safety_signal(repo)
     add("safety boundary", safety_ok, 6, safety_note, "health-gates")
 
@@ -285,6 +319,8 @@ def score_repo(repo: Path) -> dict[str, Any]:
             actions.append("Add explicit authorized-use and non-abuse boundaries.")
         elif check["name"] == "release evidence":
             actions.append("Create a tagged release or release-readiness report when build outputs are reproducible.")
+        elif check["name"] == "contract artifacts":
+            actions.append("Add a machine-readable API, release asset, APK, or project registry contract report.")
         elif check["name"] == "readme":
             actions.append("Add README usage, verification, and project status sections.")
         elif check["name"] == "license":

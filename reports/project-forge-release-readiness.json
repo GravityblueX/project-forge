@@ -1,10 +1,10 @@
 {
   "reportType": "project_forge_release_readiness",
-  "generatedAt": "2026-06-24T02:49:42.768075+00:00",
+  "generatedAt": "2026-06-24T03:06:16.475793+00:00",
   "project": "project-forge",
   "version": "0.1.0",
   "ok": true,
-  "dirtyCount": 5,
+  "dirtyCount": 11,
   "gates": [
     {
       "name": "required file README.md",
@@ -189,7 +189,7 @@
     {
       "name": "reference repos are not managed",
       "ok": true,
-      "detail": "lux_net-reference, AllBeingsFuture, lux_net"
+      "detail": "lux_net-reference, lux_net, AllBeingsFuture"
     },
     {
       "name": "managed repos have next work",
@@ -229,7 +229,7 @@
     {
       "name": "git status readable",
       "ok": true,
-      "detail": "dirty_count=5"
+      "detail": "dirty_count=11"
     }
   ],
   "references": [
