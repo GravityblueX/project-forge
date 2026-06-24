@@ -21,6 +21,13 @@ assert BACKLOG_SPEC and BACKLOG_SPEC.loader
 sys.modules[BACKLOG_SPEC.name] = backlog
 BACKLOG_SPEC.loader.exec_module(backlog)
 
+RELEASE_MODULE_PATH = Path(__file__).resolve().parents[1] / "scripts" / "release_readiness_report.py"
+RELEASE_SPEC = importlib.util.spec_from_file_location("release_readiness_report", RELEASE_MODULE_PATH)
+release_readiness = importlib.util.module_from_spec(RELEASE_SPEC)
+assert RELEASE_SPEC and RELEASE_SPEC.loader
+sys.modules[RELEASE_SPEC.name] = release_readiness
+RELEASE_SPEC.loader.exec_module(release_readiness)
+
 
 class GroundedEvolutionRadarTests(unittest.TestCase):
     def test_detects_placeholder_test_commands(self) -> None:
@@ -153,6 +160,28 @@ class GroundedEvolutionRadarTests(unittest.TestCase):
         self.assertIn("Android app signing", rendered)
         self.assertIn("study APK contract output", rendered)
         self.assertIn("developer.android.com", rendered)
+
+    def test_release_readiness_markdown_renders_gate_status(self) -> None:
+        payload = {
+            "reportType": "project_forge_release_readiness",
+            "generatedAt": "2026-06-24T00:00:00+00:00",
+            "project": "project-forge",
+            "version": "0.1.0",
+            "ok": True,
+            "dirtyCount": 0,
+            "gates": [
+                {"name": "unit tests", "ok": True, "detail": "OK"},
+                {"name": "reference repos are not managed", "ok": True, "detail": "AllBeingsFuture, lux_net"},
+            ],
+            "references": ["OpenSSF Scorecard", "Renovate"],
+            "nextReleaseNotes": ["Release readiness is reproducible."],
+        }
+
+        rendered = release_readiness.render_markdown(payload)
+
+        self.assertIn("Project Forge Release Readiness", rendered)
+        self.assertIn("unit tests", rendered)
+        self.assertIn("OpenSSF Scorecard", rendered)
 
 
 if __name__ == "__main__":

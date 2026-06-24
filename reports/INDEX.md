@@ -1,7 +1,7 @@
 # Report Index
 
-Last refreshed: 2026-06-24 01:43 UTC
-Reports indexed: `18`
+Last refreshed: 2026-06-24 01:51 UTC
+Reports indexed: `19`
 
 | Report | File | Signal |
 |---|---|---|
@@ -12,6 +12,7 @@ Reports indexed: `18`
 | Dependency Update Config Draft | [`dependency-update-config.md`](dependency-update-config.md) | See report |
 | Evolution Backlog | [`evolution-backlog.md`](evolution-backlog.md) | See report |
 | Grounded Evolution Radar | [`grounded-evolution-radar.md`](grounded-evolution-radar.md) | See report |
+| Project Forge Release Readiness | [`project-forge-release-readiness.md`](project-forge-release-readiness.md) | See report |
 | Release Notes Studio | [`release-notes.md`](release-notes.md) | See report |
 | Repo Health Radar | [`repo-health.md`](repo-health.md) | See report |
 | Secret Pattern Audit | [`secret-audit.md`](secret-audit.md) | Text files scanned: `45` |

@@ -1,0 +1,188 @@
+{
+  "reportType": "project_forge_release_readiness",
+  "generatedAt": "2026-06-24T01:50:44.151393+00:00",
+  "project": "project-forge",
+  "version": "0.1.0",
+  "ok": true,
+  "dirtyCount": 0,
+  "gates": [
+    {
+      "name": "required file README.md",
+      "ok": true,
+      "detail": "README.md"
+    },
+    {
+      "name": "required file LICENSE",
+      "ok": true,
+      "detail": "LICENSE"
+    },
+    {
+      "name": "required file pyproject.toml",
+      "ok": true,
+      "detail": "pyproject.toml"
+    },
+    {
+      "name": "required file renovate.json",
+      "ok": true,
+      "detail": "renovate.json"
+    },
+    {
+      "name": "required file docs/PROJECT_POLICY.md",
+      "ok": true,
+      "detail": "docs/PROJECT_POLICY.md"
+    },
+    {
+      "name": "required file docs/GROUNDED_REFERENCE_CATALOG.md",
+      "ok": true,
+      "detail": "docs/GROUNDED_REFERENCE_CATALOG.md"
+    },
+    {
+      "name": "required file scripts/grounded_evolution_radar.py",
+      "ok": true,
+      "detail": "scripts/grounded_evolution_radar.py"
+    },
+    {
+      "name": "required file scripts/evolution_backlog.py",
+      "ok": true,
+      "detail": "scripts/evolution_backlog.py"
+    },
+    {
+      "name": "required file scripts/report_index.py",
+      "ok": true,
+      "detail": "scripts/report_index.py"
+    },
+    {
+      "name": "required file tests/test_grounded_evolution_radar.py",
+      "ok": true,
+      "detail": "tests/test_grounded_evolution_radar.py"
+    },
+    {
+      "name": "required file reports/INDEX.md",
+      "ok": true,
+      "detail": "reports/INDEX.md"
+    },
+    {
+      "name": "required file reports/grounded-evolution-radar.md",
+      "ok": true,
+      "detail": "reports/grounded-evolution-radar.md"
+    },
+    {
+      "name": "required file reports/grounded-evolution-radar.json",
+      "ok": true,
+      "detail": "reports/grounded-evolution-radar.json"
+    },
+    {
+      "name": "required file reports/evolution-backlog.md",
+      "ok": true,
+      "detail": "reports/evolution-backlog.md"
+    },
+    {
+      "name": "required file reports/evolution-backlog.json",
+      "ok": true,
+      "detail": "reports/evolution-backlog.json"
+    },
+    {
+      "name": "reference source OpenSSF Scorecard",
+      "ok": true,
+      "detail": "OpenSSF Scorecard"
+    },
+    {
+      "name": "reference source Renovate",
+      "ok": true,
+      "detail": "Renovate"
+    },
+    {
+      "name": "reference source Backstage Software Templates",
+      "ok": true,
+      "detail": "Backstage Software Templates"
+    },
+    {
+      "name": "reference source Playwright Trace Viewer",
+      "ok": true,
+      "detail": "Playwright Trace Viewer"
+    },
+    {
+      "name": "reference source Android app signing",
+      "ok": true,
+      "detail": "Android app signing"
+    },
+    {
+      "name": "reference source OWASP MASVS",
+      "ok": true,
+      "detail": "OWASP MASVS"
+    },
+    {
+      "name": "radar payload exists",
+      "ok": true,
+      "detail": "10 repositories"
+    },
+    {
+      "name": "project-forge radar row exists",
+      "ok": true,
+      "detail": "100"
+    },
+    {
+      "name": "project-forge score at least 90",
+      "ok": true,
+      "detail": "100"
+    },
+    {
+      "name": "managed project scores remain strong",
+      "ok": true,
+      "detail": "YumeBox-MaterialDesign-Study, ashveil-console, GravityblueX-First-Identify, kiogarezaki, slider-captcha-lab"
+    },
+    {
+      "name": "evolution backlog exists",
+      "ok": true,
+      "detail": "10 entries"
+    },
+    {
+      "name": "reference repos are not managed",
+      "ok": true,
+      "detail": "AllBeingsFuture, lux_net, lux_net-reference"
+    },
+    {
+      "name": "managed repos have next work",
+      "ok": true,
+      "detail": "ashveil-console, GravityblueX-First-Identify, kiogarezaki, nocturne-admin, project-forge, slider-captcha-lab, YumeBox-MaterialDesign-Study"
+    },
+    {
+      "name": "report index includes Grounded Evolution Radar",
+      "ok": true,
+      "detail": "Grounded Evolution Radar"
+    },
+    {
+      "name": "report index includes Evolution Backlog",
+      "ok": true,
+      "detail": "Evolution Backlog"
+    },
+    {
+      "name": "report index includes Project Forge Release Readiness",
+      "ok": true,
+      "detail": "Project Forge Release Readiness"
+    },
+    {
+      "name": "unit tests",
+      "ok": true,
+      "detail": "OK"
+    },
+    {
+      "name": "git status readable",
+      "ok": true,
+      "detail": "dirty_count=0"
+    }
+  ],
+  "references": [
+    "OpenSSF Scorecard",
+    "Renovate",
+    "Backstage Software Templates",
+    "Playwright Trace Viewer",
+    "Android app signing",
+    "OWASP MASVS"
+  ],
+  "nextReleaseNotes": [
+    "Reference-grounded evolution radar and backlog are generated from local repository evidence.",
+    "Friend/reference repositories are explicitly marked non-managed.",
+    "Project Forge now has a repeatable release-readiness report before tagging."
+  ]
+}

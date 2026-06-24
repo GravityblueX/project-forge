@@ -1,6 +1,6 @@
 # Evolution Backlog
 
-Last refreshed: 2026-06-24 01:43 UTC
+Last refreshed: 2026-06-24 01:51 UTC
 
 This backlog converts the grounded radar into project-specific next work.
 It separates managed repositories from reference-only repositories so borrowed ideas do not become accidental pushes.
@@ -63,6 +63,20 @@ Next work:
 - Move stale early recovery notes into an archive once no automation references them.
 - Keep score at 100 by turning the next important manual check into an automated contract.
 
+### project-forge
+
+- Kind: maintenance toolkit
+- Score: `100`
+- Remote: `git@github.com:GravityblueX/project-forge.git`
+- Evidence: tests `1 Python test files`; diagnostics `29 report artifacts, 0 logs`; release `1 release docs`
+- Reference anchors: OpenSSF Scorecard, Backstage Software Templates, Renovate
+
+Next work:
+- Ship a release-readiness report for the toolkit itself before creating the first tag.
+- Convert repeated report scripts into a small templateable command registry.
+- Keep reference sources primary and linked so generated advice is auditable.
+- Keep score at 100 by turning the next important manual check into an automated contract.
+
 ### slider-captcha-lab
 
 - Kind: authorized browser diagnostics lab
@@ -101,20 +115,6 @@ Next work:
 
 Next work:
 - Add conservative Renovate or Dependabot grouping without automerge.
-
-### project-forge
-
-- Kind: maintenance toolkit
-- Score: `90`
-- Remote: `git@github.com:GravityblueX/project-forge.git`
-- Evidence: tests `1 Python test files`; diagnostics `26 report artifacts, 0 logs`; release `no local tags or release docs`
-- Reference anchors: OpenSSF Scorecard, Backstage Software Templates, Renovate
-
-Next work:
-- Create a release-readiness report before tagging.
-- Ship a release-readiness report for the toolkit itself before creating the first tag.
-- Convert repeated report scripts into a small templateable command registry.
-- Keep reference sources primary and linked so generated advice is auditable.
 
 ## Reference-Only Repositories
 

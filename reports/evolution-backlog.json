@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-24T01:43:14.183705+00:00",
-  "radarGeneratedAt": "2026-06-24T01:43:04.158550+00:00",
+  "generatedAt": "2026-06-24T01:51:32.599831+00:00",
+  "radarGeneratedAt": "2026-06-24T01:51:22.657659+00:00",
   "referenceSources": [
     {
       "key": "scorecard",
@@ -258,7 +258,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\project-forge",
       "remote": "git@github.com:GravityblueX/project-forge.git",
       "kind": "maintenance toolkit",
-      "score": 90,
+      "score": 100,
       "managed": true,
       "sources": [
         {
@@ -281,15 +281,15 @@
         }
       ],
       "items": [
-        "Create a release-readiness report before tagging.",
         "Ship a release-readiness report for the toolkit itself before creating the first tag.",
         "Convert repeated report scripts into a small templateable command registry.",
-        "Keep reference sources primary and linked so generated advice is auditable."
+        "Keep reference sources primary and linked so generated advice is auditable.",
+        "Keep score at 100 by turning the next important manual check into an automated contract."
       ],
       "currentEvidence": {
         "tests": "1 Python test files",
-        "diagnostics": "26 report artifacts, 0 logs",
-        "release": "no local tags or release docs"
+        "diagnostics": "29 report artifacts, 0 logs",
+        "release": "1 release docs"
       }
     },
     {

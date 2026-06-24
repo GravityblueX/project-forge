@@ -1,6 +1,6 @@
 # Grounded Evolution Radar
 
-Last refreshed: 2026-06-24 01:43 UTC
+Last refreshed: 2026-06-24 01:51 UTC
 
 This report maps local repositories to proven patterns from mature projects.
 It is intentionally boring: each recommendation is tied to an observable local signal.
@@ -20,12 +20,12 @@ It is intentionally boring: each recommendation is tied to an observable local s
 | Rank | Repository | Score | Dirty | Top Next Action |
 |---:|---|---:|---:|---|
 | 1 | `slider-captcha-lab` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 2 | `kiogarezaki` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 3 | `ashveil-console` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 4 | `YumeBox-MaterialDesign-Study` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 5 | `GravityblueX-First-Identify` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 6 | `nocturne-admin` | 91 | 0 | Draft Renovate or Dependabot config with conservative grouping. |
-| 7 | `project-forge` | 90 | 0 | Create a tagged release or release-readiness report when build outputs are reproducible. |
+| 2 | `project-forge` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 3 | `kiogarezaki` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 4 | `ashveil-console` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 5 | `YumeBox-MaterialDesign-Study` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 6 | `GravityblueX-First-Identify` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 7 | `nocturne-admin` | 91 | 0 | Draft Renovate or Dependabot config with conservative grouping. |
 | 8 | `AllBeingsFuture` | 74 | 2 | Draft Renovate or Dependabot config with conservative grouping. |
 | 9 | `lux_net-reference` | 65 | 0 | Add license metadata when the repo is intended for reuse. |
 | 10 | `lux_net` | 65 | 3 | Add license metadata when the repo is intended for reuse. |
@@ -52,6 +52,31 @@ It is intentionally boring: each recommendation is tied to an observable local s
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 5 git tags, 3 release docs |
 | diagnostic artifacts | OK | debug-traces | 10 report artifacts, 0 logs |
+| safety boundary | OK | health-gates | explicit safety or authorization boundary found |
+
+Next actions:
+- Keep current maintenance rhythm and tighten next measurable gate.
+
+### project-forge
+
+- Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\project-forge`
+- Remote: `git@github.com:GravityblueX/project-forge.git`
+- Branch: `main`
+- HEAD: `2449f59`
+- Dirty files: `0`
+- Score: `100`
+
+| Check | Result | Pattern | Evidence |
+|---|---|---|---|
+| readme | OK | health-gates | README present |
+| license | OK | health-gates | license present |
+| ci workflow | OK | health-gates | workflow directory present |
+| build signal | OK | native-test-runner | Python project manifest |
+| meaningful tests | OK | native-test-runner | 1 Python test files |
+| dependency manifests | OK | dependency-rhythm | 1 manifest files |
+| dependency automation | OK | dependency-rhythm | automation config found |
+| release evidence | OK | templateable-workflows | 1 release docs |
+| diagnostic artifacts | OK | debug-traces | 29 report artifacts, 0 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -181,31 +206,6 @@ Next actions:
 
 Next actions:
 - Draft Renovate or Dependabot config with conservative grouping.
-
-### project-forge
-
-- Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\project-forge`
-- Remote: `git@github.com:GravityblueX/project-forge.git`
-- Branch: `main`
-- HEAD: `772272b`
-- Dirty files: `0`
-- Score: `90`
-
-| Check | Result | Pattern | Evidence |
-|---|---|---|---|
-| readme | OK | health-gates | README present |
-| license | OK | health-gates | license present |
-| ci workflow | OK | health-gates | workflow directory present |
-| build signal | OK | native-test-runner | Python project manifest |
-| meaningful tests | OK | native-test-runner | 1 Python test files |
-| dependency manifests | OK | dependency-rhythm | 1 manifest files |
-| dependency automation | OK | dependency-rhythm | automation config found |
-| release evidence | Gap | templateable-workflows | no local tags or release docs |
-| diagnostic artifacts | OK | debug-traces | 26 report artifacts, 0 logs |
-| safety boundary | OK | health-gates | explicit safety or authorization boundary found |
-
-Next actions:
-- Create a tagged release or release-readiness report when build outputs are reproducible.
 
 ### AllBeingsFuture
 
