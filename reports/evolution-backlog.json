@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-24T03:28:15.776292+00:00",
-  "radarGeneratedAt": "2026-06-24T03:28:15.612103+00:00",
+  "generatedAt": "2026-06-24T03:30:01.327870+00:00",
+  "radarGeneratedAt": "2026-06-24T03:30:01.175459+00:00",
   "referenceSources": [
     {
       "key": "scorecard",
@@ -249,7 +249,7 @@
       ],
       "currentEvidence": {
         "tests": "package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\\package.json: node --test \"test/**/*.test.js\"; frontend\\package.json: node --test \"test/**/*.test.js\"",
-        "diagnostics": "45 report artifacts, 0 logs",
+        "diagnostics": "47 report artifacts, 0 logs",
         "release": "44 git tags, 1 release docs"
       }
     },

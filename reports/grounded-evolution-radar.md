@@ -1,6 +1,6 @@
 # Grounded Evolution Radar
 
-Last refreshed: 2026-06-24 03:28 UTC
+Last refreshed: 2026-06-24 03:30 UTC
 
 This report maps local repositories to proven patterns from mature projects.
 It is intentionally boring: each recommendation is tied to an observable local signal.
@@ -21,7 +21,7 @@ It is intentionally boring: each recommendation is tied to an observable local s
 | Rank | Repository | Score | Dirty | Top Next Action |
 |---:|---|---:|---:|---|
 | 1 | `slider-captcha-lab` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 2 | `project-forge` | 100 | 14 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 2 | `project-forge` | 100 | 4 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 3 | `nocturne-admin` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 4 | `kiogarezaki` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 5 | `ashveil-console` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
@@ -64,8 +64,8 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\project-forge`
 - Remote: `git@github.com:GravityblueX/project-forge.git`
 - Branch: `main`
-- HEAD: `cc47ac4`
-- Dirty files: `14`
+- HEAD: `ad5a002`
+- Dirty files: `4`
 - Score: `100`
 
 | Check | Result | Pattern | Evidence |
@@ -90,7 +90,7 @@ Next actions:
 - Path: `C:\Users\123\Desktop\fountain\nocturne-admin`
 - Remote: `git@github.com:GravityblueX/ashveil-console.git`
 - Branch: `main`
-- HEAD: `7e6f308`
+- HEAD: `5b71611`
 - Dirty files: `0`
 - Score: `100`
 
@@ -104,8 +104,8 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 3 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 44 git tags, 1 release docs |
-| diagnostic artifacts | OK | debug-traces | 45 report artifacts, 0 logs |
-| contract artifacts | OK | evidence-contracts | 6 contract artifact(s): reports\api-surface.json, reports\api-surface.md, reports\release-readiness.json, reports\release-readiness.md |
+| diagnostic artifacts | OK | debug-traces | 47 report artifacts, 0 logs |
+| contract artifacts | OK | evidence-contracts | 9 contract artifact(s): reports\api-surface.json, reports\api-surface.md, reports\openapi.json, reports\openapi.md |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
