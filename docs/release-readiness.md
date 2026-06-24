@@ -4,7 +4,7 @@ Generated: 2026-06-24 03:30 UTC
 Project: `project-forge`
 Version: `0.1.0`
 Status: `OK`
-Dirty files when generated: `9`
+Dirty files when generated: `0`
 
 ## Gates
 
@@ -54,7 +54,7 @@ Dirty files when generated: `9`
 | tool registry exists | OK | 8 tools |
 | tool registry ok | OK | True |
 | unit tests | OK | OK |
-| git status readable | OK | dirty_count=9 |
+| git status readable | OK | dirty_count=0 |
 
 ## Reference Basis
 

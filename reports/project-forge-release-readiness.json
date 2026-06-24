@@ -1,10 +1,10 @@
 {
   "reportType": "project_forge_release_readiness",
-  "generatedAt": "2026-06-24T03:30:01.821003+00:00",
+  "generatedAt": "2026-06-24T03:30:46.424636+00:00",
   "project": "project-forge",
   "version": "0.1.0",
   "ok": true,
-  "dirtyCount": 9,
+  "dirtyCount": 0,
   "gates": [
     {
       "name": "required file README.md",
@@ -229,7 +229,7 @@
     {
       "name": "git status readable",
       "ok": true,
-      "detail": "dirty_count=9"
+      "detail": "dirty_count=0"
     }
   ],
   "references": [
