@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T01:11:49.507915+00:00",
+  "generatedAt": "2026-06-24T01:25:00.773284+00:00",
   "roots": [
     "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work",
     "C:\\Users\\123\\Desktop"
@@ -238,16 +238,16 @@
       "path": "C:\\Users\\123\\Desktop\\YumeBox-MaterialDesign-Study",
       "remote": "git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git",
       "branch": "Yume",
-      "head": "32a953c",
-      "dirtyCount": 1,
-      "score": 68,
+      "head": "03aad6f",
+      "dirtyCount": 0,
+      "score": 85,
       "checks": [
         {
           "name": "readme",
-          "ok": false,
+          "ok": true,
           "weight": 8,
-          "points": 0,
-          "note": "missing README",
+          "points": 8,
+          "note": "README present",
           "pattern": "health-gates"
         },
         {
@@ -316,17 +316,15 @@
         },
         {
           "name": "safety boundary",
-          "ok": false,
+          "ok": true,
           "weight": 6,
-          "points": 0,
-          "note": "no explicit safety boundary found",
+          "points": 6,
+          "note": "explicit safety or authorization boundary found",
           "pattern": "health-gates"
         }
       ],
       "actions": [
-        "Add README usage, verification, and project status sections.",
-        "Replace placeholder tests with fast smoke or contract tests.",
-        "Add explicit authorized-use and non-abuse boundaries."
+        "Replace placeholder tests with fast smoke or contract tests."
       ]
     },
     {
@@ -524,9 +522,9 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\GravityblueX-First-Identify",
       "remote": "git@github.com:GravityblueX/GravityblueX-First-Identify.git",
       "branch": "main",
-      "head": "da443f3",
+      "head": "625ddb5",
       "dirtyCount": 0,
-      "score": 77,
+      "score": 100,
       "checks": [
         {
           "name": "readme",
@@ -538,10 +536,10 @@
         },
         {
           "name": "license",
-          "ok": false,
+          "ok": true,
           "weight": 6,
-          "points": 0,
-          "note": "missing license",
+          "points": 6,
+          "note": "license present",
           "pattern": "health-gates"
         },
         {
@@ -578,10 +576,10 @@
         },
         {
           "name": "dependency automation",
-          "ok": false,
+          "ok": true,
           "weight": 7,
-          "points": 0,
-          "note": "no dependency update config",
+          "points": 7,
+          "note": "automation config found",
           "pattern": "dependency-rhythm"
         },
         {
@@ -602,17 +600,15 @@
         },
         {
           "name": "safety boundary",
-          "ok": false,
+          "ok": true,
           "weight": 6,
-          "points": 0,
-          "note": "no explicit safety boundary found",
+          "points": 6,
+          "note": "explicit safety or authorization boundary found",
           "pattern": "health-gates"
         }
       ],
       "actions": [
-        "Add license metadata when the repo is intended for reuse.",
-        "Draft Renovate or Dependabot config with conservative grouping.",
-        "Add explicit authorized-use and non-abuse boundaries."
+        "Keep current maintenance rhythm and tighten next measurable gate."
       ]
     },
     {
@@ -620,9 +616,9 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\kiogarezaki",
       "remote": "git@github.com:GravityblueX/kiogarezaki.git",
       "branch": "main",
-      "head": "1e4835a",
+      "head": "9459f6f",
       "dirtyCount": 0,
-      "score": 74,
+      "score": 100,
       "checks": [
         {
           "name": "readme",
@@ -634,10 +630,10 @@
         },
         {
           "name": "license",
-          "ok": false,
+          "ok": true,
           "weight": 6,
-          "points": 0,
-          "note": "missing license",
+          "points": 6,
+          "note": "license present",
           "pattern": "health-gates"
         },
         {
@@ -674,10 +670,10 @@
         },
         {
           "name": "dependency automation",
-          "ok": false,
+          "ok": true,
           "weight": 7,
-          "points": 0,
-          "note": "no dependency update config",
+          "points": 7,
+          "note": "automation config found",
           "pattern": "dependency-rhythm"
         },
         {
@@ -690,10 +686,10 @@
         },
         {
           "name": "diagnostic artifacts",
-          "ok": false,
+          "ok": true,
           "weight": 8,
-          "points": 0,
-          "note": "no local report artifacts",
+          "points": 8,
+          "note": "1 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
@@ -706,9 +702,7 @@
         }
       ],
       "actions": [
-        "Add license metadata when the repo is intended for reuse.",
-        "Draft Renovate or Dependabot config with conservative grouping.",
-        "Emit markdown/JSON reports for every release or maintenance run."
+        "Keep current maintenance rhythm and tighten next measurable gate."
       ]
     },
     {
@@ -813,9 +807,9 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\project-forge",
       "remote": "git@github.com:GravityblueX/project-forge.git",
       "branch": "main",
-      "head": "62c9d1d",
-      "dirtyCount": 2,
-      "score": 82,
+      "head": "f43ddb7",
+      "dirtyCount": 0,
+      "score": 90,
       "checks": [
         {
           "name": "readme",
@@ -867,10 +861,10 @@
         },
         {
           "name": "dependency automation",
-          "ok": false,
+          "ok": true,
           "weight": 7,
-          "points": 0,
-          "note": "no dependency update config",
+          "points": 7,
+          "note": "automation config found",
           "pattern": "dependency-rhythm"
         },
         {
@@ -899,7 +893,6 @@
         }
       ],
       "actions": [
-        "Draft Renovate or Dependabot config with conservative grouping.",
         "Create a tagged release or release-readiness report when build outputs are reproducible."
       ]
     },
@@ -908,9 +901,9 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\slider-captcha-lab",
       "remote": "git@github.com:GravityblueX/slider-captcha-lab.git",
       "branch": "main",
-      "head": "ce22469",
+      "head": "9ac2db3",
       "dirtyCount": 0,
-      "score": 91,
+      "score": 100,
       "checks": [
         {
           "name": "readme",
@@ -962,10 +955,10 @@
         },
         {
           "name": "dependency automation",
-          "ok": false,
+          "ok": true,
           "weight": 7,
-          "points": 0,
-          "note": "no dependency update config",
+          "points": 7,
+          "note": "automation config found",
           "pattern": "dependency-rhythm"
         },
         {
@@ -994,7 +987,7 @@
         }
       ],
       "actions": [
-        "Draft Renovate or Dependabot config with conservative grouping."
+        "Keep current maintenance rhythm and tighten next measurable gate."
       ]
     }
   ]

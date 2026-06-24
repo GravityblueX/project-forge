@@ -45,6 +45,19 @@ class GroundedEvolutionRadarTests(unittest.TestCase):
         self.assertIn(repo.resolve(), repos)
         self.assertNotIn(build_repo.resolve(), repos)
 
+    def test_counts_security_md_as_a_safety_boundary(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            repo = Path(temp)
+            (repo / "SECURITY.md").write_text(
+                "Authorized testing only. Do not include live credentials.",
+                encoding="utf-8",
+            )
+
+            ok, note = radar.safety_signal(repo)
+
+        self.assertTrue(ok)
+        self.assertIn("boundary", note)
+
     def test_render_report_includes_reference_patterns_and_actions(self) -> None:
         report = radar.render_report([
             {

@@ -205,7 +205,10 @@ def diagnostic_signal(repo: Path) -> tuple[bool, str]:
 
 
 def safety_signal(repo: Path) -> tuple[bool, str]:
-    text = "\n".join(read_text(repo / name) for name in ["README.md", "DISCLAIMER.md", "SAFETY.md", "docs/PROJECT_POLICY.md"])
+    text = "\n".join(
+        read_text(repo / name)
+        for name in ["README.md", "DISCLAIMER.md", "SAFETY.md", "SECURITY.md", "docs/PROJECT_POLICY.md"]
+    )
     if any(word in text.lower() for word in ["authorized", "授权", "disclaimer", "仅用于", "safety"]):
         return True, "explicit safety or authorization boundary found"
     return False, "no explicit safety boundary found"

@@ -1,6 +1,6 @@
 # Grounded Evolution Radar
 
-Last refreshed: 2026-06-24 01:11 UTC
+Last refreshed: 2026-06-24 01:25 UTC
 
 This report maps local repositories to proven patterns from mature projects.
 It is intentionally boring: each recommendation is tied to an observable local signal.
@@ -19,18 +19,68 @@ It is intentionally boring: each recommendation is tied to an observable local s
 
 | Rank | Repository | Score | Dirty | Top Next Action |
 |---:|---|---:|---:|---|
-| 1 | `ashveil-console` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 2 | `slider-captcha-lab` | 91 | 0 | Draft Renovate or Dependabot config with conservative grouping. |
-| 3 | `nocturne-admin` | 91 | 0 | Draft Renovate or Dependabot config with conservative grouping. |
-| 4 | `project-forge` | 82 | 2 | Draft Renovate or Dependabot config with conservative grouping. |
-| 5 | `GravityblueX-First-Identify` | 77 | 0 | Add license metadata when the repo is intended for reuse. |
-| 6 | `kiogarezaki` | 74 | 0 | Add license metadata when the repo is intended for reuse. |
-| 7 | `AllBeingsFuture` | 74 | 2 | Draft Renovate or Dependabot config with conservative grouping. |
-| 8 | `YumeBox-MaterialDesign-Study` | 68 | 1 | Add README usage, verification, and project status sections. |
+| 1 | `slider-captcha-lab` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 2 | `kiogarezaki` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 3 | `ashveil-console` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 4 | `GravityblueX-First-Identify` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 5 | `nocturne-admin` | 91 | 0 | Draft Renovate or Dependabot config with conservative grouping. |
+| 6 | `project-forge` | 90 | 0 | Create a tagged release or release-readiness report when build outputs are reproducible. |
+| 7 | `YumeBox-MaterialDesign-Study` | 85 | 0 | Replace placeholder tests with fast smoke or contract tests. |
+| 8 | `AllBeingsFuture` | 74 | 2 | Draft Renovate or Dependabot config with conservative grouping. |
 | 9 | `lux_net-reference` | 65 | 0 | Add license metadata when the repo is intended for reuse. |
 | 10 | `lux_net` | 65 | 3 | Add license metadata when the repo is intended for reuse. |
 
 ## Details
+
+### slider-captcha-lab
+
+- Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\slider-captcha-lab`
+- Remote: `git@github.com:GravityblueX/slider-captcha-lab.git`
+- Branch: `main`
+- HEAD: `9ac2db3`
+- Dirty files: `0`
+- Score: `100`
+
+| Check | Result | Pattern | Evidence |
+|---|---|---|---|
+| readme | OK | health-gates | README present |
+| license | OK | health-gates | license present |
+| ci workflow | OK | health-gates | workflow directory present |
+| build signal | OK | native-test-runner | Python project manifest |
+| meaningful tests | OK | native-test-runner | 1 Python test files |
+| dependency manifests | OK | dependency-rhythm | 2 manifest files |
+| dependency automation | OK | dependency-rhythm | automation config found |
+| release evidence | OK | templateable-workflows | 5 git tags, 3 release docs |
+| diagnostic artifacts | OK | debug-traces | 8 report artifacts, 0 logs |
+| safety boundary | OK | health-gates | explicit safety or authorization boundary found |
+
+Next actions:
+- Keep current maintenance rhythm and tighten next measurable gate.
+
+### kiogarezaki
+
+- Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\kiogarezaki`
+- Remote: `git@github.com:GravityblueX/kiogarezaki.git`
+- Branch: `main`
+- HEAD: `9459f6f`
+- Dirty files: `0`
+- Score: `100`
+
+| Check | Result | Pattern | Evidence |
+|---|---|---|---|
+| readme | OK | health-gates | README present |
+| license | OK | health-gates | license present |
+| ci workflow | OK | health-gates | workflow directory present |
+| build signal | OK | native-test-runner | projects\idea-triage-board\package.json: tsc -p tsconfig.json; projects\personal-craft-console\package.json: tsc -p tsconfig.json |
+| meaningful tests | OK | native-test-runner | projects\idea-triage-board\package.json: npm run build && node --test dist/tests/*.test.js; projects\personal-craft-console\package.json: npm run build && node --test dist/tests/*.test.js |
+| dependency manifests | OK | dependency-rhythm | 2 manifest files |
+| dependency automation | OK | dependency-rhythm | automation config found |
+| release evidence | OK | templateable-workflows | 4 git tags |
+| diagnostic artifacts | OK | debug-traces | 1 report artifacts, 0 logs |
+| safety boundary | OK | health-gates | explicit safety or authorization boundary found |
+
+Next actions:
+- Keep current maintenance rhythm and tighten next measurable gate.
 
 ### ashveil-console
 
@@ -57,30 +107,30 @@ It is intentionally boring: each recommendation is tied to an observable local s
 Next actions:
 - Keep current maintenance rhythm and tighten next measurable gate.
 
-### slider-captcha-lab
+### GravityblueX-First-Identify
 
-- Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\slider-captcha-lab`
-- Remote: `git@github.com:GravityblueX/slider-captcha-lab.git`
+- Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\GravityblueX-First-Identify`
+- Remote: `git@github.com:GravityblueX/GravityblueX-First-Identify.git`
 - Branch: `main`
-- HEAD: `ce22469`
+- HEAD: `625ddb5`
 - Dirty files: `0`
-- Score: `91`
+- Score: `100`
 
 | Check | Result | Pattern | Evidence |
 |---|---|---|---|
 | readme | OK | health-gates | README present |
 | license | OK | health-gates | license present |
 | ci workflow | OK | health-gates | workflow directory present |
-| build signal | OK | native-test-runner | Python project manifest |
-| meaningful tests | OK | native-test-runner | 1 Python test files |
-| dependency manifests | OK | dependency-rhythm | 2 manifest files |
-| dependency automation | Gap | dependency-rhythm | no dependency update config |
-| release evidence | OK | templateable-workflows | 5 git tags, 3 release docs |
-| diagnostic artifacts | OK | debug-traces | 8 report artifacts, 0 logs |
+| build signal | OK | native-test-runner | package.json: turbo build; client\package.json: next build; server\package.json: tsc |
+| meaningful tests | OK | native-test-runner | package.json: turbo test; client\package.json: jest; server\package.json: jest |
+| dependency manifests | OK | dependency-rhythm | 4 manifest files |
+| dependency automation | OK | dependency-rhythm | automation config found |
+| release evidence | OK | templateable-workflows | 1 git tags |
+| diagnostic artifacts | OK | debug-traces | 4 report artifacts, 0 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
-- Draft Renovate or Dependabot config with conservative grouping.
+- Keep current maintenance rhythm and tighten next measurable gate.
 
 ### nocturne-admin
 
@@ -112,9 +162,9 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\project-forge`
 - Remote: `git@github.com:GravityblueX/project-forge.git`
 - Branch: `main`
-- HEAD: `62c9d1d`
-- Dirty files: `2`
-- Score: `82`
+- HEAD: `f43ddb7`
+- Dirty files: `0`
+- Score: `90`
 
 | Check | Result | Pattern | Evidence |
 |---|---|---|---|
@@ -124,68 +174,38 @@ Next actions:
 | build signal | OK | native-test-runner | Python project manifest |
 | meaningful tests | OK | native-test-runner | 1 Python test files |
 | dependency manifests | OK | dependency-rhythm | 1 manifest files |
-| dependency automation | Gap | dependency-rhythm | no dependency update config |
+| dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | Gap | templateable-workflows | no local tags or release docs |
 | diagnostic artifacts | OK | debug-traces | 23 report artifacts, 0 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
-- Draft Renovate or Dependabot config with conservative grouping.
 - Create a tagged release or release-readiness report when build outputs are reproducible.
 
-### GravityblueX-First-Identify
+### YumeBox-MaterialDesign-Study
 
-- Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\GravityblueX-First-Identify`
-- Remote: `git@github.com:GravityblueX/GravityblueX-First-Identify.git`
-- Branch: `main`
-- HEAD: `da443f3`
+- Path: `C:\Users\123\Desktop\YumeBox-MaterialDesign-Study`
+- Remote: `git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git`
+- Branch: `Yume`
+- HEAD: `03aad6f`
 - Dirty files: `0`
-- Score: `77`
+- Score: `85`
 
 | Check | Result | Pattern | Evidence |
 |---|---|---|---|
 | readme | OK | health-gates | README present |
-| license | Gap | health-gates | missing license |
+| license | OK | health-gates | license present |
 | ci workflow | OK | health-gates | workflow directory present |
-| build signal | OK | native-test-runner | package.json: turbo build; client\package.json: next build; server\package.json: tsc |
-| meaningful tests | OK | native-test-runner | package.json: turbo test; client\package.json: jest; server\package.json: jest |
-| dependency manifests | OK | dependency-rhythm | 4 manifest files |
-| dependency automation | Gap | dependency-rhythm | no dependency update config |
-| release evidence | OK | templateable-workflows | 1 git tags |
-| diagnostic artifacts | OK | debug-traces | 4 report artifacts, 0 logs |
-| safety boundary | Gap | health-gates | no explicit safety boundary found |
-
-Next actions:
-- Add license metadata when the repo is intended for reuse.
-- Draft Renovate or Dependabot config with conservative grouping.
-- Add explicit authorized-use and non-abuse boundaries.
-
-### kiogarezaki
-
-- Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\kiogarezaki`
-- Remote: `git@github.com:GravityblueX/kiogarezaki.git`
-- Branch: `main`
-- HEAD: `1e4835a`
-- Dirty files: `0`
-- Score: `74`
-
-| Check | Result | Pattern | Evidence |
-|---|---|---|---|
-| readme | OK | health-gates | README present |
-| license | Gap | health-gates | missing license |
-| ci workflow | OK | health-gates | workflow directory present |
-| build signal | OK | native-test-runner | projects\idea-triage-board\package.json: tsc -p tsconfig.json; projects\personal-craft-console\package.json: tsc -p tsconfig.json |
-| meaningful tests | OK | native-test-runner | projects\idea-triage-board\package.json: npm run build && node --test dist/tests/*.test.js; projects\personal-craft-console\package.json: npm run build && node --test dist/tests/*.test.js |
-| dependency manifests | OK | dependency-rhythm | 2 manifest files |
-| dependency automation | Gap | dependency-rhythm | no dependency update config |
-| release evidence | OK | templateable-workflows | 4 git tags |
-| diagnostic artifacts | Gap | debug-traces | no local report artifacts |
+| build signal | OK | native-test-runner | Gradle project |
+| meaningful tests | Gap | native-test-runner | no test command or common test files |
+| dependency manifests | OK | dependency-rhythm | 17 manifest files |
+| dependency automation | OK | dependency-rhythm | automation config found |
+| release evidence | OK | templateable-workflows | 15 git tags, 9 release docs |
+| diagnostic artifacts | OK | debug-traces | 11 report artifacts, 2 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
-- Add license metadata when the repo is intended for reuse.
-- Draft Renovate or Dependabot config with conservative grouping.
-- Emit markdown/JSON reports for every release or maintenance run.
+- Replace placeholder tests with fast smoke or contract tests.
 
 ### AllBeingsFuture
 
@@ -212,33 +232,6 @@ Next actions:
 Next actions:
 - Draft Renovate or Dependabot config with conservative grouping.
 - Emit markdown/JSON reports for every release or maintenance run.
-- Add explicit authorized-use and non-abuse boundaries.
-
-### YumeBox-MaterialDesign-Study
-
-- Path: `C:\Users\123\Desktop\YumeBox-MaterialDesign-Study`
-- Remote: `git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git`
-- Branch: `Yume`
-- HEAD: `32a953c`
-- Dirty files: `1`
-- Score: `68`
-
-| Check | Result | Pattern | Evidence |
-|---|---|---|---|
-| readme | Gap | health-gates | missing README |
-| license | OK | health-gates | license present |
-| ci workflow | OK | health-gates | workflow directory present |
-| build signal | OK | native-test-runner | Gradle project |
-| meaningful tests | Gap | native-test-runner | no test command or common test files |
-| dependency manifests | OK | dependency-rhythm | 17 manifest files |
-| dependency automation | OK | dependency-rhythm | automation config found |
-| release evidence | OK | templateable-workflows | 15 git tags, 9 release docs |
-| diagnostic artifacts | OK | debug-traces | 11 report artifacts, 2 logs |
-| safety boundary | Gap | health-gates | no explicit safety boundary found |
-
-Next actions:
-- Add README usage, verification, and project status sections.
-- Replace placeholder tests with fast smoke or contract tests.
 - Add explicit authorized-use and non-abuse boundaries.
 
 ### lux_net-reference
