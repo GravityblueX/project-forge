@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-24T03:30:01.327870+00:00",
-  "radarGeneratedAt": "2026-06-24T03:30:01.175459+00:00",
+  "generatedAt": "2026-06-24T03:45:41.111070+00:00",
+  "radarGeneratedAt": "2026-06-24T03:45:40.962679+00:00",
   "referenceSources": [
     {
       "key": "scorecard",
@@ -111,7 +111,7 @@
       ],
       "currentEvidence": {
         "tests": "package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\\package.json: node --test \"test/**/*.test.js\"; frontend\\package.json: node --test \"test/**/*.test.js\"",
-        "diagnostics": "47 report artifacts, 0 logs",
+        "diagnostics": "49 report artifacts, 0 logs",
         "release": "44 git tags, 1 release docs"
       }
     },
@@ -150,7 +150,7 @@
       ],
       "currentEvidence": {
         "tests": "package.json: turbo test; client\\package.json: jest; server\\package.json: jest",
-        "diagnostics": "12 report artifacts, 0 logs",
+        "diagnostics": "14 report artifacts, 0 logs",
         "release": "1 git tags"
       }
     },
@@ -189,7 +189,7 @@
       ],
       "currentEvidence": {
         "tests": "projects\\idea-triage-board\\package.json: npm run build && node --test dist/tests/*.test.js; projects\\personal-craft-console\\package.json: npm run build && node --test dist/tests/*.test.js",
-        "diagnostics": "9 report artifacts, 0 logs",
+        "diagnostics": "11 report artifacts, 0 logs",
         "release": "4 git tags"
       }
     },
@@ -249,7 +249,7 @@
       ],
       "currentEvidence": {
         "tests": "package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\\package.json: node --test \"test/**/*.test.js\"; frontend\\package.json: node --test \"test/**/*.test.js\"",
-        "diagnostics": "47 report artifacts, 0 logs",
+        "diagnostics": "49 report artifacts, 0 logs",
         "release": "44 git tags, 1 release docs"
       }
     },
@@ -327,7 +327,7 @@
       ],
       "currentEvidence": {
         "tests": "1 Python test files",
-        "diagnostics": "21 report artifacts, 0 logs",
+        "diagnostics": "23 report artifacts, 0 logs",
         "release": "5 git tags, 3 release docs"
       }
     },
@@ -366,7 +366,7 @@
       ],
       "currentEvidence": {
         "tests": "scripts\\study-apk-contract.ps1; scripts\\verify-installable-apk.ps1",
-        "diagnostics": "21 report artifacts, 2 logs",
+        "diagnostics": "23 report artifacts, 2 logs",
         "release": "15 git tags, 13 release docs"
       }
     }

@@ -1,6 +1,6 @@
 # Grounded Evolution Radar
 
-Last refreshed: 2026-06-24 03:30 UTC
+Last refreshed: 2026-06-24 03:45 UTC
 
 This report maps local repositories to proven patterns from mature projects.
 It is intentionally boring: each recommendation is tied to an observable local signal.
@@ -21,7 +21,7 @@ It is intentionally boring: each recommendation is tied to an observable local s
 | Rank | Repository | Score | Dirty | Top Next Action |
 |---:|---|---:|---:|---|
 | 1 | `slider-captcha-lab` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 2 | `project-forge` | 100 | 4 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 2 | `project-forge` | 100 | 6 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 3 | `nocturne-admin` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 4 | `kiogarezaki` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 5 | `ashveil-console` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
@@ -38,7 +38,7 @@ It is intentionally boring: each recommendation is tied to an observable local s
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\slider-captcha-lab`
 - Remote: `git@github.com:GravityblueX/slider-captcha-lab.git`
 - Branch: `main`
-- HEAD: `aa716a9`
+- HEAD: `41d6bc7`
 - Dirty files: `0`
 - Score: `100`
 
@@ -52,8 +52,8 @@ It is intentionally boring: each recommendation is tied to an observable local s
 | dependency manifests | OK | dependency-rhythm | 2 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 5 git tags, 3 release docs |
-| diagnostic artifacts | OK | debug-traces | 21 report artifacts, 0 logs |
-| contract artifacts | OK | evidence-contracts | 2 contract artifact(s): docs\safety-contract.json, docs\safety-contract.md |
+| diagnostic artifacts | OK | debug-traces | 23 report artifacts, 0 logs |
+| contract artifacts | OK | evidence-contracts | 4 contract artifact(s): docs\dependency-inventory.json, docs\dependency-inventory.md, docs\safety-contract.json, docs\safety-contract.md |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -64,8 +64,8 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\project-forge`
 - Remote: `git@github.com:GravityblueX/project-forge.git`
 - Branch: `main`
-- HEAD: `ad5a002`
-- Dirty files: `4`
+- HEAD: `f86d262`
+- Dirty files: `6`
 - Score: `100`
 
 | Check | Result | Pattern | Evidence |
@@ -90,7 +90,7 @@ Next actions:
 - Path: `C:\Users\123\Desktop\fountain\nocturne-admin`
 - Remote: `git@github.com:GravityblueX/ashveil-console.git`
 - Branch: `main`
-- HEAD: `5b71611`
+- HEAD: `b28e04c`
 - Dirty files: `0`
 - Score: `100`
 
@@ -104,8 +104,8 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 3 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 44 git tags, 1 release docs |
-| diagnostic artifacts | OK | debug-traces | 47 report artifacts, 0 logs |
-| contract artifacts | OK | evidence-contracts | 9 contract artifact(s): reports\api-surface.json, reports\api-surface.md, reports\openapi.json, reports\openapi.md |
+| diagnostic artifacts | OK | debug-traces | 49 report artifacts, 0 logs |
+| contract artifacts | OK | evidence-contracts | 12 contract artifact(s): reports\api-surface.json, reports\api-surface.md, reports\bom.cdx.json, reports\dependency-sbom.md |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -116,7 +116,7 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\kiogarezaki`
 - Remote: `git@github.com:GravityblueX/kiogarezaki.git`
 - Branch: `main`
-- HEAD: `2c9ef5a`
+- HEAD: `895715c`
 - Dirty files: `0`
 - Score: `100`
 
@@ -130,8 +130,8 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 2 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 4 git tags |
-| diagnostic artifacts | OK | debug-traces | 9 report artifacts, 0 logs |
-| contract artifacts | OK | evidence-contracts | 11 contract artifact(s): reports\catalog-info.json, reports\catalog-info.md, reports\project-promotion.json, reports\project-promotion.md |
+| diagnostic artifacts | OK | debug-traces | 11 report artifacts, 0 logs |
+| contract artifacts | OK | evidence-contracts | 14 contract artifact(s): reports\bom.cdx.json, reports\catalog-info.json, reports\catalog-info.md, reports\dependency-sbom.md |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -142,7 +142,7 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\ashveil-console`
 - Remote: `git@github.com:GravityblueX/ashveil-console.git`
 - Branch: `main`
-- HEAD: `5b71611`
+- HEAD: `b28e04c`
 - Dirty files: `0`
 - Score: `100`
 
@@ -156,8 +156,8 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 3 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 44 git tags, 1 release docs |
-| diagnostic artifacts | OK | debug-traces | 47 report artifacts, 0 logs |
-| contract artifacts | OK | evidence-contracts | 9 contract artifact(s): reports\api-surface.json, reports\api-surface.md, reports\openapi.json, reports\openapi.md |
+| diagnostic artifacts | OK | debug-traces | 49 report artifacts, 0 logs |
+| contract artifacts | OK | evidence-contracts | 12 contract artifact(s): reports\api-surface.json, reports\api-surface.md, reports\bom.cdx.json, reports\dependency-sbom.md |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -168,7 +168,7 @@ Next actions:
 - Path: `C:\Users\123\Desktop\YumeBox-MaterialDesign-Study`
 - Remote: `git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git`
 - Branch: `Yume`
-- HEAD: `fcf961e`
+- HEAD: `33843ba`
 - Dirty files: `0`
 - Score: `100`
 
@@ -182,8 +182,8 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 17 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 15 git tags, 13 release docs |
-| diagnostic artifacts | OK | debug-traces | 21 report artifacts, 2 logs |
-| contract artifacts | OK | evidence-contracts | 14 contract artifact(s): docs\apk-installability-report-v0.5.4-study.8.json, docs\apk-installability-report-v0.5.4-study.8.md, docs\apk-installability-report-v0.5.4-study.9.json, docs\apk-installability-report-v0.5.4-study.9.md |
+| diagnostic artifacts | OK | debug-traces | 23 report artifacts, 2 logs |
+| contract artifacts | OK | evidence-contracts | 17 contract artifact(s): docs\apk-installability-report-v0.5.4-study.8.json, docs\apk-installability-report-v0.5.4-study.8.md, docs\apk-installability-report-v0.5.4-study.9.json, docs\apk-installability-report-v0.5.4-study.9.md |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -194,7 +194,7 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\GravityblueX-First-Identify`
 - Remote: `git@github.com:GravityblueX/GravityblueX-First-Identify.git`
 - Branch: `main`
-- HEAD: `4763650`
+- HEAD: `2333bd0`
 - Dirty files: `0`
 - Score: `100`
 
@@ -208,8 +208,8 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 4 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 1 git tags |
-| diagnostic artifacts | OK | debug-traces | 12 report artifacts, 0 logs |
-| contract artifacts | OK | evidence-contracts | 12 contract artifact(s): reports\api-surface.json, reports\api-surface.md, reports\openapi.json, reports\openapi.md |
+| diagnostic artifacts | OK | debug-traces | 14 report artifacts, 0 logs |
+| contract artifacts | OK | evidence-contracts | 15 contract artifact(s): reports\api-surface.json, reports\api-surface.md, reports\bom.cdx.json, reports\dependency-sbom.md |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:

@@ -225,7 +225,11 @@ def contract_artifact_signal(repo: Path) -> tuple[bool, str]:
     artifact_names = [
         "api-surface",
         "openapi",
+        "bom.cdx",
+        "dependency-sbom",
+        "dependency-inventory",
         "apk-installability-report",
+        "build-environment",
         "release-asset-manifest",
         "release-provenance",
         "runtime-boundary",

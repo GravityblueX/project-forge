@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T03:30:01.175459+00:00",
+  "generatedAt": "2026-06-24T03:45:40.962679+00:00",
   "roots": [
     "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work",
     "C:\\Users\\123\\Desktop"
@@ -160,7 +160,7 @@
       "path": "C:\\Users\\123\\Desktop\\fountain\\nocturne-admin",
       "remote": "git@github.com:GravityblueX/ashveil-console.git",
       "branch": "main",
-      "head": "5b71611",
+      "head": "b28e04c",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -233,7 +233,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "47 report artifacts, 0 logs",
+          "note": "49 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
@@ -241,7 +241,7 @@
           "ok": true,
           "weight": 0,
           "points": 0,
-          "note": "9 contract artifact(s): reports\\api-surface.json, reports\\api-surface.md, reports\\openapi.json, reports\\openapi.md",
+          "note": "12 contract artifact(s): reports\\api-surface.json, reports\\api-surface.md, reports\\bom.cdx.json, reports\\dependency-sbom.md",
           "pattern": "evidence-contracts"
         },
         {
@@ -262,7 +262,7 @@
       "path": "C:\\Users\\123\\Desktop\\YumeBox-MaterialDesign-Study",
       "remote": "git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git",
       "branch": "Yume",
-      "head": "fcf961e",
+      "head": "33843ba",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -335,7 +335,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "21 report artifacts, 2 logs",
+          "note": "23 report artifacts, 2 logs",
           "pattern": "debug-traces"
         },
         {
@@ -343,7 +343,7 @@
           "ok": true,
           "weight": 0,
           "points": 0,
-          "note": "14 contract artifact(s): docs\\apk-installability-report-v0.5.4-study.8.json, docs\\apk-installability-report-v0.5.4-study.8.md, docs\\apk-installability-report-v0.5.4-study.9.json, docs\\apk-installability-report-v0.5.4-study.9.md",
+          "note": "17 contract artifact(s): docs\\apk-installability-report-v0.5.4-study.8.json, docs\\apk-installability-report-v0.5.4-study.8.md, docs\\apk-installability-report-v0.5.4-study.9.json, docs\\apk-installability-report-v0.5.4-study.9.md",
           "pattern": "evidence-contracts"
         },
         {
@@ -469,7 +469,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\ashveil-console",
       "remote": "git@github.com:GravityblueX/ashveil-console.git",
       "branch": "main",
-      "head": "5b71611",
+      "head": "b28e04c",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -542,7 +542,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "47 report artifacts, 0 logs",
+          "note": "49 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
@@ -550,7 +550,7 @@
           "ok": true,
           "weight": 0,
           "points": 0,
-          "note": "9 contract artifact(s): reports\\api-surface.json, reports\\api-surface.md, reports\\openapi.json, reports\\openapi.md",
+          "note": "12 contract artifact(s): reports\\api-surface.json, reports\\api-surface.md, reports\\bom.cdx.json, reports\\dependency-sbom.md",
           "pattern": "evidence-contracts"
         },
         {
@@ -571,7 +571,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\GravityblueX-First-Identify",
       "remote": "git@github.com:GravityblueX/GravityblueX-First-Identify.git",
       "branch": "main",
-      "head": "4763650",
+      "head": "2333bd0",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -644,7 +644,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "12 report artifacts, 0 logs",
+          "note": "14 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
@@ -652,7 +652,7 @@
           "ok": true,
           "weight": 0,
           "points": 0,
-          "note": "12 contract artifact(s): reports\\api-surface.json, reports\\api-surface.md, reports\\openapi.json, reports\\openapi.md",
+          "note": "15 contract artifact(s): reports\\api-surface.json, reports\\api-surface.md, reports\\bom.cdx.json, reports\\dependency-sbom.md",
           "pattern": "evidence-contracts"
         },
         {
@@ -673,7 +673,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\kiogarezaki",
       "remote": "git@github.com:GravityblueX/kiogarezaki.git",
       "branch": "main",
-      "head": "2c9ef5a",
+      "head": "895715c",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -746,7 +746,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "9 report artifacts, 0 logs",
+          "note": "11 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
@@ -754,7 +754,7 @@
           "ok": true,
           "weight": 0,
           "points": 0,
-          "note": "11 contract artifact(s): reports\\catalog-info.json, reports\\catalog-info.md, reports\\project-promotion.json, reports\\project-promotion.md",
+          "note": "14 contract artifact(s): reports\\bom.cdx.json, reports\\catalog-info.json, reports\\catalog-info.md, reports\\dependency-sbom.md",
           "pattern": "evidence-contracts"
         },
         {
@@ -881,8 +881,8 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\project-forge",
       "remote": "git@github.com:GravityblueX/project-forge.git",
       "branch": "main",
-      "head": "ad5a002",
-      "dirtyCount": 4,
+      "head": "f86d262",
+      "dirtyCount": 6,
       "score": 100,
       "checks": [
         {
@@ -983,7 +983,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\slider-captcha-lab",
       "remote": "git@github.com:GravityblueX/slider-captcha-lab.git",
       "branch": "main",
-      "head": "aa716a9",
+      "head": "41d6bc7",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -1056,7 +1056,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "21 report artifacts, 0 logs",
+          "note": "23 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
@@ -1064,7 +1064,7 @@
           "ok": true,
           "weight": 0,
           "points": 0,
-          "note": "2 contract artifact(s): docs\\safety-contract.json, docs\\safety-contract.md",
+          "note": "4 contract artifact(s): docs\\dependency-inventory.json, docs\\dependency-inventory.md, docs\\safety-contract.json, docs\\safety-contract.md",
           "pattern": "evidence-contracts"
         },
         {
