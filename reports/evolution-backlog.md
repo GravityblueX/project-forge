@@ -1,6 +1,6 @@
 # Evolution Backlog
 
-Last refreshed: 2026-06-24 03:06 UTC
+Last refreshed: 2026-06-24 03:14 UTC
 
 This backlog converts the grounded radar into project-specific next work.
 It separates managed repositories from reference-only repositories so borrowed ideas do not become accidental pushes.
@@ -68,7 +68,7 @@ Next work:
 - Kind: managed repository
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/ashveil-console.git`
-- Evidence: tests `package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\package.json: node --test "test/**/*.test.js"; frontend\package.json: node --test "test/**/*.test.js"`; diagnostics `43 report artifacts, 0 logs`; release `44 git tags, 1 release docs`
+- Evidence: tests `package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\package.json: node --test "test/**/*.test.js"; frontend\package.json: node --test "test/**/*.test.js"`; diagnostics `45 report artifacts, 0 logs`; release `44 git tags, 1 release docs`
 - Reference anchors: OpenSSF Scorecard
 
 Next work:
@@ -93,7 +93,7 @@ Next work:
 - Kind: authorized browser diagnostics lab
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/slider-captcha-lab.git`
-- Evidence: tests `1 Python test files`; diagnostics `17 report artifacts, 0 logs`; release `5 git tags, 3 release docs`
+- Evidence: tests `1 Python test files`; diagnostics `19 report artifacts, 0 logs`; release `5 git tags, 3 release docs`
 - Reference anchors: Playwright Trace Viewer, Chrome DevTools Protocol Page domain, OpenSSF Scorecard
 
 Next work:
