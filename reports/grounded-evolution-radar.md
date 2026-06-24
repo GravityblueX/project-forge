@@ -1,6 +1,6 @@
 # Grounded Evolution Radar
 
-Last refreshed: 2026-06-24 02:48 UTC
+Last refreshed: 2026-06-24 02:49 UTC
 
 This report maps local repositories to proven patterns from mature projects.
 It is intentionally boring: each recommendation is tied to an observable local signal.
@@ -20,7 +20,7 @@ It is intentionally boring: each recommendation is tied to an observable local s
 | Rank | Repository | Score | Dirty | Top Next Action |
 |---:|---|---:|---:|---|
 | 1 | `slider-captcha-lab` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 2 | `project-forge` | 100 | 4 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 2 | `project-forge` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 3 | `nocturne-admin` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 4 | `kiogarezaki` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 5 | `ashveil-console` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
@@ -62,8 +62,8 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\project-forge`
 - Remote: `git@github.com:GravityblueX/project-forge.git`
 - Branch: `main`
-- HEAD: `6b183a3`
-- Dirty files: `4`
+- HEAD: `7801ebe`
+- Dirty files: `0`
 - Score: `100`
 
 | Check | Result | Pattern | Evidence |
