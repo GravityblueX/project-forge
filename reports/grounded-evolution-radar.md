@@ -1,6 +1,6 @@
 # Grounded Evolution Radar
 
-Last refreshed: 2026-06-24 02:05 UTC
+Last refreshed: 2026-06-24 02:16 UTC
 
 This report maps local repositories to proven patterns from mature projects.
 It is intentionally boring: each recommendation is tied to an observable local signal.
@@ -19,12 +19,12 @@ It is intentionally boring: each recommendation is tied to an observable local s
 
 | Rank | Repository | Score | Dirty | Top Next Action |
 |---:|---|---:|---:|---|
-| 1 | `slider-captcha-lab` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 1 | `slider-captcha-lab` | 100 | 5 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 2 | `project-forge` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 3 | `kiogarezaki` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 4 | `ashveil-console` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 5 | `YumeBox-MaterialDesign-Study` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 6 | `GravityblueX-First-Identify` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 4 | `ashveil-console` | 100 | 7 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 5 | `YumeBox-MaterialDesign-Study` | 100 | 7 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 6 | `GravityblueX-First-Identify` | 100 | 8 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 7 | `nocturne-admin` | 91 | 0 | Draft Renovate or Dependabot config with conservative grouping. |
 | 8 | `AllBeingsFuture` | 74 | 2 | Draft Renovate or Dependabot config with conservative grouping. |
 | 9 | `lux_net-reference` | 65 | 0 | Add license metadata when the repo is intended for reuse. |
@@ -38,7 +38,7 @@ It is intentionally boring: each recommendation is tied to an observable local s
 - Remote: `git@github.com:GravityblueX/slider-captcha-lab.git`
 - Branch: `main`
 - HEAD: `84add5f`
-- Dirty files: `0`
+- Dirty files: `5`
 - Score: `100`
 
 | Check | Result | Pattern | Evidence |
@@ -51,7 +51,7 @@ It is intentionally boring: each recommendation is tied to an observable local s
 | dependency manifests | OK | dependency-rhythm | 2 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 5 git tags, 3 release docs |
-| diagnostic artifacts | OK | debug-traces | 10 report artifacts, 0 logs |
+| diagnostic artifacts | OK | debug-traces | 12 report artifacts, 0 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -62,7 +62,7 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\project-forge`
 - Remote: `git@github.com:GravityblueX/project-forge.git`
 - Branch: `main`
-- HEAD: `2c846a3`
+- HEAD: `2947001`
 - Dirty files: `0`
 - Score: `100`
 
@@ -113,7 +113,7 @@ Next actions:
 - Remote: `git@github.com:GravityblueX/ashveil-console.git`
 - Branch: `main`
 - HEAD: `378a08d`
-- Dirty files: `0`
+- Dirty files: `7`
 - Score: `100`
 
 | Check | Result | Pattern | Evidence |
@@ -126,7 +126,7 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 3 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 44 git tags, 1 release docs |
-| diagnostic artifacts | OK | debug-traces | 41 report artifacts, 0 logs |
+| diagnostic artifacts | OK | debug-traces | 43 report artifacts, 0 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -138,7 +138,7 @@ Next actions:
 - Remote: `git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git`
 - Branch: `Yume`
 - HEAD: `6618a91`
-- Dirty files: `0`
+- Dirty files: `7`
 - Score: `100`
 
 | Check | Result | Pattern | Evidence |
@@ -151,7 +151,7 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 17 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 15 git tags, 9 release docs |
-| diagnostic artifacts | OK | debug-traces | 13 report artifacts, 2 logs |
+| diagnostic artifacts | OK | debug-traces | 15 report artifacts, 2 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -163,7 +163,7 @@ Next actions:
 - Remote: `git@github.com:GravityblueX/GravityblueX-First-Identify.git`
 - Branch: `main`
 - HEAD: `ce7f81e`
-- Dirty files: `0`
+- Dirty files: `8`
 - Score: `100`
 
 | Check | Result | Pattern | Evidence |
@@ -176,7 +176,7 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 4 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 1 git tags |
-| diagnostic artifacts | OK | debug-traces | 6 report artifacts, 0 logs |
+| diagnostic artifacts | OK | debug-traces | 8 report artifacts, 0 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:

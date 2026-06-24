@@ -1,10 +1,10 @@
 # Project Forge Release Readiness
 
-Generated: 2026-06-24 02:05 UTC
+Generated: 2026-06-24 02:17 UTC
 Project: `project-forge`
 Version: `0.1.0`
 Status: `OK`
-Dirty files when generated: `0`
+Dirty files when generated: `5`
 
 ## Gates
 
@@ -36,13 +36,13 @@ Dirty files when generated: `0`
 | project-forge score at least 90 | OK | 100 |
 | managed project scores remain strong | OK | YumeBox-MaterialDesign-Study, ashveil-console, GravityblueX-First-Identify, kiogarezaki, slider-captcha-lab |
 | evolution backlog exists | OK | 10 entries |
-| reference repos are not managed | OK | lux_net-reference, AllBeingsFuture, lux_net |
+| reference repos are not managed | OK | lux_net, AllBeingsFuture, lux_net-reference |
 | managed repos have next work | OK | ashveil-console, GravityblueX-First-Identify, kiogarezaki, nocturne-admin, project-forge, slider-captcha-lab, YumeBox-MaterialDesign-Study |
 | report index includes Grounded Evolution Radar | OK | Grounded Evolution Radar |
 | report index includes Evolution Backlog | OK | Evolution Backlog |
 | report index includes Project Forge Release Readiness | OK | Project Forge Release Readiness |
 | unit tests | OK | OK |
-| git status readable | OK | dirty_count=0 |
+| git status readable | OK | dirty_count=5 |
 
 ## Reference Basis
 

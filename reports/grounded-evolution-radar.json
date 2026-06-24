@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T02:05:01.953623+00:00",
+  "generatedAt": "2026-06-24T02:16:43.641281+00:00",
   "roots": [
     "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work",
     "C:\\Users\\123\\Desktop"
@@ -239,7 +239,7 @@
       "remote": "git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git",
       "branch": "Yume",
       "head": "6618a91",
-      "dirtyCount": 0,
+      "dirtyCount": 7,
       "score": 100,
       "checks": [
         {
@@ -311,7 +311,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "13 report artifacts, 2 logs",
+          "note": "15 report artifacts, 2 logs",
           "pattern": "debug-traces"
         },
         {
@@ -429,7 +429,7 @@
       "remote": "git@github.com:GravityblueX/ashveil-console.git",
       "branch": "main",
       "head": "378a08d",
-      "dirtyCount": 0,
+      "dirtyCount": 7,
       "score": 100,
       "checks": [
         {
@@ -501,7 +501,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "41 report artifacts, 0 logs",
+          "note": "43 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
@@ -523,7 +523,7 @@
       "remote": "git@github.com:GravityblueX/GravityblueX-First-Identify.git",
       "branch": "main",
       "head": "ce7f81e",
-      "dirtyCount": 0,
+      "dirtyCount": 8,
       "score": 100,
       "checks": [
         {
@@ -595,7 +595,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "6 report artifacts, 0 logs",
+          "note": "8 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
@@ -807,7 +807,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\project-forge",
       "remote": "git@github.com:GravityblueX/project-forge.git",
       "branch": "main",
-      "head": "2c846a3",
+      "head": "2947001",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -902,7 +902,7 @@
       "remote": "git@github.com:GravityblueX/slider-captcha-lab.git",
       "branch": "main",
       "head": "84add5f",
-      "dirtyCount": 0,
+      "dirtyCount": 5,
       "score": 100,
       "checks": [
         {
@@ -974,7 +974,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "10 report artifacts, 0 logs",
+          "note": "12 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {

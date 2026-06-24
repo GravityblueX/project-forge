@@ -1,6 +1,6 @@
 # Evolution Backlog
 
-Last refreshed: 2026-06-24 02:05 UTC
+Last refreshed: 2026-06-24 02:17 UTC
 
 This backlog converts the grounded radar into project-specific next work.
 It separates managed repositories from reference-only repositories so borrowed ideas do not become accidental pushes.
@@ -26,7 +26,7 @@ It separates managed repositories from reference-only repositories so borrowed i
 - Kind: admin console
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/ashveil-console.git`
-- Evidence: tests `package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\package.json: node --test "test/**/*.test.js"; frontend\package.json: node --test "test/**/*.test.js"`; diagnostics `41 report artifacts, 0 logs`; release `44 git tags, 1 release docs`
+- Evidence: tests `package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\package.json: node --test "test/**/*.test.js"; frontend\package.json: node --test "test/**/*.test.js"`; diagnostics `43 report artifacts, 0 logs`; release `44 git tags, 1 release docs`
 - Reference anchors: Node.js test runner, Renovate, OpenSSF Scorecard
 
 Next work:
@@ -40,7 +40,7 @@ Next work:
 - Kind: full-stack project-management app
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/GravityblueX-First-Identify.git`
-- Evidence: tests `package.json: turbo test; client\package.json: jest; server\package.json: jest`; diagnostics `6 report artifacts, 0 logs`; release `1 git tags`
+- Evidence: tests `package.json: turbo test; client\package.json: jest; server\package.json: jest`; diagnostics `8 report artifacts, 0 logs`; release `1 git tags`
 - Reference anchors: OpenSSF Scorecard, Node.js test runner, Renovate
 
 Next work:
@@ -82,7 +82,7 @@ Next work:
 - Kind: authorized browser diagnostics lab
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/slider-captcha-lab.git`
-- Evidence: tests `1 Python test files`; diagnostics `10 report artifacts, 0 logs`; release `5 git tags, 3 release docs`
+- Evidence: tests `1 Python test files`; diagnostics `12 report artifacts, 0 logs`; release `5 git tags, 3 release docs`
 - Reference anchors: Playwright Trace Viewer, Chrome DevTools Protocol Page domain, OpenSSF Scorecard
 
 Next work:
@@ -96,7 +96,7 @@ Next work:
 - Kind: Android APK study fork
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git`
-- Evidence: tests `scripts\study-apk-contract.ps1; scripts\verify-installable-apk.ps1`; diagnostics `13 report artifacts, 2 logs`; release `15 git tags, 9 release docs`
+- Evidence: tests `scripts\study-apk-contract.ps1; scripts\verify-installable-apk.ps1`; diagnostics `15 report artifacts, 2 logs`; release `15 git tags, 9 release docs`
 - Reference anchors: Android app signing, Gradle dependency verification, OWASP MASVS
 
 Next work:
