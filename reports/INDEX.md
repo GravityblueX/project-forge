@@ -1,7 +1,7 @@
 # Report Index
 
-Last refreshed: 2026-06-24 01:25 UTC
-Reports indexed: `17`
+Last refreshed: 2026-06-24 01:43 UTC
+Reports indexed: `18`
 
 | Report | File | Signal |
 |---|---|---|
@@ -10,6 +10,7 @@ Reports indexed: `17`
 | CI Failure Copilot | [`ci-failures.md`](ci-failures.md) | See report |
 | Dependency Manifest Radar | [`dependency-radar.md`](dependency-radar.md) | Manifests found: `0` |
 | Dependency Update Config Draft | [`dependency-update-config.md`](dependency-update-config.md) | See report |
+| Evolution Backlog | [`evolution-backlog.md`](evolution-backlog.md) | See report |
 | Grounded Evolution Radar | [`grounded-evolution-radar.md`](grounded-evolution-radar.md) | See report |
 | Release Notes Studio | [`release-notes.md`](release-notes.md) | See report |
 | Repo Health Radar | [`repo-health.md`](repo-health.md) | See report |

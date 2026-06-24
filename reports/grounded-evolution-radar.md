@@ -1,6 +1,6 @@
 # Grounded Evolution Radar
 
-Last refreshed: 2026-06-24 01:25 UTC
+Last refreshed: 2026-06-24 01:43 UTC
 
 This report maps local repositories to proven patterns from mature projects.
 It is intentionally boring: each recommendation is tied to an observable local signal.
@@ -22,10 +22,10 @@ It is intentionally boring: each recommendation is tied to an observable local s
 | 1 | `slider-captcha-lab` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 2 | `kiogarezaki` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 3 | `ashveil-console` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 4 | `GravityblueX-First-Identify` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 5 | `nocturne-admin` | 91 | 0 | Draft Renovate or Dependabot config with conservative grouping. |
-| 6 | `project-forge` | 90 | 0 | Create a tagged release or release-readiness report when build outputs are reproducible. |
-| 7 | `YumeBox-MaterialDesign-Study` | 85 | 0 | Replace placeholder tests with fast smoke or contract tests. |
+| 4 | `YumeBox-MaterialDesign-Study` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 5 | `GravityblueX-First-Identify` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 6 | `nocturne-admin` | 91 | 0 | Draft Renovate or Dependabot config with conservative grouping. |
+| 7 | `project-forge` | 90 | 0 | Create a tagged release or release-readiness report when build outputs are reproducible. |
 | 8 | `AllBeingsFuture` | 74 | 2 | Draft Renovate or Dependabot config with conservative grouping. |
 | 9 | `lux_net-reference` | 65 | 0 | Add license metadata when the repo is intended for reuse. |
 | 10 | `lux_net` | 65 | 3 | Add license metadata when the repo is intended for reuse. |
@@ -37,7 +37,7 @@ It is intentionally boring: each recommendation is tied to an observable local s
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\slider-captcha-lab`
 - Remote: `git@github.com:GravityblueX/slider-captcha-lab.git`
 - Branch: `main`
-- HEAD: `9ac2db3`
+- HEAD: `84add5f`
 - Dirty files: `0`
 - Score: `100`
 
@@ -51,7 +51,7 @@ It is intentionally boring: each recommendation is tied to an observable local s
 | dependency manifests | OK | dependency-rhythm | 2 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 5 git tags, 3 release docs |
-| diagnostic artifacts | OK | debug-traces | 8 report artifacts, 0 logs |
+| diagnostic artifacts | OK | debug-traces | 10 report artifacts, 0 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -62,7 +62,7 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\kiogarezaki`
 - Remote: `git@github.com:GravityblueX/kiogarezaki.git`
 - Branch: `main`
-- HEAD: `9459f6f`
+- HEAD: `d70ba62`
 - Dirty files: `0`
 - Score: `100`
 
@@ -100,8 +100,33 @@ Next actions:
 | meaningful tests | OK | native-test-runner | package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\package.json: node --test "test/**/*.test.js"; frontend\package.json: node --test "test/**/*.test.js" |
 | dependency manifests | OK | dependency-rhythm | 3 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
-| release evidence | OK | templateable-workflows | 39 git tags, 1 release docs |
+| release evidence | OK | templateable-workflows | 44 git tags, 1 release docs |
 | diagnostic artifacts | OK | debug-traces | 39 report artifacts, 0 logs |
+| safety boundary | OK | health-gates | explicit safety or authorization boundary found |
+
+Next actions:
+- Keep current maintenance rhythm and tighten next measurable gate.
+
+### YumeBox-MaterialDesign-Study
+
+- Path: `C:\Users\123\Desktop\YumeBox-MaterialDesign-Study`
+- Remote: `git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git`
+- Branch: `Yume`
+- HEAD: `2a123cd`
+- Dirty files: `0`
+- Score: `100`
+
+| Check | Result | Pattern | Evidence |
+|---|---|---|---|
+| readme | OK | health-gates | README present |
+| license | OK | health-gates | license present |
+| ci workflow | OK | health-gates | workflow directory present |
+| build signal | OK | native-test-runner | Gradle project |
+| meaningful tests | OK | native-test-runner | scripts\study-apk-contract.ps1; scripts\verify-installable-apk.ps1 |
+| dependency manifests | OK | dependency-rhythm | 17 manifest files |
+| dependency automation | OK | dependency-rhythm | automation config found |
+| release evidence | OK | templateable-workflows | 15 git tags, 9 release docs |
+| diagnostic artifacts | OK | debug-traces | 11 report artifacts, 2 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -162,7 +187,7 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\project-forge`
 - Remote: `git@github.com:GravityblueX/project-forge.git`
 - Branch: `main`
-- HEAD: `f43ddb7`
+- HEAD: `772272b`
 - Dirty files: `0`
 - Score: `90`
 
@@ -176,36 +201,11 @@ Next actions:
 | dependency manifests | OK | dependency-rhythm | 1 manifest files |
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | Gap | templateable-workflows | no local tags or release docs |
-| diagnostic artifacts | OK | debug-traces | 23 report artifacts, 0 logs |
+| diagnostic artifacts | OK | debug-traces | 26 report artifacts, 0 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
 - Create a tagged release or release-readiness report when build outputs are reproducible.
-
-### YumeBox-MaterialDesign-Study
-
-- Path: `C:\Users\123\Desktop\YumeBox-MaterialDesign-Study`
-- Remote: `git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git`
-- Branch: `Yume`
-- HEAD: `03aad6f`
-- Dirty files: `0`
-- Score: `85`
-
-| Check | Result | Pattern | Evidence |
-|---|---|---|---|
-| readme | OK | health-gates | README present |
-| license | OK | health-gates | license present |
-| ci workflow | OK | health-gates | workflow directory present |
-| build signal | OK | native-test-runner | Gradle project |
-| meaningful tests | Gap | native-test-runner | no test command or common test files |
-| dependency manifests | OK | dependency-rhythm | 17 manifest files |
-| dependency automation | OK | dependency-rhythm | automation config found |
-| release evidence | OK | templateable-workflows | 15 git tags, 9 release docs |
-| diagnostic artifacts | OK | debug-traces | 11 report artifacts, 2 logs |
-| safety boundary | OK | health-gates | explicit safety or authorization boundary found |
-
-Next actions:
-- Replace placeholder tests with fast smoke or contract tests.
 
 ### AllBeingsFuture
 

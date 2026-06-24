@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T01:25:00.773284+00:00",
+  "generatedAt": "2026-06-24T01:43:04.158550+00:00",
   "roots": [
     "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work",
     "C:\\Users\\123\\Desktop"
@@ -238,9 +238,9 @@
       "path": "C:\\Users\\123\\Desktop\\YumeBox-MaterialDesign-Study",
       "remote": "git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git",
       "branch": "Yume",
-      "head": "03aad6f",
+      "head": "2a123cd",
       "dirtyCount": 0,
-      "score": 85,
+      "score": 100,
       "checks": [
         {
           "name": "readme",
@@ -276,10 +276,10 @@
         },
         {
           "name": "meaningful tests",
-          "ok": false,
+          "ok": true,
           "weight": 12,
-          "points": 0,
-          "note": "no test command or common test files",
+          "points": 12,
+          "note": "scripts\\study-apk-contract.ps1; scripts\\verify-installable-apk.ps1",
           "pattern": "native-test-runner"
         },
         {
@@ -324,7 +324,7 @@
         }
       ],
       "actions": [
-        "Replace placeholder tests with fast smoke or contract tests."
+        "Keep current maintenance rhythm and tighten next measurable gate."
       ]
     },
     {
@@ -493,7 +493,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "39 git tags, 1 release docs",
+          "note": "44 git tags, 1 release docs",
           "pattern": "templateable-workflows"
         },
         {
@@ -616,7 +616,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\kiogarezaki",
       "remote": "git@github.com:GravityblueX/kiogarezaki.git",
       "branch": "main",
-      "head": "9459f6f",
+      "head": "d70ba62",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -807,7 +807,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\project-forge",
       "remote": "git@github.com:GravityblueX/project-forge.git",
       "branch": "main",
-      "head": "f43ddb7",
+      "head": "772272b",
       "dirtyCount": 0,
       "score": 90,
       "checks": [
@@ -880,7 +880,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "23 report artifacts, 0 logs",
+          "note": "26 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
@@ -901,7 +901,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\slider-captcha-lab",
       "remote": "git@github.com:GravityblueX/slider-captcha-lab.git",
       "branch": "main",
-      "head": "9ac2db3",
+      "head": "84add5f",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -974,7 +974,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "8 report artifacts, 0 logs",
+          "note": "10 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {

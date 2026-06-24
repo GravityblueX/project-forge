@@ -14,6 +14,13 @@ assert SPEC and SPEC.loader
 sys.modules[SPEC.name] = radar
 SPEC.loader.exec_module(radar)
 
+BACKLOG_MODULE_PATH = Path(__file__).resolve().parents[1] / "scripts" / "evolution_backlog.py"
+BACKLOG_SPEC = importlib.util.spec_from_file_location("evolution_backlog", BACKLOG_MODULE_PATH)
+backlog = importlib.util.module_from_spec(BACKLOG_SPEC)
+assert BACKLOG_SPEC and BACKLOG_SPEC.loader
+sys.modules[BACKLOG_SPEC.name] = backlog
+BACKLOG_SPEC.loader.exec_module(backlog)
+
 
 class GroundedEvolutionRadarTests(unittest.TestCase):
     def test_detects_placeholder_test_commands(self) -> None:
@@ -31,6 +38,18 @@ class GroundedEvolutionRadarTests(unittest.TestCase):
 
         self.assertTrue(ok)
         self.assertIn("node --test", note)
+
+    def test_accepts_apk_contract_scripts_as_meaningful_checks(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            repo = Path(temp)
+            scripts_dir = repo / "scripts"
+            scripts_dir.mkdir()
+            (scripts_dir / "study-apk-contract.ps1").write_text("exit 0", encoding="utf-8")
+
+            ok, note = radar.has_meaningful_test(repo, [])
+
+        self.assertTrue(ok)
+        self.assertIn("study-apk-contract.ps1", note)
 
     def test_discovers_git_repositories_while_skipping_heavy_dirs(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
@@ -83,6 +102,57 @@ class GroundedEvolutionRadarTests(unittest.TestCase):
         self.assertIn("Grounded Evolution Radar", report)
         self.assertIn("OpenSSF Scorecard", report)
         self.assertIn("Add tests.", report)
+
+    def test_evolution_backlog_marks_reference_repos_as_non_managed(self) -> None:
+        payload = {
+            "generatedAt": "2026-06-24T00:00:00+00:00",
+            "repositories": [
+                {
+                    "name": "slider-captcha-lab",
+                    "path": "C:/work/slider-captcha-lab",
+                    "remote": "git@github.com:GravityblueX/slider-captcha-lab.git",
+                    "score": 100,
+                    "checks": [],
+                },
+                {
+                    "name": "friend-reference",
+                    "path": "C:/work/friend-reference",
+                    "remote": "git@github.com:friend/reference.git",
+                    "score": 70,
+                    "dirtyCount": 1,
+                    "checks": [],
+                },
+            ],
+        }
+
+        generated = backlog.build_backlog(payload)
+        managed = {entry["name"]: entry["managed"] for entry in generated["entries"]}
+
+        self.assertTrue(managed["slider-captcha-lab"])
+        self.assertFalse(managed["friend-reference"])
+
+    def test_evolution_backlog_uses_primary_reference_sources(self) -> None:
+        payload = {
+            "generatedAt": "2026-06-24T00:00:00+00:00",
+            "repositories": [
+                {
+                    "name": "YumeBox-MaterialDesign-Study",
+                    "path": "C:/work/Yume",
+                    "remote": "https://github.com/GravityblueX/YumeBox-MaterialDesign-Study.git",
+                    "score": 85,
+                    "checks": [
+                        {"name": "meaningful tests", "ok": False},
+                    ],
+                }
+            ],
+        }
+
+        generated = backlog.build_backlog(payload)
+        rendered = backlog.render_markdown(generated)
+
+        self.assertIn("Android app signing", rendered)
+        self.assertIn("study APK contract output", rendered)
+        self.assertIn("developer.android.com", rendered)
 
 
 if __name__ == "__main__":

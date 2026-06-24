@@ -45,6 +45,7 @@ python scripts/dependency_update_config_drafter.py C:\path\to\repo
 python scripts/branch_protection_radar.py --owner GravityblueX
 python scripts/repo_template_factory.py --name valuable-tool
 python scripts/grounded_evolution_radar.py --root C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work --root C:\Users\123\Desktop
+python scripts/evolution_backlog.py
 python scripts/report_index.py
 ```
 
@@ -62,14 +63,16 @@ Start with:
 reports/INDEX.md
 reports/weekly-briefing.md
 reports/grounded-evolution-radar.md
+reports/evolution-backlog.md
 ```
 
 ## References
 
-The direction is documented in `docs/REFERENCE_PROJECTS.md`. The toolkit is
-inspired by mature maintenance tools such as OpenSSF Scorecard, Renovate,
-Release Drafter, Gitleaks, pre-commit, Cookiecutter, Copier, and Backstage
-templates.
+The direction is documented in `docs/REFERENCE_PROJECTS.md` and
+`docs/GROUNDED_REFERENCE_CATALOG.md`. The toolkit is inspired by mature
+maintenance tools such as OpenSSF Scorecard, Renovate, Release Drafter,
+Gitleaks, pre-commit, Cookiecutter, Copier, Backstage templates, Playwright
+Trace Viewer, Android app signing, and OWASP MASVS.
 
 ## Project Cards
 

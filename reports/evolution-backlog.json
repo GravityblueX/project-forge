@@ -1,0 +1,374 @@
+{
+  "generatedAt": "2026-06-24T01:43:14.183705+00:00",
+  "radarGeneratedAt": "2026-06-24T01:43:04.158550+00:00",
+  "referenceSources": [
+    {
+      "key": "scorecard",
+      "name": "OpenSSF Scorecard",
+      "url": "https://github.com/ossf/scorecard",
+      "lesson": "turn repository quality into explicit checks instead of taste calls"
+    },
+    {
+      "key": "renovate",
+      "name": "Renovate",
+      "url": "https://docs.renovatebot.com/configuration-options/",
+      "lesson": "make dependency change cadence scheduled, grouped, and reviewable"
+    },
+    {
+      "key": "backstage-templates",
+      "name": "Backstage Software Templates",
+      "url": "https://backstage.io/docs/features/software-templates/",
+      "lesson": "treat good project structure as a repeatable template"
+    },
+    {
+      "key": "playwright-trace",
+      "name": "Playwright Trace Viewer",
+      "url": "https://playwright.dev/docs/trace-viewer",
+      "lesson": "preserve inspectable evidence for browser failures"
+    },
+    {
+      "key": "cdp-page",
+      "name": "Chrome DevTools Protocol Page domain",
+      "url": "https://chromedevtools.github.io/devtools-protocol/tot/Page/",
+      "lesson": "model deep pages and frames as observable browser state"
+    },
+    {
+      "key": "node-test-runner",
+      "name": "Node.js test runner",
+      "url": "https://nodejs.org/api/test.html",
+      "lesson": "prefer fast language-native contract tests for small tools"
+    },
+    {
+      "key": "android-signing",
+      "name": "Android app signing",
+      "url": "https://developer.android.com/studio/publish/app-signing",
+      "lesson": "verify installability through package metadata and signatures"
+    },
+    {
+      "key": "gradle-verification",
+      "name": "Gradle dependency verification",
+      "url": "https://docs.gradle.org/current/userguide/dependency_verification.html",
+      "lesson": "make supply-chain integrity explicit for large builds"
+    },
+    {
+      "key": "owasp-masvs",
+      "name": "OWASP MASVS",
+      "url": "https://mas.owasp.org/MASVS/",
+      "lesson": "separate study build evidence from production mobile assurance"
+    }
+  ],
+  "entries": [
+    {
+      "name": "AllBeingsFuture",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\AllBeingsFuture",
+      "remote": "git@github.com:AllBeingsFuture/AllBeingsFuture.git",
+      "kind": "reference-only repository",
+      "score": 74,
+      "managed": false,
+      "sources": [],
+      "items": [
+        "Do not push or rewrite this repository from the maintenance pass.",
+        "Use it only as a pattern reference after checking license and owner permission.",
+        "Keep local changes isolated from GravityblueX-owned project commits."
+      ],
+      "currentEvidence": {
+        "dirtyCount": 2,
+        "head": "abb2308"
+      }
+    },
+    {
+      "name": "ashveil-console",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\ashveil-console",
+      "remote": "git@github.com:GravityblueX/ashveil-console.git",
+      "kind": "admin console",
+      "score": 100,
+      "managed": true,
+      "sources": [
+        {
+          "key": "node-test-runner",
+          "name": "Node.js test runner",
+          "url": "https://nodejs.org/api/test.html",
+          "lesson": "prefer fast language-native contract tests for small tools"
+        },
+        {
+          "key": "renovate",
+          "name": "Renovate",
+          "url": "https://docs.renovatebot.com/configuration-options/",
+          "lesson": "make dependency change cadence scheduled, grouped, and reviewable"
+        },
+        {
+          "key": "scorecard",
+          "name": "OpenSSF Scorecard",
+          "url": "https://github.com/ossf/scorecard",
+          "lesson": "turn repository quality into explicit checks instead of taste calls"
+        }
+      ],
+      "items": [
+        "Add fixture-backed route regression tests for the risk audit and permission matrix views.",
+        "Add a smoke report artifact that records API health, protected-route behavior, and frontend route coverage.",
+        "Keep the existing Prettier debt isolated until a dedicated formatting-only pass is scheduled.",
+        "Keep score at 100 by turning the next important manual check into an automated contract."
+      ],
+      "currentEvidence": {
+        "tests": "package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\\package.json: node --test \"test/**/*.test.js\"; frontend\\package.json: node --test \"test/**/*.test.js\"",
+        "diagnostics": "39 report artifacts, 0 logs",
+        "release": "44 git tags, 1 release docs"
+      }
+    },
+    {
+      "name": "GravityblueX-First-Identify",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\GravityblueX-First-Identify",
+      "remote": "git@github.com:GravityblueX/GravityblueX-First-Identify.git",
+      "kind": "full-stack project-management app",
+      "score": 100,
+      "managed": true,
+      "sources": [
+        {
+          "key": "scorecard",
+          "name": "OpenSSF Scorecard",
+          "url": "https://github.com/ossf/scorecard",
+          "lesson": "turn repository quality into explicit checks instead of taste calls"
+        },
+        {
+          "key": "node-test-runner",
+          "name": "Node.js test runner",
+          "url": "https://nodejs.org/api/test.html",
+          "lesson": "prefer fast language-native contract tests for small tools"
+        },
+        {
+          "key": "renovate",
+          "name": "Renovate",
+          "url": "https://docs.renovatebot.com/configuration-options/",
+          "lesson": "make dependency change cadence scheduled, grouped, and reviewable"
+        }
+      ],
+      "items": [
+        "Add API contract coverage for the highest-value auth and project routes.",
+        "Add a release-readiness report that records build, test, seed-data, and security-boundary status.",
+        "Promote only runtime-imported server modules into strict TypeScript coverage before widening the tsconfig.",
+        "Keep score at 100 by turning the next important manual check into an automated contract."
+      ],
+      "currentEvidence": {
+        "tests": "package.json: turbo test; client\\package.json: jest; server\\package.json: jest",
+        "diagnostics": "4 report artifacts, 0 logs",
+        "release": "1 git tags"
+      }
+    },
+    {
+      "name": "kiogarezaki",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\kiogarezaki",
+      "remote": "git@github.com:GravityblueX/kiogarezaki.git",
+      "kind": "AI lab workspace",
+      "score": 100,
+      "managed": true,
+      "sources": [
+        {
+          "key": "backstage-templates",
+          "name": "Backstage Software Templates",
+          "url": "https://backstage.io/docs/features/software-templates/",
+          "lesson": "treat good project structure as a repeatable template"
+        },
+        {
+          "key": "node-test-runner",
+          "name": "Node.js test runner",
+          "url": "https://nodejs.org/api/test.html",
+          "lesson": "prefer fast language-native contract tests for small tools"
+        },
+        {
+          "key": "scorecard",
+          "name": "OpenSSF Scorecard",
+          "url": "https://github.com/ossf/scorecard",
+          "lesson": "turn repository quality into explicit checks instead of taste calls"
+        }
+      ],
+      "items": [
+        "Archive root workspace verification output in the next weekly project report.",
+        "Generate a weekly project promotion report from project TASKS, NOTES, and package metadata.",
+        "Move stale early recovery notes into an archive once no automation references them.",
+        "Keep score at 100 by turning the next important manual check into an automated contract."
+      ],
+      "currentEvidence": {
+        "tests": "projects\\idea-triage-board\\package.json: npm run build && node --test dist/tests/*.test.js; projects\\personal-craft-console\\package.json: npm run build && node --test dist/tests/*.test.js",
+        "diagnostics": "1 report artifacts, 0 logs",
+        "release": "4 git tags"
+      }
+    },
+    {
+      "name": "lux_net",
+      "path": "C:\\Users\\123\\Desktop\\fountain\\maintenance\\lux_net",
+      "remote": "git@github.com:tmzncty/lux_net.git",
+      "kind": "reference-only repository",
+      "score": 65,
+      "managed": false,
+      "sources": [],
+      "items": [
+        "Do not push or rewrite this repository from the maintenance pass.",
+        "Use it only as a pattern reference after checking license and owner permission.",
+        "Keep local changes isolated from GravityblueX-owned project commits."
+      ],
+      "currentEvidence": {
+        "dirtyCount": 3,
+        "head": "af27c88"
+      }
+    },
+    {
+      "name": "lux_net-reference",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\lux_net-reference",
+      "remote": "git@github.com:tmzncty/lux_net.git",
+      "kind": "reference-only repository",
+      "score": 65,
+      "managed": false,
+      "sources": [],
+      "items": [
+        "Do not push or rewrite this repository from the maintenance pass.",
+        "Use it only as a pattern reference after checking license and owner permission.",
+        "Keep local changes isolated from GravityblueX-owned project commits."
+      ],
+      "currentEvidence": {
+        "dirtyCount": 0,
+        "head": "1cb771e"
+      }
+    },
+    {
+      "name": "nocturne-admin",
+      "path": "C:\\Users\\123\\Desktop\\fountain\\nocturne-admin",
+      "remote": "git@github.com:GravityblueX/ashveil-console.git",
+      "kind": "managed repository",
+      "score": 91,
+      "managed": true,
+      "sources": [
+        {
+          "key": "scorecard",
+          "name": "OpenSSF Scorecard",
+          "url": "https://github.com/ossf/scorecard",
+          "lesson": "turn repository quality into explicit checks instead of taste calls"
+        }
+      ],
+      "items": [
+        "Add conservative Renovate or Dependabot grouping without automerge."
+      ],
+      "currentEvidence": {
+        "tests": "package.json: npm run test --prefix backend && npm run test --prefix frontend",
+        "diagnostics": "39 report artifacts, 0 logs",
+        "release": "1 release docs"
+      }
+    },
+    {
+      "name": "project-forge",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\project-forge",
+      "remote": "git@github.com:GravityblueX/project-forge.git",
+      "kind": "maintenance toolkit",
+      "score": 90,
+      "managed": true,
+      "sources": [
+        {
+          "key": "scorecard",
+          "name": "OpenSSF Scorecard",
+          "url": "https://github.com/ossf/scorecard",
+          "lesson": "turn repository quality into explicit checks instead of taste calls"
+        },
+        {
+          "key": "backstage-templates",
+          "name": "Backstage Software Templates",
+          "url": "https://backstage.io/docs/features/software-templates/",
+          "lesson": "treat good project structure as a repeatable template"
+        },
+        {
+          "key": "renovate",
+          "name": "Renovate",
+          "url": "https://docs.renovatebot.com/configuration-options/",
+          "lesson": "make dependency change cadence scheduled, grouped, and reviewable"
+        }
+      ],
+      "items": [
+        "Create a release-readiness report before tagging.",
+        "Ship a release-readiness report for the toolkit itself before creating the first tag.",
+        "Convert repeated report scripts into a small templateable command registry.",
+        "Keep reference sources primary and linked so generated advice is auditable."
+      ],
+      "currentEvidence": {
+        "tests": "1 Python test files",
+        "diagnostics": "26 report artifacts, 0 logs",
+        "release": "no local tags or release docs"
+      }
+    },
+    {
+      "name": "slider-captcha-lab",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\slider-captcha-lab",
+      "remote": "git@github.com:GravityblueX/slider-captcha-lab.git",
+      "kind": "authorized browser diagnostics lab",
+      "score": 100,
+      "managed": true,
+      "sources": [
+        {
+          "key": "playwright-trace",
+          "name": "Playwright Trace Viewer",
+          "url": "https://playwright.dev/docs/trace-viewer",
+          "lesson": "preserve inspectable evidence for browser failures"
+        },
+        {
+          "key": "cdp-page",
+          "name": "Chrome DevTools Protocol Page domain",
+          "url": "https://chromedevtools.github.io/devtools-protocol/tot/Page/",
+          "lesson": "model deep pages and frames as observable browser state"
+        },
+        {
+          "key": "scorecard",
+          "name": "OpenSSF Scorecard",
+          "url": "https://github.com/ossf/scorecard",
+          "lesson": "turn repository quality into explicit checks instead of taste calls"
+        }
+      ],
+      "items": [
+        "Extend the authorized evidence pack with optional local screenshots or Playwright trace artifacts.",
+        "Keep every profile marked local-owned-or-explicitly-authorized and refuse third-party target defaults.",
+        "Use trace-style artifacts for diagnosis, not CAPTCHA bypass or anti-bot evasion.",
+        "Keep score at 100 by turning the next important manual check into an automated contract."
+      ],
+      "currentEvidence": {
+        "tests": "1 Python test files",
+        "diagnostics": "10 report artifacts, 0 logs",
+        "release": "5 git tags, 3 release docs"
+      }
+    },
+    {
+      "name": "YumeBox-MaterialDesign-Study",
+      "path": "C:\\Users\\123\\Desktop\\YumeBox-MaterialDesign-Study",
+      "remote": "git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git",
+      "kind": "Android APK study fork",
+      "score": 100,
+      "managed": true,
+      "sources": [
+        {
+          "key": "android-signing",
+          "name": "Android app signing",
+          "url": "https://developer.android.com/studio/publish/app-signing",
+          "lesson": "verify installability through package metadata and signatures"
+        },
+        {
+          "key": "gradle-verification",
+          "name": "Gradle dependency verification",
+          "url": "https://docs.gradle.org/current/userguide/dependency_verification.html",
+          "lesson": "make supply-chain integrity explicit for large builds"
+        },
+        {
+          "key": "owasp-masvs",
+          "name": "OWASP MASVS",
+          "url": "https://mas.owasp.org/MASVS/",
+          "lesson": "separate study build evidence from production mobile assurance"
+        }
+      ],
+      "items": [
+        "Archive the study APK contract output with each future release report.",
+        "Add a real device matrix only after adb install evidence is available for owned or authorized devices.",
+        "Keep debug-keystore signing labeled as study/testing evidence, not production release assurance.",
+        "Keep score at 100 by turning the next important manual check into an automated contract."
+      ],
+      "currentEvidence": {
+        "tests": "scripts\\study-apk-contract.ps1; scripts\\verify-installable-apk.ps1",
+        "diagnostics": "11 report artifacts, 2 logs",
+        "release": "15 git tags, 9 release docs"
+      }
+    }
+  ]
+}

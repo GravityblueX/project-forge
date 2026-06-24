@@ -150,6 +150,16 @@ def has_meaningful_test(repo: Path, scripts: list[tuple[Path, dict[str, str]]]) 
         ]
         if python_tests:
             return True, f"{len(python_tests)} Python test files"
+        contract_scripts = [
+            path for path in [
+                repo / "scripts" / "study-apk-contract.ps1",
+                repo / "scripts" / "verify-installable-apk.ps1",
+            ]
+            if path.exists()
+        ]
+        if contract_scripts:
+            notes = "; ".join(str(path.relative_to(repo)) for path in contract_scripts)
+            return True, notes
         return False, "no test command or common test files"
 
     placeholders = ["no tests configured", "echo", "not implemented"]
