@@ -105,7 +105,9 @@ class GroundedEvolutionRadarTests(unittest.TestCase):
             reports.mkdir()
             (reports / "api-surface.json").write_text('{"ok": true}', encoding="utf-8")
             (reports / "openapi.json").write_text('{"openapi": "3.1.0"}', encoding="utf-8")
+            (reports / "client-api-coverage.json").write_text('{"ok": true}', encoding="utf-8")
             (reports / "bom.cdx.json").write_text('{"bomFormat": "CycloneDX"}', encoding="utf-8")
+            (reports / "adr-index.json").write_text('{"ok": true}', encoding="utf-8")
 
             ok, note = radar.contract_artifact_signal(repo)
 
