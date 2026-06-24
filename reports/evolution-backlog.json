@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-24T02:17:03.006977+00:00",
-  "radarGeneratedAt": "2026-06-24T02:16:43.641281+00:00",
+  "generatedAt": "2026-06-24T02:21:42.655644+00:00",
+  "radarGeneratedAt": "2026-06-24T02:21:31.451259+00:00",
   "referenceSources": [
     {
       "key": "scorecard",
@@ -234,7 +234,7 @@
       "path": "C:\\Users\\123\\Desktop\\fountain\\nocturne-admin",
       "remote": "git@github.com:GravityblueX/ashveil-console.git",
       "kind": "managed repository",
-      "score": 91,
+      "score": 100,
       "managed": true,
       "sources": [
         {
@@ -245,12 +245,12 @@
         }
       ],
       "items": [
-        "Add conservative Renovate or Dependabot grouping without automerge."
+        "Keep score at 100 by turning the next important manual check into an automated contract."
       ],
       "currentEvidence": {
-        "tests": "package.json: npm run test --prefix backend && npm run test --prefix frontend",
-        "diagnostics": "39 report artifacts, 0 logs",
-        "release": "1 release docs"
+        "tests": "package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\\package.json: node --test \"test/**/*.test.js\"; frontend\\package.json: node --test \"test/**/*.test.js\"",
+        "diagnostics": "43 report artifacts, 0 logs",
+        "release": "44 git tags, 1 release docs"
       }
     },
     {

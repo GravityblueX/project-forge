@@ -1,6 +1,6 @@
 # Evolution Backlog
 
-Last refreshed: 2026-06-24 02:17 UTC
+Last refreshed: 2026-06-24 02:21 UTC
 
 This backlog converts the grounded radar into project-specific next work.
 It separates managed repositories from reference-only repositories so borrowed ideas do not become accidental pushes.
@@ -63,6 +63,17 @@ Next work:
 - Move stale early recovery notes into an archive once no automation references them.
 - Keep score at 100 by turning the next important manual check into an automated contract.
 
+### nocturne-admin
+
+- Kind: managed repository
+- Score: `100`
+- Remote: `git@github.com:GravityblueX/ashveil-console.git`
+- Evidence: tests `package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\package.json: node --test "test/**/*.test.js"; frontend\package.json: node --test "test/**/*.test.js"`; diagnostics `43 report artifacts, 0 logs`; release `44 git tags, 1 release docs`
+- Reference anchors: OpenSSF Scorecard
+
+Next work:
+- Keep score at 100 by turning the next important manual check into an automated contract.
+
 ### project-forge
 
 - Kind: maintenance toolkit
@@ -104,17 +115,6 @@ Next work:
 - Add a real device matrix only after adb install evidence is available for owned or authorized devices.
 - Keep debug-keystore signing labeled as study/testing evidence, not production release assurance.
 - Keep score at 100 by turning the next important manual check into an automated contract.
-
-### nocturne-admin
-
-- Kind: managed repository
-- Score: `91`
-- Remote: `git@github.com:GravityblueX/ashveil-console.git`
-- Evidence: tests `package.json: npm run test --prefix backend && npm run test --prefix frontend`; diagnostics `39 report artifacts, 0 logs`; release `1 release docs`
-- Reference anchors: OpenSSF Scorecard
-
-Next work:
-- Add conservative Renovate or Dependabot grouping without automerge.
 
 ## Reference-Only Repositories
 

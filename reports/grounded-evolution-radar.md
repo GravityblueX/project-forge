@@ -1,6 +1,6 @@
 # Grounded Evolution Radar
 
-Last refreshed: 2026-06-24 02:16 UTC
+Last refreshed: 2026-06-24 02:21 UTC
 
 This report maps local repositories to proven patterns from mature projects.
 It is intentionally boring: each recommendation is tied to an observable local signal.
@@ -19,13 +19,13 @@ It is intentionally boring: each recommendation is tied to an observable local s
 
 | Rank | Repository | Score | Dirty | Top Next Action |
 |---:|---|---:|---:|---|
-| 1 | `slider-captcha-lab` | 100 | 5 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 1 | `slider-captcha-lab` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 2 | `project-forge` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 3 | `kiogarezaki` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 4 | `ashveil-console` | 100 | 7 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 5 | `YumeBox-MaterialDesign-Study` | 100 | 7 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 6 | `GravityblueX-First-Identify` | 100 | 8 | Keep current maintenance rhythm and tighten next measurable gate. |
-| 7 | `nocturne-admin` | 91 | 0 | Draft Renovate or Dependabot config with conservative grouping. |
+| 3 | `nocturne-admin` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 4 | `kiogarezaki` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 5 | `ashveil-console` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 6 | `YumeBox-MaterialDesign-Study` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
+| 7 | `GravityblueX-First-Identify` | 100 | 0 | Keep current maintenance rhythm and tighten next measurable gate. |
 | 8 | `AllBeingsFuture` | 74 | 2 | Draft Renovate or Dependabot config with conservative grouping. |
 | 9 | `lux_net-reference` | 65 | 0 | Add license metadata when the repo is intended for reuse. |
 | 10 | `lux_net` | 65 | 3 | Add license metadata when the repo is intended for reuse. |
@@ -37,8 +37,8 @@ It is intentionally boring: each recommendation is tied to an observable local s
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\slider-captcha-lab`
 - Remote: `git@github.com:GravityblueX/slider-captcha-lab.git`
 - Branch: `main`
-- HEAD: `84add5f`
-- Dirty files: `5`
+- HEAD: `b405b02`
+- Dirty files: `0`
 - Score: `100`
 
 | Check | Result | Pattern | Evidence |
@@ -62,7 +62,7 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\project-forge`
 - Remote: `git@github.com:GravityblueX/project-forge.git`
 - Branch: `main`
-- HEAD: `2947001`
+- HEAD: `23d8948`
 - Dirty files: `0`
 - Score: `100`
 
@@ -77,6 +77,31 @@ Next actions:
 | dependency automation | OK | dependency-rhythm | automation config found |
 | release evidence | OK | templateable-workflows | 1 git tags, 1 release docs |
 | diagnostic artifacts | OK | debug-traces | 29 report artifacts, 0 logs |
+| safety boundary | OK | health-gates | explicit safety or authorization boundary found |
+
+Next actions:
+- Keep current maintenance rhythm and tighten next measurable gate.
+
+### nocturne-admin
+
+- Path: `C:\Users\123\Desktop\fountain\nocturne-admin`
+- Remote: `git@github.com:GravityblueX/ashveil-console.git`
+- Branch: `main`
+- HEAD: `432eb81`
+- Dirty files: `0`
+- Score: `100`
+
+| Check | Result | Pattern | Evidence |
+|---|---|---|---|
+| readme | OK | health-gates | README present |
+| license | OK | health-gates | license present |
+| ci workflow | OK | health-gates | workflow directory present |
+| build signal | OK | native-test-runner | package.json: npm run build --prefix backend && npm run build --prefix frontend; backend\package.json: node --check src/server.js && node --check src/store.js; frontend\package.json: vite build |
+| meaningful tests | OK | native-test-runner | package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\package.json: node --test "test/**/*.test.js"; frontend\package.json: node --test "test/**/*.test.js" |
+| dependency manifests | OK | dependency-rhythm | 3 manifest files |
+| dependency automation | OK | dependency-rhythm | automation config found |
+| release evidence | OK | templateable-workflows | 44 git tags, 1 release docs |
+| diagnostic artifacts | OK | debug-traces | 43 report artifacts, 0 logs |
 | safety boundary | OK | health-gates | explicit safety or authorization boundary found |
 
 Next actions:
@@ -112,8 +137,8 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\ashveil-console`
 - Remote: `git@github.com:GravityblueX/ashveil-console.git`
 - Branch: `main`
-- HEAD: `378a08d`
-- Dirty files: `7`
+- HEAD: `432eb81`
+- Dirty files: `0`
 - Score: `100`
 
 | Check | Result | Pattern | Evidence |
@@ -137,8 +162,8 @@ Next actions:
 - Path: `C:\Users\123\Desktop\YumeBox-MaterialDesign-Study`
 - Remote: `git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git`
 - Branch: `Yume`
-- HEAD: `6618a91`
-- Dirty files: `7`
+- HEAD: `b06a805`
+- Dirty files: `0`
 - Score: `100`
 
 | Check | Result | Pattern | Evidence |
@@ -162,8 +187,8 @@ Next actions:
 - Path: `C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work\GravityblueX-First-Identify`
 - Remote: `git@github.com:GravityblueX/GravityblueX-First-Identify.git`
 - Branch: `main`
-- HEAD: `ce7f81e`
-- Dirty files: `8`
+- HEAD: `74c0291`
+- Dirty files: `0`
 - Score: `100`
 
 | Check | Result | Pattern | Evidence |
@@ -181,31 +206,6 @@ Next actions:
 
 Next actions:
 - Keep current maintenance rhythm and tighten next measurable gate.
-
-### nocturne-admin
-
-- Path: `C:\Users\123\Desktop\fountain\nocturne-admin`
-- Remote: `git@github.com:GravityblueX/ashveil-console.git`
-- Branch: `main`
-- HEAD: `e44d2a7`
-- Dirty files: `0`
-- Score: `91`
-
-| Check | Result | Pattern | Evidence |
-|---|---|---|---|
-| readme | OK | health-gates | README present |
-| license | OK | health-gates | license present |
-| ci workflow | OK | health-gates | workflow directory present |
-| build signal | OK | native-test-runner | package.json: npm run build --prefix backend && npm run build --prefix frontend; backend\package.json: node --check src/server.js && node --check src/store.js; frontend\package.json: vite build |
-| meaningful tests | OK | native-test-runner | package.json: npm run test --prefix backend && npm run test --prefix frontend |
-| dependency manifests | OK | dependency-rhythm | 3 manifest files |
-| dependency automation | Gap | dependency-rhythm | no dependency update config |
-| release evidence | OK | templateable-workflows | 1 release docs |
-| diagnostic artifacts | OK | debug-traces | 39 report artifacts, 0 logs |
-| safety boundary | OK | health-gates | explicit safety or authorization boundary found |
-
-Next actions:
-- Draft Renovate or Dependabot config with conservative grouping.
 
 ### AllBeingsFuture
 

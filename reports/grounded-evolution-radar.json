@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T02:16:43.641281+00:00",
+  "generatedAt": "2026-06-24T02:21:31.451259+00:00",
   "roots": [
     "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work",
     "C:\\Users\\123\\Desktop"
@@ -144,9 +144,9 @@
       "path": "C:\\Users\\123\\Desktop\\fountain\\nocturne-admin",
       "remote": "git@github.com:GravityblueX/ashveil-console.git",
       "branch": "main",
-      "head": "e44d2a7",
+      "head": "432eb81",
       "dirtyCount": 0,
-      "score": 91,
+      "score": 100,
       "checks": [
         {
           "name": "readme",
@@ -185,7 +185,7 @@
           "ok": true,
           "weight": 12,
           "points": 12,
-          "note": "package.json: npm run test --prefix backend && npm run test --prefix frontend",
+          "note": "package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\\package.json: node --test \"test/**/*.test.js\"; frontend\\package.json: node --test \"test/**/*.test.js\"",
           "pattern": "native-test-runner"
         },
         {
@@ -198,10 +198,10 @@
         },
         {
           "name": "dependency automation",
-          "ok": false,
+          "ok": true,
           "weight": 7,
-          "points": 0,
-          "note": "no dependency update config",
+          "points": 7,
+          "note": "automation config found",
           "pattern": "dependency-rhythm"
         },
         {
@@ -209,7 +209,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "1 release docs",
+          "note": "44 git tags, 1 release docs",
           "pattern": "templateable-workflows"
         },
         {
@@ -217,7 +217,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "39 report artifacts, 0 logs",
+          "note": "43 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
@@ -230,7 +230,7 @@
         }
       ],
       "actions": [
-        "Draft Renovate or Dependabot config with conservative grouping."
+        "Keep current maintenance rhythm and tighten next measurable gate."
       ]
     },
     {
@@ -238,8 +238,8 @@
       "path": "C:\\Users\\123\\Desktop\\YumeBox-MaterialDesign-Study",
       "remote": "git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git",
       "branch": "Yume",
-      "head": "6618a91",
-      "dirtyCount": 7,
+      "head": "b06a805",
+      "dirtyCount": 0,
       "score": 100,
       "checks": [
         {
@@ -428,8 +428,8 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\ashveil-console",
       "remote": "git@github.com:GravityblueX/ashveil-console.git",
       "branch": "main",
-      "head": "378a08d",
-      "dirtyCount": 7,
+      "head": "432eb81",
+      "dirtyCount": 0,
       "score": 100,
       "checks": [
         {
@@ -522,8 +522,8 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\GravityblueX-First-Identify",
       "remote": "git@github.com:GravityblueX/GravityblueX-First-Identify.git",
       "branch": "main",
-      "head": "ce7f81e",
-      "dirtyCount": 8,
+      "head": "74c0291",
+      "dirtyCount": 0,
       "score": 100,
       "checks": [
         {
@@ -807,7 +807,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\project-forge",
       "remote": "git@github.com:GravityblueX/project-forge.git",
       "branch": "main",
-      "head": "2947001",
+      "head": "23d8948",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -901,8 +901,8 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\slider-captcha-lab",
       "remote": "git@github.com:GravityblueX/slider-captcha-lab.git",
       "branch": "main",
-      "head": "84add5f",
-      "dirtyCount": 5,
+      "head": "b405b02",
+      "dirtyCount": 0,
       "score": 100,
       "checks": [
         {

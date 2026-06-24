@@ -1,6 +1,6 @@
 {
   "reportType": "project_forge_release_readiness",
-  "generatedAt": "2026-06-24T02:17:03.353606+00:00",
+  "generatedAt": "2026-06-24T02:21:42.961380+00:00",
   "project": "project-forge",
   "version": "0.1.0",
   "ok": true,
@@ -129,7 +129,7 @@
     {
       "name": "managed project scores remain strong",
       "ok": true,
-      "detail": "YumeBox-MaterialDesign-Study, ashveil-console, GravityblueX-First-Identify, kiogarezaki, slider-captcha-lab"
+      "detail": "nocturne-admin, YumeBox-MaterialDesign-Study, ashveil-console, GravityblueX-First-Identify, kiogarezaki, slider-captcha-lab"
     },
     {
       "name": "evolution backlog exists",
@@ -139,7 +139,7 @@
     {
       "name": "reference repos are not managed",
       "ok": true,
-      "detail": "lux_net, AllBeingsFuture, lux_net-reference"
+      "detail": "lux_net-reference, lux_net, AllBeingsFuture"
     },
     {
       "name": "managed repos have next work",
