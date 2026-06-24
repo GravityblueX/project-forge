@@ -1,0 +1,206 @@
+{
+  "report_type": "reference_catalog_check",
+  "generated_at": "2026-06-24T02:32:48.264987+00:00",
+  "catalog": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\project-forge\\docs\\GROUNDED_REFERENCE_CATALOG.md",
+  "ok": true,
+  "references": [
+    {
+      "name": "OpenSSF Scorecard",
+      "url": "https://github.com/ossf/scorecard",
+      "local_artifact": "scripts/grounded_evolution_radar.py",
+      "reason": "repository health is represented as measurable local gates",
+      "ok": true,
+      "checks": [
+        {
+          "name": "name in catalog",
+          "ok": true,
+          "detail": "OpenSSF Scorecard"
+        },
+        {
+          "name": "primary url in catalog",
+          "ok": true,
+          "detail": "https://github.com/ossf/scorecard"
+        },
+        {
+          "name": "local artifact exists",
+          "ok": true,
+          "detail": "scripts/grounded_evolution_radar.py"
+        }
+      ]
+    },
+    {
+      "name": "Renovate",
+      "url": "https://docs.renovatebot.com/configuration-options/",
+      "local_artifact": "renovate.json",
+      "reason": "dependency cadence is scheduled and reviewable",
+      "ok": true,
+      "checks": [
+        {
+          "name": "name in catalog",
+          "ok": true,
+          "detail": "Renovate"
+        },
+        {
+          "name": "primary url in catalog",
+          "ok": true,
+          "detail": "https://docs.renovatebot.com/configuration-options/"
+        },
+        {
+          "name": "local artifact exists",
+          "ok": true,
+          "detail": "renovate.json"
+        }
+      ]
+    },
+    {
+      "name": "Backstage Software Templates",
+      "url": "https://backstage.io/docs/features/software-templates/",
+      "local_artifact": "scripts/repo_template_factory.py",
+      "reason": "repeatable structure can graduate into templates",
+      "ok": true,
+      "checks": [
+        {
+          "name": "name in catalog",
+          "ok": true,
+          "detail": "Backstage Software Templates"
+        },
+        {
+          "name": "primary url in catalog",
+          "ok": true,
+          "detail": "https://backstage.io/docs/features/software-templates/"
+        },
+        {
+          "name": "local artifact exists",
+          "ok": true,
+          "detail": "scripts/repo_template_factory.py"
+        }
+      ]
+    },
+    {
+      "name": "Playwright Trace Viewer",
+      "url": "https://playwright.dev/docs/trace-viewer",
+      "local_artifact": "reports/grounded-evolution-radar.md",
+      "reason": "diagnostic evidence should be inspectable",
+      "ok": true,
+      "checks": [
+        {
+          "name": "name in catalog",
+          "ok": true,
+          "detail": "Playwright Trace Viewer"
+        },
+        {
+          "name": "primary url in catalog",
+          "ok": true,
+          "detail": "https://playwright.dev/docs/trace-viewer"
+        },
+        {
+          "name": "local artifact exists",
+          "ok": true,
+          "detail": "reports/grounded-evolution-radar.md"
+        }
+      ]
+    },
+    {
+      "name": "Chrome DevTools Protocol Page domain",
+      "url": "https://chromedevtools.github.io/devtools-protocol/tot/Page/",
+      "local_artifact": "docs/GROUNDED_REFERENCE_CATALOG.md",
+      "reason": "browser/frame references remain tied to official protocol docs",
+      "ok": true,
+      "checks": [
+        {
+          "name": "name in catalog",
+          "ok": true,
+          "detail": "Chrome DevTools Protocol Page domain"
+        },
+        {
+          "name": "primary url in catalog",
+          "ok": true,
+          "detail": "https://chromedevtools.github.io/devtools-protocol/tot/Page/"
+        },
+        {
+          "name": "local artifact exists",
+          "ok": true,
+          "detail": "docs/GROUNDED_REFERENCE_CATALOG.md"
+        }
+      ]
+    },
+    {
+      "name": "Android app signing",
+      "url": "https://developer.android.com/studio/publish/app-signing",
+      "local_artifact": "scripts/apk_release_forge.py",
+      "reason": "APK claims are separated into signing, metadata, and release evidence",
+      "ok": true,
+      "checks": [
+        {
+          "name": "name in catalog",
+          "ok": true,
+          "detail": "Android app signing"
+        },
+        {
+          "name": "primary url in catalog",
+          "ok": true,
+          "detail": "https://developer.android.com/studio/publish/app-signing"
+        },
+        {
+          "name": "local artifact exists",
+          "ok": true,
+          "detail": "scripts/apk_release_forge.py"
+        }
+      ]
+    },
+    {
+      "name": "Gradle dependency verification",
+      "url": "https://docs.gradle.org/current/userguide/dependency_verification.html",
+      "local_artifact": "reports/yumebox-dependency-radar.md",
+      "reason": "large Android builds need explicit supply-chain evidence",
+      "ok": true,
+      "checks": [
+        {
+          "name": "name in catalog",
+          "ok": true,
+          "detail": "Gradle dependency verification"
+        },
+        {
+          "name": "primary url in catalog",
+          "ok": true,
+          "detail": "https://docs.gradle.org/current/userguide/dependency_verification.html"
+        },
+        {
+          "name": "local artifact exists",
+          "ok": true,
+          "detail": "reports/yumebox-dependency-radar.md"
+        }
+      ]
+    },
+    {
+      "name": "OWASP MASVS",
+      "url": "https://mas.owasp.org/MASVS/",
+      "local_artifact": "reports/yumebox-apk-release.md",
+      "reason": "mobile assurance is separate from simple installability",
+      "ok": true,
+      "checks": [
+        {
+          "name": "name in catalog",
+          "ok": true,
+          "detail": "OWASP MASVS"
+        },
+        {
+          "name": "primary url in catalog",
+          "ok": true,
+          "detail": "https://mas.owasp.org/MASVS/"
+        },
+        {
+          "name": "local artifact exists",
+          "ok": true,
+          "detail": "reports/yumebox-apk-release.md"
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "policy": [
+    "Use primary documentation or original project repositories as reference sources.",
+    "Translate references into local tests, scripts, reports, or release gates.",
+    "Do not copy third-party code, assets, branding, prompts, or private workflows."
+  ]
+}

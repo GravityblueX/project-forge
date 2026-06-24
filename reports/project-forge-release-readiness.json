@@ -1,10 +1,10 @@
 {
   "reportType": "project_forge_release_readiness",
-  "generatedAt": "2026-06-24T02:21:42.961380+00:00",
+  "generatedAt": "2026-06-24T02:32:54.423985+00:00",
   "project": "project-forge",
   "version": "0.1.0",
   "ok": true,
-  "dirtyCount": 5,
+  "dirtyCount": 10,
   "gates": [
     {
       "name": "required file README.md",
@@ -47,6 +47,11 @@
       "detail": "scripts/evolution_backlog.py"
     },
     {
+      "name": "required file scripts/reference_catalog_check.py",
+      "ok": true,
+      "detail": "scripts/reference_catalog_check.py"
+    },
+    {
       "name": "required file scripts/report_index.py",
       "ok": true,
       "detail": "scripts/report_index.py"
@@ -82,6 +87,16 @@
       "detail": "reports/evolution-backlog.json"
     },
     {
+      "name": "required file reports/reference-catalog-check.md",
+      "ok": true,
+      "detail": "reports/reference-catalog-check.md"
+    },
+    {
+      "name": "required file reports/reference-catalog-check.json",
+      "ok": true,
+      "detail": "reports/reference-catalog-check.json"
+    },
+    {
       "name": "reference source OpenSSF Scorecard",
       "ok": true,
       "detail": "OpenSSF Scorecard"
@@ -102,14 +117,34 @@
       "detail": "Playwright Trace Viewer"
     },
     {
+      "name": "reference source Chrome DevTools Protocol Page domain",
+      "ok": true,
+      "detail": "Chrome DevTools Protocol Page domain"
+    },
+    {
       "name": "reference source Android app signing",
       "ok": true,
       "detail": "Android app signing"
     },
     {
+      "name": "reference source Gradle dependency verification",
+      "ok": true,
+      "detail": "Gradle dependency verification"
+    },
+    {
       "name": "reference source OWASP MASVS",
       "ok": true,
       "detail": "OWASP MASVS"
+    },
+    {
+      "name": "reference catalog check exists",
+      "ok": true,
+      "detail": "8 references"
+    },
+    {
+      "name": "reference catalog check ok",
+      "ok": true,
+      "detail": "True"
     },
     {
       "name": "radar payload exists",
@@ -169,7 +204,7 @@
     {
       "name": "git status readable",
       "ok": true,
-      "detail": "dirty_count=5"
+      "detail": "dirty_count=10"
     }
   ],
   "references": [
@@ -177,7 +212,9 @@
     "Renovate",
     "Backstage Software Templates",
     "Playwright Trace Viewer",
+    "Chrome DevTools Protocol Page domain",
     "Android app signing",
+    "Gradle dependency verification",
     "OWASP MASVS"
   ],
   "nextReleaseNotes": [

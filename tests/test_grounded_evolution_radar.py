@@ -28,6 +28,13 @@ assert RELEASE_SPEC and RELEASE_SPEC.loader
 sys.modules[RELEASE_SPEC.name] = release_readiness
 RELEASE_SPEC.loader.exec_module(release_readiness)
 
+REFERENCE_MODULE_PATH = Path(__file__).resolve().parents[1] / "scripts" / "reference_catalog_check.py"
+REFERENCE_SPEC = importlib.util.spec_from_file_location("reference_catalog_check", REFERENCE_MODULE_PATH)
+reference_catalog = importlib.util.module_from_spec(REFERENCE_SPEC)
+assert REFERENCE_SPEC and REFERENCE_SPEC.loader
+sys.modules[REFERENCE_SPEC.name] = reference_catalog
+REFERENCE_SPEC.loader.exec_module(reference_catalog)
+
 
 class GroundedEvolutionRadarTests(unittest.TestCase):
     def test_detects_placeholder_test_commands(self) -> None:
@@ -182,6 +189,15 @@ class GroundedEvolutionRadarTests(unittest.TestCase):
         self.assertIn("Project Forge Release Readiness", rendered)
         self.assertIn("unit tests", rendered)
         self.assertIn("OpenSSF Scorecard", rendered)
+
+    def test_reference_catalog_check_requires_primary_urls_and_local_artifacts(self) -> None:
+        report = reference_catalog.build_report()
+
+        self.assertTrue(report["ok"])
+        urls = {row["url"] for row in report["references"]}
+        self.assertIn("https://github.com/ossf/scorecard", urls)
+        self.assertIn("https://mas.owasp.org/MASVS/", urls)
+        self.assertEqual(report["failures"], [])
 
 
 if __name__ == "__main__":

@@ -31,6 +31,7 @@ REQUIRED_FILES = [
     "docs/GROUNDED_REFERENCE_CATALOG.md",
     "scripts/grounded_evolution_radar.py",
     "scripts/evolution_backlog.py",
+    "scripts/reference_catalog_check.py",
     "scripts/report_index.py",
     "tests/test_grounded_evolution_radar.py",
     "reports/INDEX.md",
@@ -38,6 +39,8 @@ REQUIRED_FILES = [
     "reports/grounded-evolution-radar.json",
     "reports/evolution-backlog.md",
     "reports/evolution-backlog.json",
+    "reports/reference-catalog-check.md",
+    "reports/reference-catalog-check.json",
 ]
 
 PRIMARY_REFERENCES = [
@@ -45,7 +48,9 @@ PRIMARY_REFERENCES = [
     "Renovate",
     "Backstage Software Templates",
     "Playwright Trace Viewer",
+    "Chrome DevTools Protocol Page domain",
     "Android app signing",
+    "Gradle dependency verification",
     "OWASP MASVS",
 ]
 
@@ -97,6 +102,15 @@ def reference_gates() -> list[Gate]:
     return [
         Gate(f"reference source {name}", name in catalog, name)
         for name in PRIMARY_REFERENCES
+    ]
+
+
+def reference_catalog_report_gates() -> list[Gate]:
+    payload = load_json(ROOT / "reports" / "reference-catalog-check.json")
+    references = payload.get("references", [])
+    return [
+        Gate("reference catalog check exists", bool(references), f"{len(references)} references"),
+        Gate("reference catalog check ok", payload.get("ok") is True, str(payload.get("ok"))),
     ]
 
 
@@ -156,6 +170,7 @@ def build_payload(run_tests: bool = False) -> dict[str, Any]:
     gates = (
         required_file_gates()
         + reference_gates()
+        + reference_catalog_report_gates()
         + radar_gates()
         + backlog_gates()
         + report_index_gates()

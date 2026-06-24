@@ -1,6 +1,6 @@
 # Evolution Backlog
 
-Last refreshed: 2026-06-24 02:21 UTC
+Last refreshed: 2026-06-24 02:32 UTC
 
 This backlog converts the grounded radar into project-specific next work.
 It separates managed repositories from reference-only repositories so borrowed ideas do not become accidental pushes.
@@ -54,7 +54,7 @@ Next work:
 - Kind: AI lab workspace
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/kiogarezaki.git`
-- Evidence: tests `projects\idea-triage-board\package.json: npm run build && node --test dist/tests/*.test.js; projects\personal-craft-console\package.json: npm run build && node --test dist/tests/*.test.js`; diagnostics `3 report artifacts, 0 logs`; release `4 git tags`
+- Evidence: tests `projects\idea-triage-board\package.json: npm run build && node --test dist/tests/*.test.js; projects\personal-craft-console\package.json: npm run build && node --test dist/tests/*.test.js`; diagnostics `5 report artifacts, 0 logs`; release `4 git tags`
 - Reference anchors: Backstage Software Templates, Node.js test runner, OpenSSF Scorecard
 
 Next work:
@@ -79,7 +79,7 @@ Next work:
 - Kind: maintenance toolkit
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/project-forge.git`
-- Evidence: tests `1 Python test files`; diagnostics `29 report artifacts, 0 logs`; release `1 git tags, 1 release docs`
+- Evidence: tests `1 Python test files`; diagnostics `31 report artifacts, 0 logs`; release `1 git tags, 1 release docs`
 - Reference anchors: OpenSSF Scorecard, Backstage Software Templates, Renovate
 
 Next work:
@@ -93,7 +93,7 @@ Next work:
 - Kind: authorized browser diagnostics lab
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/slider-captcha-lab.git`
-- Evidence: tests `1 Python test files`; diagnostics `12 report artifacts, 0 logs`; release `5 git tags, 3 release docs`
+- Evidence: tests `1 Python test files`; diagnostics `14 report artifacts, 0 logs`; release `5 git tags, 3 release docs`
 - Reference anchors: Playwright Trace Viewer, Chrome DevTools Protocol Page domain, OpenSSF Scorecard
 
 Next work:
@@ -107,7 +107,7 @@ Next work:
 - Kind: Android APK study fork
 - Score: `100`
 - Remote: `git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git`
-- Evidence: tests `scripts\study-apk-contract.ps1; scripts\verify-installable-apk.ps1`; diagnostics `15 report artifacts, 2 logs`; release `15 git tags, 9 release docs`
+- Evidence: tests `scripts\study-apk-contract.ps1; scripts\verify-installable-apk.ps1`; diagnostics `17 report artifacts, 2 logs`; release `15 git tags, 9 release docs`
 - Reference anchors: Android app signing, Gradle dependency verification, OWASP MASVS
 
 Next work:

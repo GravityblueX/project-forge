@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-24T02:21:42.655644+00:00",
-  "radarGeneratedAt": "2026-06-24T02:21:31.451259+00:00",
+  "generatedAt": "2026-06-24T02:32:53.785565+00:00",
+  "radarGeneratedAt": "2026-06-24T02:32:53.610150+00:00",
   "referenceSources": [
     {
       "key": "scorecard",
@@ -189,7 +189,7 @@
       ],
       "currentEvidence": {
         "tests": "projects\\idea-triage-board\\package.json: npm run build && node --test dist/tests/*.test.js; projects\\personal-craft-console\\package.json: npm run build && node --test dist/tests/*.test.js",
-        "diagnostics": "3 report artifacts, 0 logs",
+        "diagnostics": "5 report artifacts, 0 logs",
         "release": "4 git tags"
       }
     },
@@ -288,7 +288,7 @@
       ],
       "currentEvidence": {
         "tests": "1 Python test files",
-        "diagnostics": "29 report artifacts, 0 logs",
+        "diagnostics": "31 report artifacts, 0 logs",
         "release": "1 git tags, 1 release docs"
       }
     },
@@ -327,7 +327,7 @@
       ],
       "currentEvidence": {
         "tests": "1 Python test files",
-        "diagnostics": "12 report artifacts, 0 logs",
+        "diagnostics": "14 report artifacts, 0 logs",
         "release": "5 git tags, 3 release docs"
       }
     },
@@ -366,7 +366,7 @@
       ],
       "currentEvidence": {
         "tests": "scripts\\study-apk-contract.ps1; scripts\\verify-installable-apk.ps1",
-        "diagnostics": "15 report artifacts, 2 logs",
+        "diagnostics": "17 report artifacts, 2 logs",
         "release": "15 git tags, 9 release docs"
       }
     }

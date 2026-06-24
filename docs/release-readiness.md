@@ -1,10 +1,10 @@
 # Project Forge Release Readiness
 
-Generated: 2026-06-24 02:21 UTC
+Generated: 2026-06-24 02:32 UTC
 Project: `project-forge`
 Version: `0.1.0`
 Status: `OK`
-Dirty files when generated: `5`
+Dirty files when generated: `10`
 
 ## Gates
 
@@ -18,6 +18,7 @@ Dirty files when generated: `5`
 | required file docs/GROUNDED_REFERENCE_CATALOG.md | OK | docs/GROUNDED_REFERENCE_CATALOG.md |
 | required file scripts/grounded_evolution_radar.py | OK | scripts/grounded_evolution_radar.py |
 | required file scripts/evolution_backlog.py | OK | scripts/evolution_backlog.py |
+| required file scripts/reference_catalog_check.py | OK | scripts/reference_catalog_check.py |
 | required file scripts/report_index.py | OK | scripts/report_index.py |
 | required file tests/test_grounded_evolution_radar.py | OK | tests/test_grounded_evolution_radar.py |
 | required file reports/INDEX.md | OK | reports/INDEX.md |
@@ -25,12 +26,18 @@ Dirty files when generated: `5`
 | required file reports/grounded-evolution-radar.json | OK | reports/grounded-evolution-radar.json |
 | required file reports/evolution-backlog.md | OK | reports/evolution-backlog.md |
 | required file reports/evolution-backlog.json | OK | reports/evolution-backlog.json |
+| required file reports/reference-catalog-check.md | OK | reports/reference-catalog-check.md |
+| required file reports/reference-catalog-check.json | OK | reports/reference-catalog-check.json |
 | reference source OpenSSF Scorecard | OK | OpenSSF Scorecard |
 | reference source Renovate | OK | Renovate |
 | reference source Backstage Software Templates | OK | Backstage Software Templates |
 | reference source Playwright Trace Viewer | OK | Playwright Trace Viewer |
+| reference source Chrome DevTools Protocol Page domain | OK | Chrome DevTools Protocol Page domain |
 | reference source Android app signing | OK | Android app signing |
+| reference source Gradle dependency verification | OK | Gradle dependency verification |
 | reference source OWASP MASVS | OK | OWASP MASVS |
+| reference catalog check exists | OK | 8 references |
+| reference catalog check ok | OK | True |
 | radar payload exists | OK | 10 repositories |
 | project-forge radar row exists | OK | 100 |
 | project-forge score at least 90 | OK | 100 |
@@ -42,7 +49,7 @@ Dirty files when generated: `5`
 | report index includes Evolution Backlog | OK | Evolution Backlog |
 | report index includes Project Forge Release Readiness | OK | Project Forge Release Readiness |
 | unit tests | OK | OK |
-| git status readable | OK | dirty_count=5 |
+| git status readable | OK | dirty_count=10 |
 
 ## Reference Basis
 
@@ -50,7 +57,9 @@ Dirty files when generated: `5`
 - Renovate
 - Backstage Software Templates
 - Playwright Trace Viewer
+- Chrome DevTools Protocol Page domain
 - Android app signing
+- Gradle dependency verification
 - OWASP MASVS
 
 ## Next Release Notes
