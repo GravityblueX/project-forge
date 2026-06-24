@@ -224,12 +224,16 @@ def diagnostic_signal(repo: Path) -> tuple[bool, str]:
 def contract_artifact_signal(repo: Path) -> tuple[bool, str]:
     artifact_names = [
         "api-surface",
+        "openapi",
         "apk-installability-report",
         "release-asset-manifest",
+        "release-provenance",
         "runtime-boundary",
         "study-apk-contract",
         "project-registry",
+        "catalog-info",
         "project-promotion",
+        "safety-contract",
         "workspace-verification",
         "release-readiness",
     ]

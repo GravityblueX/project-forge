@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T03:14:39.909603+00:00",
+  "generatedAt": "2026-06-24T03:28:15.612103+00:00",
   "roots": [
     "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work",
     "C:\\Users\\123\\Desktop"
@@ -262,7 +262,7 @@
       "path": "C:\\Users\\123\\Desktop\\YumeBox-MaterialDesign-Study",
       "remote": "git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git",
       "branch": "Yume",
-      "head": "39744e2",
+      "head": "fcf961e",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -327,7 +327,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "15 git tags, 11 release docs",
+          "note": "15 git tags, 13 release docs",
           "pattern": "templateable-workflows"
         },
         {
@@ -335,7 +335,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "19 report artifacts, 2 logs",
+          "note": "21 report artifacts, 2 logs",
           "pattern": "debug-traces"
         },
         {
@@ -343,7 +343,7 @@
           "ok": true,
           "weight": 0,
           "points": 0,
-          "note": "11 contract artifact(s): docs\\apk-installability-report-v0.5.4-study.8.json, docs\\apk-installability-report-v0.5.4-study.8.md, docs\\apk-installability-report-v0.5.4-study.9.json, docs\\apk-installability-report-v0.5.4-study.9.md",
+          "note": "14 contract artifact(s): docs\\apk-installability-report-v0.5.4-study.8.json, docs\\apk-installability-report-v0.5.4-study.8.md, docs\\apk-installability-report-v0.5.4-study.9.json, docs\\apk-installability-report-v0.5.4-study.9.md",
           "pattern": "evidence-contracts"
         },
         {
@@ -469,7 +469,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\ashveil-console",
       "remote": "git@github.com:GravityblueX/ashveil-console.git",
       "branch": "main",
-      "head": "7e6f308",
+      "head": "5b71611",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -542,7 +542,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "45 report artifacts, 0 logs",
+          "note": "47 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
@@ -550,7 +550,7 @@
           "ok": true,
           "weight": 0,
           "points": 0,
-          "note": "6 contract artifact(s): reports\\api-surface.json, reports\\api-surface.md, reports\\release-readiness.json, reports\\release-readiness.md",
+          "note": "9 contract artifact(s): reports\\api-surface.json, reports\\api-surface.md, reports\\openapi.json, reports\\openapi.md",
           "pattern": "evidence-contracts"
         },
         {
@@ -571,7 +571,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\GravityblueX-First-Identify",
       "remote": "git@github.com:GravityblueX/GravityblueX-First-Identify.git",
       "branch": "main",
-      "head": "6103381",
+      "head": "4763650",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -644,7 +644,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "10 report artifacts, 0 logs",
+          "note": "12 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
@@ -652,7 +652,7 @@
           "ok": true,
           "weight": 0,
           "points": 0,
-          "note": "9 contract artifact(s): reports\\api-surface.json, reports\\api-surface.md, reports\\release-readiness.json, reports\\release-readiness.md",
+          "note": "12 contract artifact(s): reports\\api-surface.json, reports\\api-surface.md, reports\\openapi.json, reports\\openapi.md",
           "pattern": "evidence-contracts"
         },
         {
@@ -673,7 +673,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\kiogarezaki",
       "remote": "git@github.com:GravityblueX/kiogarezaki.git",
       "branch": "main",
-      "head": "b0e00ce",
+      "head": "2c9ef5a",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -746,7 +746,7 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "7 report artifacts, 0 logs",
+          "note": "9 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
@@ -754,7 +754,7 @@
           "ok": true,
           "weight": 0,
           "points": 0,
-          "note": "8 contract artifact(s): reports\\project-promotion.json, reports\\project-promotion.md, reports\\project-registry.json, reports\\project-registry.md",
+          "note": "11 contract artifact(s): reports\\catalog-info.json, reports\\catalog-info.md, reports\\project-promotion.json, reports\\project-promotion.md",
           "pattern": "evidence-contracts"
         },
         {
@@ -881,8 +881,8 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\project-forge",
       "remote": "git@github.com:GravityblueX/project-forge.git",
       "branch": "main",
-      "head": "c8b9369",
-      "dirtyCount": 4,
+      "head": "cc47ac4",
+      "dirtyCount": 14,
       "score": 100,
       "checks": [
         {
@@ -983,7 +983,7 @@
       "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\slider-captcha-lab",
       "remote": "git@github.com:GravityblueX/slider-captcha-lab.git",
       "branch": "main",
-      "head": "3d311e2",
+      "head": "aa716a9",
       "dirtyCount": 0,
       "score": 100,
       "checks": [
@@ -1056,15 +1056,15 @@
           "ok": true,
           "weight": 8,
           "points": 8,
-          "note": "19 report artifacts, 0 logs",
+          "note": "21 report artifacts, 0 logs",
           "pattern": "debug-traces"
         },
         {
           "name": "contract artifacts",
-          "ok": false,
+          "ok": true,
           "weight": 0,
           "points": 0,
-          "note": "no API, release asset, APK, or project registry contract artifacts",
+          "note": "2 contract artifact(s): docs\\safety-contract.json, docs\\safety-contract.md",
           "pattern": "evidence-contracts"
         },
         {
@@ -1077,7 +1077,7 @@
         }
       ],
       "actions": [
-        "Add a machine-readable API, release asset, APK, or project registry contract report."
+        "Keep current maintenance rhythm and tighten next measurable gate."
       ]
     }
   ]

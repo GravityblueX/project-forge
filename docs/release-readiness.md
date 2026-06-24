@@ -1,10 +1,10 @@
 # Project Forge Release Readiness
 
-Generated: 2026-06-24 03:14 UTC
+Generated: 2026-06-24 03:28 UTC
 Project: `project-forge`
 Version: `0.1.0`
 Status: `OK`
-Dirty files when generated: `9`
+Dirty files when generated: `14`
 
 ## Gates
 
@@ -54,7 +54,7 @@ Dirty files when generated: `9`
 | tool registry exists | OK | 8 tools |
 | tool registry ok | OK | True |
 | unit tests | OK | OK |
-| git status readable | OK | dirty_count=9 |
+| git status readable | OK | dirty_count=14 |
 
 ## Reference Basis
 
