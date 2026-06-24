@@ -5,12 +5,13 @@ These references are used for direction, not copied implementation.
 
 ## Maintenance And Security
 
-- OpenSSF Scorecard: repository health checks for security posture, branch
+- [OpenSSF Scorecard](https://github.com/ossf/scorecard): repository health checks for security posture, branch
   protection, dependency update signals, pinned dependencies, and token
   permissions.
 - Gitleaks: local and CI-friendly secret detection with redacted reporting.
 - pre-commit: small checks that run before risky changes land.
-- Dependabot and Renovate: automated dependency update workflows with
+- [Dependabot](https://docs.github.com/en/code-security/dependabot) and
+  [Renovate](https://docs.renovatebot.com/): automated dependency update workflows with
   controlled grouping and scheduling.
 
 ## Release Automation
@@ -23,8 +24,18 @@ These references are used for direction, not copied implementation.
 
 - Cookiecutter and Copier: templates that turn repeatable project structure into
   a command instead of a manual checklist.
-- Backstage Software Templates: catalog-driven service creation with ownership
+- [Backstage Software Templates](https://backstage.io/docs/features/software-templates/):
+  catalog-driven service creation with ownership
   and operational metadata.
+
+## Debuggability And Tests
+
+- [Playwright Trace Viewer](https://playwright.dev/docs/trace-viewer): a model
+  for leaving inspectable traces behind when automation fails.
+- [Node.js test runner](https://nodejs.org/api/test.html): a low-friction
+  built-in test runner for JavaScript smoke and contract tests.
+- [Vue Test Utils](https://test-utils.vuejs.org/guide/): focused component tests
+  when UI behavior needs real rendering coverage.
 
 ## What Project Forge Keeps
 
@@ -32,4 +43,5 @@ These references are used for direction, not copied implementation.
 - Prefer reports and checklists that can run locally and in CI.
 - Redact risky data by default.
 - Keep templates inactive until the owner explicitly enables workflow files.
-
+- Prefer boring evidence over speculative ideas: build output, test output,
+  release artifacts, reports, and reproducible scripts.

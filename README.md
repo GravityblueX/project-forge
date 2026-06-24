@@ -44,7 +44,14 @@ python scripts/token_scope_doctor.py
 python scripts/dependency_update_config_drafter.py C:\path\to\repo
 python scripts/branch_protection_radar.py --owner GravityblueX
 python scripts/repo_template_factory.py --name valuable-tool
+python scripts/grounded_evolution_radar.py --root C:\Users\123\Documents\Codex\2026-06-18\new-chat-5\work --root C:\Users\123\Desktop
 python scripts/report_index.py
+```
+
+Run the project verification suite:
+
+```bash
+python -m unittest discover -s tests
 ```
 
 Generated reports are written to `reports/`.
@@ -54,6 +61,7 @@ Start with:
 ```text
 reports/INDEX.md
 reports/weekly-briefing.md
+reports/grounded-evolution-radar.md
 ```
 
 ## References

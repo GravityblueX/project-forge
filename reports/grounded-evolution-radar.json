@@ -1,0 +1,1001 @@
+{
+  "generatedAt": "2026-06-24T01:11:49.507915+00:00",
+  "roots": [
+    "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work",
+    "C:\\Users\\123\\Desktop"
+  ],
+  "patterns": [
+    {
+      "key": "health-gates",
+      "label": "security and maintenance gates",
+      "source": "OpenSSF Scorecard",
+      "local_signal": "README, license, CI workflow, dependency manifest, non-empty tests",
+      "why": "turns vague polish into repeatable repo-health checks"
+    },
+    {
+      "key": "dependency-rhythm",
+      "label": "controlled dependency update rhythm",
+      "source": "Renovate / Dependabot",
+      "local_signal": "renovate.json or .github/dependabot.yml",
+      "why": "keeps updates boring, reviewable, and scheduled"
+    },
+    {
+      "key": "templateable-workflows",
+      "label": "templateable project scaffolding",
+      "source": "Backstage Software Templates / Copier / Cookiecutter",
+      "local_signal": "project metadata, reusable scripts, generated reports",
+      "why": "makes good structure reusable instead of one-off"
+    },
+    {
+      "key": "debug-traces",
+      "label": "inspectable failure evidence",
+      "source": "Playwright Trace Viewer",
+      "local_signal": "reports, logs, screenshots, JSON diagnostics, APK verification artifacts",
+      "why": "lets failures be replayed or audited without guesswork"
+    },
+    {
+      "key": "native-test-runner",
+      "label": "low-friction test runner",
+      "source": "Node.js test runner / language-native tests",
+      "local_signal": "test command that executes real assertions",
+      "why": "prevents placeholder tests from pretending to be quality gates"
+    }
+  ],
+  "repositories": [
+    {
+      "name": "lux_net",
+      "path": "C:\\Users\\123\\Desktop\\fountain\\maintenance\\lux_net",
+      "remote": "git@github.com:tmzncty/lux_net.git",
+      "branch": "main",
+      "head": "af27c88",
+      "dirtyCount": 3,
+      "score": 65,
+      "checks": [
+        {
+          "name": "readme",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "README present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "license",
+          "ok": false,
+          "weight": 6,
+          "points": 0,
+          "note": "missing license",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "ci workflow",
+          "ok": false,
+          "weight": 10,
+          "points": 0,
+          "note": "no workflow directory",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "build signal",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "package.json: tsc -b && node scripts/bundle.mjs; packages\\bash\\package.json: tsc -b; packages\\core\\package.json: tsc -b",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "meaningful tests",
+          "ok": true,
+          "weight": 12,
+          "points": 12,
+          "note": "package.json: pnpm -r test; packages\\bash\\package.json: vitest run; packages\\core\\package.json: vitest run",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "dependency manifests",
+          "ok": true,
+          "weight": 7,
+          "points": 7,
+          "note": "9 manifest files",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "dependency automation",
+          "ok": false,
+          "weight": 7,
+          "points": 0,
+          "note": "no dependency update config",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "release evidence",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "58 git tags",
+          "pattern": "templateable-workflows"
+        },
+        {
+          "name": "diagnostic artifacts",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "5 report artifacts, 0 logs",
+          "pattern": "debug-traces"
+        },
+        {
+          "name": "safety boundary",
+          "ok": false,
+          "weight": 6,
+          "points": 0,
+          "note": "no explicit safety boundary found",
+          "pattern": "health-gates"
+        }
+      ],
+      "actions": [
+        "Add license metadata when the repo is intended for reuse.",
+        "Add a minimal CI workflow that runs build and tests.",
+        "Draft Renovate or Dependabot config with conservative grouping.",
+        "Add explicit authorized-use and non-abuse boundaries."
+      ]
+    },
+    {
+      "name": "nocturne-admin",
+      "path": "C:\\Users\\123\\Desktop\\fountain\\nocturne-admin",
+      "remote": "git@github.com:GravityblueX/ashveil-console.git",
+      "branch": "main",
+      "head": "e44d2a7",
+      "dirtyCount": 0,
+      "score": 91,
+      "checks": [
+        {
+          "name": "readme",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "README present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "license",
+          "ok": true,
+          "weight": 6,
+          "points": 6,
+          "note": "license present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "ci workflow",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "workflow directory present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "build signal",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "package.json: npm run build --prefix backend && npm run build --prefix frontend; backend\\package.json: node --check src/server.js && node --check src/store.js; frontend\\package.json: vite build",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "meaningful tests",
+          "ok": true,
+          "weight": 12,
+          "points": 12,
+          "note": "package.json: npm run test --prefix backend && npm run test --prefix frontend",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "dependency manifests",
+          "ok": true,
+          "weight": 7,
+          "points": 7,
+          "note": "3 manifest files",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "dependency automation",
+          "ok": false,
+          "weight": 7,
+          "points": 0,
+          "note": "no dependency update config",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "release evidence",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "1 release docs",
+          "pattern": "templateable-workflows"
+        },
+        {
+          "name": "diagnostic artifacts",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "39 report artifacts, 0 logs",
+          "pattern": "debug-traces"
+        },
+        {
+          "name": "safety boundary",
+          "ok": true,
+          "weight": 6,
+          "points": 6,
+          "note": "explicit safety or authorization boundary found",
+          "pattern": "health-gates"
+        }
+      ],
+      "actions": [
+        "Draft Renovate or Dependabot config with conservative grouping."
+      ]
+    },
+    {
+      "name": "YumeBox-MaterialDesign-Study",
+      "path": "C:\\Users\\123\\Desktop\\YumeBox-MaterialDesign-Study",
+      "remote": "git@github.com:GravityblueX/YumeBox-MaterialDesign-Study.git",
+      "branch": "Yume",
+      "head": "32a953c",
+      "dirtyCount": 1,
+      "score": 68,
+      "checks": [
+        {
+          "name": "readme",
+          "ok": false,
+          "weight": 8,
+          "points": 0,
+          "note": "missing README",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "license",
+          "ok": true,
+          "weight": 6,
+          "points": 6,
+          "note": "license present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "ci workflow",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "workflow directory present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "build signal",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "Gradle project",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "meaningful tests",
+          "ok": false,
+          "weight": 12,
+          "points": 0,
+          "note": "no test command or common test files",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "dependency manifests",
+          "ok": true,
+          "weight": 7,
+          "points": 7,
+          "note": "17 manifest files",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "dependency automation",
+          "ok": true,
+          "weight": 7,
+          "points": 7,
+          "note": "automation config found",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "release evidence",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "15 git tags, 9 release docs",
+          "pattern": "templateable-workflows"
+        },
+        {
+          "name": "diagnostic artifacts",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "11 report artifacts, 2 logs",
+          "pattern": "debug-traces"
+        },
+        {
+          "name": "safety boundary",
+          "ok": false,
+          "weight": 6,
+          "points": 0,
+          "note": "no explicit safety boundary found",
+          "pattern": "health-gates"
+        }
+      ],
+      "actions": [
+        "Add README usage, verification, and project status sections.",
+        "Replace placeholder tests with fast smoke or contract tests.",
+        "Add explicit authorized-use and non-abuse boundaries."
+      ]
+    },
+    {
+      "name": "AllBeingsFuture",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\AllBeingsFuture",
+      "remote": "git@github.com:AllBeingsFuture/AllBeingsFuture.git",
+      "branch": "main",
+      "head": "abb2308",
+      "dirtyCount": 2,
+      "score": 74,
+      "checks": [
+        {
+          "name": "readme",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "README present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "license",
+          "ok": true,
+          "weight": 6,
+          "points": 6,
+          "note": "license present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "ci workflow",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "workflow directory present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "build signal",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "package.json: npm run build:renderer && npm run build:electron; frontend\\package.json: tsc && vite build",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "meaningful tests",
+          "ok": true,
+          "weight": 12,
+          "points": 12,
+          "note": "frontend\\package.json: vitest run",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "dependency manifests",
+          "ok": true,
+          "weight": 7,
+          "points": 7,
+          "note": "3 manifest files",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "dependency automation",
+          "ok": false,
+          "weight": 7,
+          "points": 0,
+          "note": "no dependency update config",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "release evidence",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "49 git tags",
+          "pattern": "templateable-workflows"
+        },
+        {
+          "name": "diagnostic artifacts",
+          "ok": false,
+          "weight": 8,
+          "points": 0,
+          "note": "no local report artifacts",
+          "pattern": "debug-traces"
+        },
+        {
+          "name": "safety boundary",
+          "ok": false,
+          "weight": 6,
+          "points": 0,
+          "note": "no explicit safety boundary found",
+          "pattern": "health-gates"
+        }
+      ],
+      "actions": [
+        "Draft Renovate or Dependabot config with conservative grouping.",
+        "Emit markdown/JSON reports for every release or maintenance run.",
+        "Add explicit authorized-use and non-abuse boundaries."
+      ]
+    },
+    {
+      "name": "ashveil-console",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\ashveil-console",
+      "remote": "git@github.com:GravityblueX/ashveil-console.git",
+      "branch": "main",
+      "head": "bbb4ce7",
+      "dirtyCount": 0,
+      "score": 100,
+      "checks": [
+        {
+          "name": "readme",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "README present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "license",
+          "ok": true,
+          "weight": 6,
+          "points": 6,
+          "note": "license present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "ci workflow",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "workflow directory present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "build signal",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "package.json: npm run build --prefix backend && npm run build --prefix frontend; backend\\package.json: node --check src/server.js && node --check src/store.js; frontend\\package.json: vite build",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "meaningful tests",
+          "ok": true,
+          "weight": 12,
+          "points": 12,
+          "note": "package.json: npm run test --prefix backend && npm run test --prefix frontend; backend\\package.json: node --test \"test/**/*.test.js\"; frontend\\package.json: node --test \"test/**/*.test.js\"",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "dependency manifests",
+          "ok": true,
+          "weight": 7,
+          "points": 7,
+          "note": "3 manifest files",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "dependency automation",
+          "ok": true,
+          "weight": 7,
+          "points": 7,
+          "note": "automation config found",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "release evidence",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "39 git tags, 1 release docs",
+          "pattern": "templateable-workflows"
+        },
+        {
+          "name": "diagnostic artifacts",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "39 report artifacts, 0 logs",
+          "pattern": "debug-traces"
+        },
+        {
+          "name": "safety boundary",
+          "ok": true,
+          "weight": 6,
+          "points": 6,
+          "note": "explicit safety or authorization boundary found",
+          "pattern": "health-gates"
+        }
+      ],
+      "actions": [
+        "Keep current maintenance rhythm and tighten next measurable gate."
+      ]
+    },
+    {
+      "name": "GravityblueX-First-Identify",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\GravityblueX-First-Identify",
+      "remote": "git@github.com:GravityblueX/GravityblueX-First-Identify.git",
+      "branch": "main",
+      "head": "da443f3",
+      "dirtyCount": 0,
+      "score": 77,
+      "checks": [
+        {
+          "name": "readme",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "README present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "license",
+          "ok": false,
+          "weight": 6,
+          "points": 0,
+          "note": "missing license",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "ci workflow",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "workflow directory present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "build signal",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "package.json: turbo build; client\\package.json: next build; server\\package.json: tsc",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "meaningful tests",
+          "ok": true,
+          "weight": 12,
+          "points": 12,
+          "note": "package.json: turbo test; client\\package.json: jest; server\\package.json: jest",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "dependency manifests",
+          "ok": true,
+          "weight": 7,
+          "points": 7,
+          "note": "4 manifest files",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "dependency automation",
+          "ok": false,
+          "weight": 7,
+          "points": 0,
+          "note": "no dependency update config",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "release evidence",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "1 git tags",
+          "pattern": "templateable-workflows"
+        },
+        {
+          "name": "diagnostic artifacts",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "4 report artifacts, 0 logs",
+          "pattern": "debug-traces"
+        },
+        {
+          "name": "safety boundary",
+          "ok": false,
+          "weight": 6,
+          "points": 0,
+          "note": "no explicit safety boundary found",
+          "pattern": "health-gates"
+        }
+      ],
+      "actions": [
+        "Add license metadata when the repo is intended for reuse.",
+        "Draft Renovate or Dependabot config with conservative grouping.",
+        "Add explicit authorized-use and non-abuse boundaries."
+      ]
+    },
+    {
+      "name": "kiogarezaki",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\kiogarezaki",
+      "remote": "git@github.com:GravityblueX/kiogarezaki.git",
+      "branch": "main",
+      "head": "1e4835a",
+      "dirtyCount": 0,
+      "score": 74,
+      "checks": [
+        {
+          "name": "readme",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "README present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "license",
+          "ok": false,
+          "weight": 6,
+          "points": 0,
+          "note": "missing license",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "ci workflow",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "workflow directory present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "build signal",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "projects\\idea-triage-board\\package.json: tsc -p tsconfig.json; projects\\personal-craft-console\\package.json: tsc -p tsconfig.json",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "meaningful tests",
+          "ok": true,
+          "weight": 12,
+          "points": 12,
+          "note": "projects\\idea-triage-board\\package.json: npm run build && node --test dist/tests/*.test.js; projects\\personal-craft-console\\package.json: npm run build && node --test dist/tests/*.test.js",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "dependency manifests",
+          "ok": true,
+          "weight": 7,
+          "points": 7,
+          "note": "2 manifest files",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "dependency automation",
+          "ok": false,
+          "weight": 7,
+          "points": 0,
+          "note": "no dependency update config",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "release evidence",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "4 git tags",
+          "pattern": "templateable-workflows"
+        },
+        {
+          "name": "diagnostic artifacts",
+          "ok": false,
+          "weight": 8,
+          "points": 0,
+          "note": "no local report artifacts",
+          "pattern": "debug-traces"
+        },
+        {
+          "name": "safety boundary",
+          "ok": true,
+          "weight": 6,
+          "points": 6,
+          "note": "explicit safety or authorization boundary found",
+          "pattern": "health-gates"
+        }
+      ],
+      "actions": [
+        "Add license metadata when the repo is intended for reuse.",
+        "Draft Renovate or Dependabot config with conservative grouping.",
+        "Emit markdown/JSON reports for every release or maintenance run."
+      ]
+    },
+    {
+      "name": "lux_net-reference",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\lux_net-reference",
+      "remote": "git@github.com:tmzncty/lux_net.git",
+      "branch": "dev",
+      "head": "1cb771e",
+      "dirtyCount": 0,
+      "score": 65,
+      "checks": [
+        {
+          "name": "readme",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "README present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "license",
+          "ok": false,
+          "weight": 6,
+          "points": 0,
+          "note": "missing license",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "ci workflow",
+          "ok": false,
+          "weight": 10,
+          "points": 0,
+          "note": "no workflow directory",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "build signal",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "package.json: tsc -b && node scripts/bundle.mjs; packages\\bash\\package.json: tsc -b; packages\\core\\package.json: tsc -b",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "meaningful tests",
+          "ok": true,
+          "weight": 12,
+          "points": 12,
+          "note": "package.json: pnpm -r test; packages\\bash\\package.json: vitest run; packages\\core\\package.json: vitest run",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "dependency manifests",
+          "ok": true,
+          "weight": 7,
+          "points": 7,
+          "note": "10 manifest files",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "dependency automation",
+          "ok": false,
+          "weight": 7,
+          "points": 0,
+          "note": "no dependency update config",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "release evidence",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "1 release docs",
+          "pattern": "templateable-workflows"
+        },
+        {
+          "name": "diagnostic artifacts",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "265 report artifacts, 0 logs",
+          "pattern": "debug-traces"
+        },
+        {
+          "name": "safety boundary",
+          "ok": false,
+          "weight": 6,
+          "points": 0,
+          "note": "no explicit safety boundary found",
+          "pattern": "health-gates"
+        }
+      ],
+      "actions": [
+        "Add license metadata when the repo is intended for reuse.",
+        "Add a minimal CI workflow that runs build and tests.",
+        "Draft Renovate or Dependabot config with conservative grouping.",
+        "Add explicit authorized-use and non-abuse boundaries."
+      ]
+    },
+    {
+      "name": "project-forge",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\project-forge",
+      "remote": "git@github.com:GravityblueX/project-forge.git",
+      "branch": "main",
+      "head": "62c9d1d",
+      "dirtyCount": 2,
+      "score": 82,
+      "checks": [
+        {
+          "name": "readme",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "README present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "license",
+          "ok": true,
+          "weight": 6,
+          "points": 6,
+          "note": "license present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "ci workflow",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "workflow directory present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "build signal",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "Python project manifest",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "meaningful tests",
+          "ok": true,
+          "weight": 12,
+          "points": 12,
+          "note": "1 Python test files",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "dependency manifests",
+          "ok": true,
+          "weight": 7,
+          "points": 7,
+          "note": "1 manifest files",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "dependency automation",
+          "ok": false,
+          "weight": 7,
+          "points": 0,
+          "note": "no dependency update config",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "release evidence",
+          "ok": false,
+          "weight": 8,
+          "points": 0,
+          "note": "no local tags or release docs",
+          "pattern": "templateable-workflows"
+        },
+        {
+          "name": "diagnostic artifacts",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "23 report artifacts, 0 logs",
+          "pattern": "debug-traces"
+        },
+        {
+          "name": "safety boundary",
+          "ok": true,
+          "weight": 6,
+          "points": 6,
+          "note": "explicit safety or authorization boundary found",
+          "pattern": "health-gates"
+        }
+      ],
+      "actions": [
+        "Draft Renovate or Dependabot config with conservative grouping.",
+        "Create a tagged release or release-readiness report when build outputs are reproducible."
+      ]
+    },
+    {
+      "name": "slider-captcha-lab",
+      "path": "C:\\Users\\123\\Documents\\Codex\\2026-06-18\\new-chat-5\\work\\slider-captcha-lab",
+      "remote": "git@github.com:GravityblueX/slider-captcha-lab.git",
+      "branch": "main",
+      "head": "ce22469",
+      "dirtyCount": 0,
+      "score": 91,
+      "checks": [
+        {
+          "name": "readme",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "README present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "license",
+          "ok": true,
+          "weight": 6,
+          "points": 6,
+          "note": "license present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "ci workflow",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "workflow directory present",
+          "pattern": "health-gates"
+        },
+        {
+          "name": "build signal",
+          "ok": true,
+          "weight": 10,
+          "points": 10,
+          "note": "Python project manifest",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "meaningful tests",
+          "ok": true,
+          "weight": 12,
+          "points": 12,
+          "note": "1 Python test files",
+          "pattern": "native-test-runner"
+        },
+        {
+          "name": "dependency manifests",
+          "ok": true,
+          "weight": 7,
+          "points": 7,
+          "note": "2 manifest files",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "dependency automation",
+          "ok": false,
+          "weight": 7,
+          "points": 0,
+          "note": "no dependency update config",
+          "pattern": "dependency-rhythm"
+        },
+        {
+          "name": "release evidence",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "5 git tags, 3 release docs",
+          "pattern": "templateable-workflows"
+        },
+        {
+          "name": "diagnostic artifacts",
+          "ok": true,
+          "weight": 8,
+          "points": 8,
+          "note": "8 report artifacts, 0 logs",
+          "pattern": "debug-traces"
+        },
+        {
+          "name": "safety boundary",
+          "ok": true,
+          "weight": 6,
+          "points": 6,
+          "note": "explicit safety or authorization boundary found",
+          "pattern": "health-gates"
+        }
+      ],
+      "actions": [
+        "Draft Renovate or Dependabot config with conservative grouping."
+      ]
+    }
+  ]
+}

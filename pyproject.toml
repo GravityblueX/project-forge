@@ -1,0 +1,9 @@
+[project]
+name = "project-forge"
+version = "0.1.0"
+description = "Local-first project incubation and maintenance radar toolkit."
+requires-python = ">=3.11"
+
+[tool.project-forge]
+test-command = "python -m unittest discover -s tests"
+smoke-command = "python scripts/grounded_evolution_radar.py"
